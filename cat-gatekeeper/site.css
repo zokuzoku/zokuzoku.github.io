@@ -77,14 +77,35 @@ nav a[aria-current="page"] {
 .language-switch {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  min-width: 112px;
-  color: var(--muted);
+  gap: 0;
+  height: 34px;
+  padding: 3px;
+  color: #3b5ea6;
+  background: rgba(25, 25, 25, 0.06);
+  border-radius: 8px;
   white-space: nowrap;
 }
 
+.language-switch a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 68px;
+  height: 28px;
+  padding: 0 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1;
+}
+
 .language-switch a[aria-current="page"] {
-  color: var(--ink);
+  color: #3b5ea6;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(25, 25, 25, 0.1);
+}
+
+.language-switch span {
+  display: none;
 }
 
 .hero {
@@ -120,9 +141,9 @@ nav a[aria-current="page"] {
 
 .eyebrow,
 .section-kicker {
-  margin: 0 0 12px;
+  margin: 16px 0 0;
   color: var(--orange);
-  font-size: 13px;
+  font-size: clamp(14px, 1.5vw, 18px);
   font-weight: 900;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -141,6 +162,10 @@ nav a[aria-current="page"] {
   font-size: clamp(20px, 3vw, 34px);
   line-height: 1.18;
   font-weight: 760;
+}
+
+:lang(ja) .hero-copy {
+  line-height: 1.4;
 }
 
 .actions {

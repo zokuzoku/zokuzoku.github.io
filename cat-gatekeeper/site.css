@@ -320,14 +320,20 @@ nav a[aria-current="page"] {
 }
 
 @media (max-width: 780px) {
+  body {
+    padding-top: 104px;
+  }
+
   .site-header {
-    position: fixed;
-    align-items: flex-start;
+    display: block;
+    height: 104px;
+    padding: 14px 20px;
   }
 
   nav {
+    margin-top: 12px;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 10px;
   }
 
@@ -336,12 +342,12 @@ nav a[aria-current="page"] {
   }
 
   .hero {
-    min-height: 88svh;
-    padding-top: 110px;
+    min-height: calc(88svh - 104px);
+    padding-top: 40px;
   }
 
   .page-nav {
-    top: 70px;
+    top: 104px;
   }
 
   .hero-video {

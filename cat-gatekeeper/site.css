@@ -191,7 +191,7 @@ nav a[aria-current="page"] {
 }
 
 .button.primary {
-  color: #fff;
+  color: #171717;
   background: var(--orange);
 }
 

@@ -167,7 +167,14 @@ nav a[aria-current="page"] {
 }
 
 :lang(ja) .hero-copy {
+  max-width: 720px;
+  font-size: clamp(20px, 2.7vw, 30px);
   line-height: 1.4;
+}
+
+:lang(ja) .eyebrow {
+  text-transform: none;
+  letter-spacing: 0.04em;
 }
 
 .actions {

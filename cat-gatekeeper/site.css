@@ -50,14 +50,9 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: 900;
   text-decoration: none;
-}
-
-.brand img {
-  width: 32px;
-  height: 32px;
 }
 
 nav {
@@ -70,6 +65,10 @@ nav {
 
 nav a {
   text-decoration: none;
+}
+
+nav a[aria-current="page"] {
+  color: var(--ink);
 }
 
 .hero {
@@ -188,6 +187,31 @@ nav a {
   line-height: 1.45;
 }
 
+.page-nav {
+  position: sticky;
+  z-index: 8;
+  top: 70px;
+  display: flex;
+  gap: 10px;
+  padding: 12px clamp(20px, 7vw, 88px);
+  overflow-x: auto;
+  color: var(--ink);
+  background: rgba(255, 250, 244, 0.94);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+}
+
+.page-nav a {
+  flex: 0 0 auto;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: var(--muted);
+  background: #fff;
+  font-size: 14px;
+  font-weight: 850;
+  text-decoration: none;
+}
+
 .section-heading {
   max-width: 860px;
 }
@@ -296,17 +320,27 @@ nav a {
 
 @media (max-width: 780px) {
   .site-header {
-    position: absolute;
+    position: fixed;
     align-items: flex-start;
   }
 
   nav {
-    display: none;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .site-header nav {
+    font-size: 13px;
   }
 
   .hero {
     min-height: 88svh;
     padding-top: 110px;
+  }
+
+  .page-nav {
+    top: 70px;
   }
 
   .hero-video {

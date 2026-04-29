@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="A cat appears when you spend too long on selected websites.">
   <link rel="icon" href="assets/nekoicon48.png">
   <link rel="apple-touch-icon" href="assets/nekoicon128.png">
-  <link rel="stylesheet" href="site.css?v=19">
+  <link rel="stylesheet" href="site.css?v=20">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -73,19 +73,21 @@
       </div>
     </section>
 
-    <section class="notice" aria-labelledby="update-title">
-      <div>
-        <p class="section-kicker">Version 1.1</p>
-        <h2 id="update-title">Custom sites are supported.</h2>
-      </div>
-      <p>Chrome may ask existing users to approve updated site permissions. Cat Gatekeeper only counts time on the sites you choose in its settings.</p>
-    </section>
-
     <nav class="page-nav" aria-label="Cat Gatekeeper page navigation">
+      <a href="#notice">What's New</a>
       <a href="#how-it-works">How it works</a>
       <a href="#privacy">Privacy</a>
       <a href="#support">Support</a>
     </nav>
+
+    <section class="section" id="notice" aria-labelledby="update-title">
+      <div class="section-heading">
+        <p class="section-kicker">Version 1.1</p>
+        <h2 id="update-title">Custom sites are supported.</h2>
+        <p>Chrome may ask existing users to approve updated site permissions.</p>
+        <p>Cat Gatekeeper only counts time on the sites you choose in its settings.</p>
+      </div>
+    </section>
 
     <section class="section" id="how-it-works" aria-labelledby="how-title">
       <div class="section-heading">
@@ -111,13 +113,11 @@
       </div>
     </section>
 
-    <section class="split" id="privacy" aria-labelledby="privacy-title">
-      <div>
+    <section class="section" id="privacy" aria-labelledby="privacy-title">
+      <div class="section-heading">
         <p class="section-kicker">Privacy First</p>
         <h2 id="privacy-title">No accounts. No ads. No data collection.</h2>
-      </div>
-      <div class="copy-block">
-        <p>Settings and timers are stored in your browser. Cat Gatekeeper does not collect, sell, or transmit your browsing data.</p>
+        <p class="section-body">Settings and timers are stored in your browser. Cat Gatekeeper does not collect, sell, or transmit your browsing data.</p>
         <a href="https://zokuzoku.github.io/privacy-policy/cat-gatekeeper/">Read the privacy policy</a>
       </div>
     </section>

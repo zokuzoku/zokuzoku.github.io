@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="選んだサイトを使いすぎると、猫が画面に現れて休憩を促します。">
   <link rel="icon" href="../../cat-gatekeeper/assets/nekoicon48.png">
   <link rel="apple-touch-icon" href="../../cat-gatekeeper/assets/nekoicon128.png">
-  <link rel="stylesheet" href="../../cat-gatekeeper/site.css?v=19">
+  <link rel="stylesheet" href="../../cat-gatekeeper/site.css?v=20">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -73,19 +73,21 @@
       </div>
     </section>
 
-    <section class="notice" aria-labelledby="update-title">
-      <div>
-        <p class="section-kicker">Version 1.1</p>
-        <h2 id="update-title">好きなサイトを追加できるようになりました！</h2>
-      </div>
-      <p>Chromeから新しいサイト権限の許可を求められる場合があります。<br>Cat Gatekeeperが計測するのは、設定で選んだサイトだけです。</p>
-    </section>
-
     <nav class="page-nav" aria-label="Cat Gatekeeperページ内ナビゲーション">
+      <a href="#notice">お知らせ</a>
       <a href="#how-it-works">使い方</a>
       <a href="#privacy">プライバシー</a>
       <a href="#support">サポート</a>
     </nav>
+
+    <section class="section" id="notice" aria-labelledby="update-title">
+      <div class="section-heading">
+        <p class="section-kicker">Version 1.1</p>
+        <h2 id="update-title">好きなサイトを追加できるようになりました！</h2>
+        <p>Chromeから新しいサイト権限の許可を求められる場合があります。</p>
+        <p>Cat Gatekeeperが計測するのは、設定で選んだサイトだけです。</p>
+      </div>
+    </section>
 
     <section class="section" id="how-it-works" aria-labelledby="how-title">
       <div class="section-heading">
@@ -111,13 +113,11 @@
       </div>
     </section>
 
-    <section class="split" id="privacy" aria-labelledby="privacy-title">
-      <div>
+    <section class="section" id="privacy" aria-labelledby="privacy-title">
+      <div class="section-heading">
         <p class="section-kicker">Privacy First</p>
         <h2 id="privacy-title">アカウントなし。広告なし。データ収集なし。</h2>
-      </div>
-      <div class="copy-block">
-        <p>設定とタイマーはブラウザ内に保存されます。Cat Gatekeeperは閲覧データを収集、販売、送信しません。</p>
+        <p class="section-body">設定とタイマーはブラウザ内に保存されます。Cat Gatekeeperは閲覧データを収集、販売、送信しません。</p>
         <a href="https://zokuzoku.github.io/privacy-policy/cat-gatekeeper/">プライバシーポリシーを読む</a>
       </div>
     </section>

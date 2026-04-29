@@ -7,6 +7,8 @@
   --panel: #f2eee8;
   --orange: #ff6633;
   --orange-dark: #c6421e;
+  --coffee: #ffd51f;
+  --coffee-hover: #ffe05c;
   --teal: #007f73;
   --leaf: #7db343;
 }
@@ -154,8 +156,14 @@ nav a[aria-current="page"] {
 }
 
 .button.secondary {
-  color: #fffdf8;
-  border: 1px solid rgba(255, 255, 255, 0.48);
+  color: #171717;
+  background: var(--coffee);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.button.secondary:hover,
+.button.secondary:focus-visible {
+  background: var(--coffee-hover);
 }
 
 .notice,

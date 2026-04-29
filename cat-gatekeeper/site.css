@@ -143,9 +143,9 @@ nav a[aria-current="page"] {
 
 .eyebrow,
 .section-kicker {
-  margin: 16px 0 0;
+  margin: clamp(18px, 2.4vw, 30px) 0 0;
   color: var(--orange);
-  font-size: clamp(14px, 1.5vw, 18px);
+  font-size: clamp(16px, 1.6vw, 22px);
   font-weight: 900;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -160,7 +160,7 @@ nav a[aria-current="page"] {
 
 .hero-copy {
   max-width: 640px;
-  margin: 24px 0 0;
+  margin: clamp(22px, 2.8vw, 34px) 0 0;
   font-size: clamp(20px, 3vw, 34px);
   line-height: 1.18;
   font-weight: 760;
@@ -168,20 +168,21 @@ nav a[aria-current="page"] {
 
 :lang(ja) .hero-copy {
   max-width: 720px;
-  font-size: clamp(20px, 2.7vw, 30px);
-  line-height: 1.4;
+  font-size: clamp(22px, 2.65vw, 32px);
+  line-height: 1.32;
 }
 
 :lang(ja) .eyebrow {
   text-transform: none;
   letter-spacing: 0.04em;
+  font-size: clamp(17px, 1.65vw, 23px);
 }
 
 .actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 34px;
+  margin-top: clamp(28px, 3.2vw, 42px);
 }
 
 .button {

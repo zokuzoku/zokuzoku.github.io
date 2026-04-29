@@ -63,8 +63,8 @@ nav {
   align-items: center;
   gap: 18px;
   color: var(--muted);
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 800;
 }
 
 nav a {

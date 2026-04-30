@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cat Gatekeeper - 公式Chrome拡張機能</title>
-  <meta name="description" content="Cat Gatekeeperは、選んだサイトを使いすぎたときに猫の休憩画面を表示する無料のChrome拡張機能です。広告なし。データ収集なし。">
+  <title>Cat Gatekeeper - 公式ブラウザ拡張機能</title>
+  <meta name="description" content="Cat Gatekeeperは、選んだサイトを使いすぎたときに猫の休憩画面を表示する無料のブラウザ拡張機能です。広告なし。データ収集なし。">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://zokuzoku.github.io/ja/cat-gatekeeper/">
   <link rel="alternate" hreflang="en" href="https://zokuzoku.github.io/cat-gatekeeper/">
@@ -14,21 +14,23 @@
   <meta property="og:description" content="SNSや選んだサイトを使いすぎると、猫が画面に現れて休憩を促します。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://zokuzoku.github.io/ja/cat-gatekeeper/">
-  <meta property="og:image" content="https://zokuzoku.github.io/cat-gatekeeper/assets/nekoicon128.png">
+  <meta property="og:image" content="https://zokuzoku.github.io/cat-gatekeeper/assets/cat-face-icon-128.png">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Cat Gatekeeper">
   <meta name="twitter:description" content="選んだサイトを使いすぎると、猫が画面に現れて休憩を促します。">
-  <link rel="icon" href="../../cat-gatekeeper/assets/nekoicon48.png">
-  <link rel="apple-touch-icon" href="../../cat-gatekeeper/assets/nekoicon128.png">
-  <link rel="stylesheet" href="../../cat-gatekeeper/site.css?v=23">
+  <link rel="icon" href="../../cat-gatekeeper/assets/cat-face-icon.svg?v=5" type="image/svg+xml">
+  <link rel="icon" href="../../cat-gatekeeper/assets/cat-face-icon-32.png?v=5" sizes="32x32" type="image/png">
+  <link rel="icon" href="../../cat-gatekeeper/assets/cat-face-icon-48.png?v=5" sizes="48x48" type="image/png">
+  <link rel="apple-touch-icon" href="../../cat-gatekeeper/assets/cat-face-icon-128.png?v=5">
+  <link rel="stylesheet" href="../../cat-gatekeeper/site.css?v=30">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "Cat Gatekeeper",
       "applicationCategory": "BrowserApplication",
-      "operatingSystem": "Chrome",
-      "description": "選んだサイトを使いすぎたときに猫の休憩画面を表示する無料のChrome拡張機能です。",
+      "operatingSystem": "Chrome, Firefox",
+      "description": "選んだサイトを使いすぎたときに猫の休憩画面を表示する無料のブラウザ拡張機能です。",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -56,7 +58,7 @@
       </div>
     </div>
     <nav aria-label="メインナビゲーション">
-      <a href="/ja/cat-gatekeeper/" aria-current="page">Cat Gatekeeper</a>
+      <a href="https://github.com/zokuzoku/cat-gatekeeper" target="_blank" rel="noopener">GitHub</a>
       <span class="language-switch" aria-label="言語切り替え">
         <a href="/ja/cat-gatekeeper/" lang="ja" aria-current="page">日本語</a>
         <span aria-hidden="true">/</span>
@@ -67,34 +69,27 @@
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
-      <video class="hero-video" src="../../cat-gatekeeper/assets/neko1.webm" autoplay muted loop playsinline aria-hidden="true"></video>
+      <video class="hero-video" src="/assets/neko2.webm" autoplay muted loop playsinline aria-hidden="true"></video>
       <div class="hero-shade" aria-hidden="true"></div>
       <div class="hero-content">
         <h1 id="hero-title"><span>Cat</span><span>Gatekeeper</span></h1>
-        <p class="eyebrow">公式Chrome拡張機能</p>
+        <p class="eyebrow">公式ブラウザ拡張機能</p>
         <p class="hero-copy">画面から離れられないあなたに。<br>最強の抑止力、あらわる。</p>
         <div class="actions" aria-label="主要リンク">
           <a class="button primary" href="https://chromewebstore.google.com/detail/cat-gatekeeper/elbikiflgfhjdjmficnigpeegjbhdidh">🐱 Chromeに追加</a>
+          <a class="button primary" href="https://addons.mozilla.org/firefox/addon/cat-gatekeeper-zokuzoku/">🦊 Firefoxに追加</a>
           <a class="button secondary" href="https://buymeacoffee.com/zokuzoku2026">☕ Buy me a coffee</a>
         </div>
+        <a class="x-buzz" href="https://x.com/konekone2026/status/2048215520965709940" target="_blank" rel="noopener">Xで大反響！🔥</a>
       </div>
     </section>
 
     <nav class="page-nav" aria-label="Cat Gatekeeperページ内ナビゲーション">
-      <a href="#notice">お知らせ</a>
       <a href="#new-cats">新しい猫</a>
       <a href="#how-it-works">使い方</a>
       <a href="#privacy">プライバシー</a>
       <a href="#support">サポート</a>
     </nav>
-
-    <section class="section" id="notice" aria-labelledby="update-title">
-      <div class="section-heading">
-        <p class="section-kicker notice-kicker"><span>New</span> Version 1.1</p>
-        <h2 id="update-title">好きなサイトを追加できるようになりました！</h2>
-        <p>※Chromeから新しいサイト権限の許可を求められる場合があります。</p>
-      </div>
-    </section>
 
     <section class="section coming-soon" id="new-cats" aria-labelledby="cats-title">
       <div class="section-heading">
@@ -156,6 +151,6 @@
     <p>Cat Gatekeeper by ZOKUZOKU.</p>
     <p>Source code is MIT licensed. Visual assets are all rights reserved.</p>
   </footer>
-  <script src="../../cat-gatekeeper/paw-trail.js?v=2"></script>
+  <script src="../../cat-gatekeeper/paw-trail.js?v=3"></script>
 </body>
 </html>

@@ -1,21 +1,24 @@
 (() => {
-  const noticeKicker = document.querySelector(".notice-kicker");
+  const sectionKickers = document.querySelectorAll(".section-kicker");
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  if (noticeKicker && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  if (sectionKickers.length && !reduceMotion) {
     const observer = new IntersectionObserver((entries) => {
-      if (!entries.some((entry) => entry.isIntersecting)) return;
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
 
-      noticeKicker.classList.add("is-visible");
-      observer.disconnect();
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
     }, { threshold: 0.55 });
 
-    observer.observe(noticeKicker);
-  } else if (noticeKicker) {
-    noticeKicker.classList.add("is-visible");
+    sectionKickers.forEach((kicker) => observer.observe(kicker));
+  } else {
+    sectionKickers.forEach((kicker) => kicker.classList.add("is-visible"));
   }
 
   if (window.matchMedia("(pointer: coarse)").matches) return;
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (reduceMotion) return;
 
   let lastX = 0;
   let lastY = 0;

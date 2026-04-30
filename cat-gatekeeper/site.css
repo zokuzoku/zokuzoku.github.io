@@ -757,8 +757,16 @@ nav a[aria-current="page"] {
   }
 
   .hero {
-    min-height: calc(88svh - 104px);
-    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 0;
+    padding: 28px 20px 0;
+  }
+
+  .hero-content {
+    order: 1;
+    max-width: none;
   }
 
   .hero h1 {
@@ -767,6 +775,13 @@ nav a[aria-current="page"] {
 
   .hero-copy {
     font-size: clamp(20px, 7vw, 28px);
+  }
+
+  .actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
   }
 
   .button {
@@ -779,7 +794,20 @@ nav a[aria-current="page"] {
   }
 
   .hero-video {
-    object-position: 68% 50%;
+    position: relative;
+    order: 2;
+    align-self: stretch;
+    width: calc(100% + 40px);
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin: 18px -20px 0;
+    background: #050505;
+    object-fit: contain;
+    object-position: center bottom;
+  }
+
+  .hero-shade {
+    display: none;
   }
 
   .notice,

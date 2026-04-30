@@ -534,9 +534,10 @@ nav a[aria-current="page"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  min-height: 260px;
-  padding: 36px 24px 48px;
+  justify-content: center;
+  gap: 14px;
+  min-height: 300px;
+  padding: 32px 24px 48px;
   border: 0;
   border-radius: 8px;
   background: var(--teal);
@@ -553,8 +554,9 @@ nav a[aria-current="page"] {
 }
 
 .steps h3 {
-  margin: 20px 0 10px;
+  margin: 0;
   font-size: 24px;
+  line-height: 1.2;
 }
 
 .steps p,
@@ -571,9 +573,9 @@ nav a[aria-current="page"] {
 
 .steps small {
   display: block;
-  margin-top: 8px;
-  font-size: 0.82em;
-  line-height: 1.45;
+  margin-top: 6px;
+  font-size: 0.78em;
+  line-height: 1.36;
 }
 
 .section-body {

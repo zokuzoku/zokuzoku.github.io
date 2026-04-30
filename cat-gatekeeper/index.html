@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="A cat appears when you spend too long on selected websites.">
   <link rel="icon" href="assets/nekoicon48.png">
   <link rel="apple-touch-icon" href="assets/nekoicon128.png">
-  <link rel="stylesheet" href="site.css?v=20">
+  <link rel="stylesheet" href="site.css?v=23">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -45,11 +45,18 @@
 </head>
 <body>
   <header class="site-header" aria-label="Site header">
-    <a class="brand" href="/" aria-label="ZOKUZOKU home">ZOKUZOKU</a>
+    <div class="header-brand">
+      <span class="brand" aria-label="ZOKUZOKU">ZOKUZOKU</span>
+      <div class="social-links" aria-label="Social links">
+        <a href="https://x.com/konekone2026" aria-label="X"><img src="/assets/social/x.svg" alt=""></a>
+        <a href="https://www.instagram.com/zokuzoku2016" aria-label="Instagram"><img src="/assets/social/instagram.svg" alt=""></a>
+        <a href="https://www.youtube.com/@zokuzoku2016" aria-label="YouTube"><img src="/assets/social/youtube.svg" alt=""></a>
+        <a href="https://www.tiktok.com/@zokuzoku30" aria-label="TikTok"><img src="/assets/social/tiktok.svg" alt=""></a>
+        <a href="https://www.threads.com/@zokuzoku2016" aria-label="Threads"><img src="/assets/social/threads.svg" alt=""></a>
+      </div>
+    </div>
     <nav aria-label="Primary navigation">
-      <a href="/">Home</a>
       <a href="/cat-gatekeeper/" aria-current="page">Cat Gatekeeper</a>
-      <a href="https://github.com/zokuzoku">GitHub</a>
       <span class="language-switch" aria-label="Language switch">
         <a href="/ja/cat-gatekeeper/" lang="ja">日本語</a>
         <span aria-hidden="true">/</span>
@@ -75,6 +82,7 @@
 
     <nav class="page-nav" aria-label="Cat Gatekeeper page navigation">
       <a href="#notice">What's New</a>
+      <a href="#new-cats">New Cats</a>
       <a href="#how-it-works">How it works</a>
       <a href="#privacy">Privacy</a>
       <a href="#support">Support</a>
@@ -82,33 +90,40 @@
 
     <section class="section" id="notice" aria-labelledby="update-title">
       <div class="section-heading">
-        <p class="section-kicker">Version 1.1</p>
+        <p class="section-kicker notice-kicker"><span>New</span> Version 1.1</p>
         <h2 id="update-title">Custom sites are supported.</h2>
-        <p>Chrome may ask existing users to approve updated site permissions.</p>
-        <p>Cat Gatekeeper only counts time on the sites you choose in its settings.</p>
+        <p>Note: Chrome may ask existing users to approve updated site permissions.</p>
+      </div>
+    </section>
+
+    <section class="section coming-soon" id="new-cats" aria-labelledby="cats-title">
+      <div class="section-heading">
+        <p class="section-kicker">New Cats</p>
+        <h2 id="cats-title">Coming Soon</h2>
       </div>
     </section>
 
     <section class="section" id="how-it-works" aria-labelledby="how-title">
       <div class="section-heading">
         <p class="section-kicker">How It Works</p>
-        <h2 id="how-title">A tiny rule, enforced by a very serious cat.</h2>
+        <h2 id="how-title">When time is up, the cat appears.<br>It takes over your screen and makes you take a break.</h2>
+        <p class="section-note">Switching to another tab resets the timer.</p>
       </div>
       <div class="steps">
         <article>
           <span>01</span>
           <h3>Choose websites</h3>
-          <p>Use the default social sites or add your own domains, one per line.</p>
+          <p>Add your favorite domains, one per line.<br><small>Major social sites are included by default.</small></p>
         </article>
         <article>
           <span>02</span>
-          <h3>Set your limit</h3>
-          <p>Pick how many active minutes are allowed before a break starts.</p>
+          <h3>Set the time</h3>
+          <p>Set when the cat appears<br>and how long it stays.<br><small>Default: 60 minutes of use, 5 minutes of break.</small></p>
         </article>
         <article>
           <span>03</span>
-          <h3>Meet the cat</h3>
-          <p>When time is up, the cat appears and keeps the page covered until the countdown ends.</p>
+          <h3>Take a break</h3>
+          <p>The cat takes over the page<br>until the countdown ends<br><small>You can also open the menu and dismiss it.</small></p>
         </article>
       </div>
     </section>
@@ -116,8 +131,8 @@
     <section class="section" id="privacy" aria-labelledby="privacy-title">
       <div class="section-heading">
         <p class="section-kicker">Privacy First</p>
-        <h2 id="privacy-title">No accounts. No ads. No data collection.</h2>
-        <p class="section-body">Settings and timers are stored in your browser. Cat Gatekeeper does not collect, sell, or transmit your browsing data.</p>
+        <h2 id="privacy-title">No ads. No data collection.</h2>
+        <p class="section-body">Settings and timers are stored in your browser.<br>Cat Gatekeeper does not collect, sell, or transmit your browsing data.</p>
         <a href="https://zokuzoku.github.io/privacy-policy/cat-gatekeeper/">Read the privacy policy</a>
       </div>
     </section>
@@ -126,28 +141,21 @@
       <div class="section-heading">
         <p class="section-kicker">Official Links</p>
         <h2 id="support-title">Install, inspect, or report an issue.</h2>
+        <p class="support-note">Please include Cat Gatekeeper in the subject line.<br><a href="mailto:zokuzoku.app@gmail.com?subject=Cat%20Gatekeeper">zokuzoku.app@gmail.com</a></p>
       </div>
       <div class="link-grid">
         <a href="https://chromewebstore.google.com/detail/cat-gatekeeper/elbikiflgfhjdjmficnigpeegjbhdidh">Chrome Web Store</a>
+        <a href="https://zokuzoku.github.io/privacy-policy/cat-gatekeeper/">Privacy Policy</a>
         <a href="https://github.com/zokuzoku/cat-gatekeeper">GitHub repository</a>
         <a href="https://github.com/zokuzoku/cat-gatekeeper/issues">GitHub Issues</a>
-        <a href="https://zokuzoku.github.io/privacy-policy/cat-gatekeeper/">Privacy Policy</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="footer-brand">
-      <span>ZOKUZOKU</span>
-      <div class="social-links" aria-label="Social links">
-        <a href="https://x.com/konekone2026" aria-label="X"><img src="/assets/social/x.svg" alt=""></a>
-        <a href="https://www.instagram.com/zokuzoku2016" aria-label="Instagram"><img src="/assets/social/instagram.svg" alt=""></a>
-        <a href="https://www.youtube.com/@zokuzoku2016" aria-label="YouTube"><img src="/assets/social/youtube.svg" alt=""></a>
-        <a href="https://www.tiktok.com/@zokuzoku30" aria-label="TikTok"><img src="/assets/social/tiktok.svg" alt=""></a>
-        <a href="https://www.threads.com/@zokuzoku2016" aria-label="Threads"><img src="/assets/social/threads.svg" alt=""></a>
-      </div>
-    </div>
+    <p>Cat Gatekeeper by ZOKUZOKU.</p>
     <p>Source code is MIT licensed. Visual assets are all rights reserved.</p>
   </footer>
+  <script src="paw-trail.js?v=2"></script>
 </body>
 </html>

@@ -172,6 +172,10 @@ nav a[aria-current="page"] {
   object-position: right bottom;
 }
 
+.hero-image {
+  display: none;
+}
+
 .hero-shade {
   position: absolute;
   inset: 0;
@@ -794,6 +798,11 @@ nav a[aria-current="page"] {
   }
 
   .hero-video {
+    display: none;
+  }
+
+  .hero-image {
+    display: block;
     position: relative;
     order: 2;
     align-self: stretch;

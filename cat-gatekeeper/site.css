@@ -801,7 +801,6 @@ nav a[aria-current="page"] {
     height: auto;
     aspect-ratio: 16 / 9;
     margin: 18px -20px 0;
-    background: #050505;
     object-fit: contain;
     object-position: center bottom;
   }

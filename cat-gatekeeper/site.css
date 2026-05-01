@@ -271,6 +271,12 @@ nav a[aria-current="page"] {
   border: 1px solid rgba(255, 255, 255, 0.16);
 }
 
+.button.disabled {
+  color: rgba(23, 23, 23, 0.58);
+  background: #ddd6cf;
+  cursor: not-allowed;
+}
+
 .button.secondary:hover,
 .button.secondary:focus-visible {
   background: var(--coffee-hover);

@@ -341,7 +341,7 @@ nav a[aria-current="page"] {
 }
 
 .coming-soon .section-kicker {
-  font-size: clamp(22px, 3vw, 40px);
+  font-size: clamp(24px, 3.4vw, 48px);
   letter-spacing: 0.06em;
   margin-bottom: 16px;
 }
@@ -413,7 +413,7 @@ nav a[aria-current="page"] {
 #how-it-works .section-kicker,
 #privacy .section-kicker,
 #support .section-kicker {
-  font-size: clamp(22px, 3vw, 40px);
+  font-size: clamp(24px, 3.4vw, 48px);
   letter-spacing: 0.06em;
   margin-bottom: clamp(20px, 2.2vw, 30px);
 }
@@ -608,6 +608,29 @@ nav a[aria-current="page"] {
   text-underline-offset: 3px;
 }
 
+.section-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.section-action .section-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(100%, 420px);
+  min-height: 76px;
+  margin: 0;
+  padding: 18px;
+  border-radius: 8px;
+  color: #fff;
+  background: var(--orange-dark);
+  font-size: clamp(17px, 1.35vw, 22px);
+  font-weight: 850;
+  text-align: center;
+  text-decoration: none;
+}
+
 .split {
   display: block;
   background: var(--paper);
@@ -640,7 +663,8 @@ nav a[aria-current="page"] {
 }
 
 .compact {
-  padding-bottom: clamp(76px, 8vw, 112px);
+  padding-top: clamp(70px, 8vw, 104px);
+  padding-bottom: clamp(96px, 9vw, 128px);
   background: var(--warm-band);
 }
 
@@ -678,6 +702,15 @@ nav a[aria-current="page"] {
 }
 
 .link-grid a:nth-child(4) {
+  background: var(--leaf);
+}
+
+.support-grid {
+  grid-template-columns: minmax(0, 420px);
+  justify-content: center;
+}
+
+.support-grid a {
   background: var(--leaf);
 }
 

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://zokuzoku.github.io/cat-gatekeeper/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zokuzoku.github.io/cat-gatekeeper/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zokuzoku.github.io/ja/cat-gatekeeper/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zokuzoku.github.io/cat-gatekeeper/" />
+  </url>
+  <url>
+    <loc>https://zokuzoku.github.io/ja/cat-gatekeeper/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zokuzoku.github.io/cat-gatekeeper/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zokuzoku.github.io/ja/cat-gatekeeper/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zokuzoku.github.io/cat-gatekeeper/" />
+  </url>
+  <url>
+    <loc>https://zokuzoku.github.io/ja/legal/tokushoho/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+</urlset>

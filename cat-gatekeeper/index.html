@@ -26,7 +26,7 @@
   <link rel="icon" href="assets/favicon-cat-48.png" sizes="48x48" type="image/png">
   <link rel="shortcut icon" href="assets/favicon-cat-32.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/apple-touch-cat.png">
-  <link rel="stylesheet" href="site.css?v=41">
+  <link rel="stylesheet" href="site.css?v=82">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -93,6 +93,7 @@
       <a href="#new-cats">New Cats</a>
       <a href="#how-it-works">How to</a>
       <a href="#privacy">Privacy</a>
+      <a href="#faq">Q&amp;A</a>
       <a href="#support">Support</a>
     </nav>
 
@@ -103,11 +104,9 @@
       </div>
     </section>
 
-    <section class="section" id="how-it-works" aria-labelledby="how-title">
+    <section class="section" id="how-it-works" aria-labelledby="how-heading">
       <div class="section-heading">
-        <p class="section-kicker">HOW TO</p>
-        <h2 id="how-title">When time is up, the cat appears.<br>It takes over your screen and makes you take a break.</h2>
-        <p class="section-note">Switching to another tab resets the timer.</p>
+        <p class="section-kicker" id="how-heading">HOW TO</p>
       </div>
       <div class="steps">
         <article>
@@ -118,7 +117,7 @@
         <article>
           <span>02</span>
           <h3>Set the time</h3>
-          <p>Set when the cat appears<br>and how long it stays.<br><small>Default: 60 minutes of use, 5 minutes of break.</small></p>
+          <p>Set when the cat appears<br>and how long it stays.<br><small>Switching tabs resets the timer.</small></p>
         </article>
         <article>
           <span>03</span>
@@ -128,31 +127,67 @@
       </div>
     </section>
 
-    <section class="section" id="privacy" aria-labelledby="privacy-title">
+    <section class="section" id="privacy" aria-labelledby="privacy-heading">
       <div class="section-heading">
-        <p class="section-kicker">PRIVACY</p>
-        <h2 id="privacy-title">No ads. No data collection.</h2>
-        <p class="section-body">Settings and timers are stored in your browser.<br>Cat Gatekeeper does not collect, sell, or transmit your browsing data.</p>
-        <div class="section-action">
-          <a class="section-button" href="https://zokuzoku.github.io/privacy-policy/cat-gatekeeper/">Privacy Policy</a>
+        <p class="section-kicker" id="privacy-heading">PRIVACY</p>
+        <div class="privacy-points" aria-label="Privacy highlights">
+          <div>
+            <strong>No ads</strong>
+            <span>No tracking tools are used</span>
+          </div>
+          <div>
+            <strong>No data</strong>
+            <span>Browsing history and SNS content<br>are not collected</span>
+          </div>
+          <div>
+            <strong>Browser only</strong>
+            <span>Settings stay on your device</span>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq" aria-labelledby="faq-heading">
+      <div class="section-heading">
+        <p class="section-kicker" id="faq-heading">Q&amp;A</p>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>Which sites does it work on?</summary>
+          <p>You can choose from X, Threads, Reddit, Facebook, YouTube, and Bluesky.</p>
+        </details>
+        <details>
+          <summary>Does Cat Gatekeeper collect data?</summary>
+          <p>No. Cat Gatekeeper does not collect, sell, or transmit browsing data.</p>
+        </details>
+        <details>
+          <summary>Can I dismiss the cat?</summary>
+          <p>Yes. You can open the extension menu and dismiss it.</p>
+        </details>
+        <details>
+          <summary>Is there a Firefox version?</summary>
+          <p>The Firefox version is coming soon.</p>
+        </details>
+        <details>
+          <summary>Will new cats be added?</summary>
+          <p>Yes. More cats are planned for future updates.</p>
+        </details>
       </div>
     </section>
 
     <section class="section compact" id="support" aria-labelledby="support-title">
       <div class="section-heading">
-        <p class="section-kicker">Support</p>
-        <h2 id="support-title">Report bugs or suggest improvements.</h2>
+        <p class="section-kicker" id="support-title">Support</p>
       </div>
       <div class="link-grid support-grid">
-        <a href="https://github.com/zokuzoku/cat-gatekeeper/issues">GitHub Issues</a>
+        <a href="https://github.com/zokuzoku/cat-gatekeeper/issues">Report bugs and suggestions</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <p>Cat Gatekeeper by ZOKUZOKU.</p>
-    <p><a href="/ja/legal/tokushoho/" lang="ja">特定商取引法に基づく表記</a></p>
+    <p><a href="https://zokuzoku.github.io/privacy-policy/cat-gatekeeper/en/">Privacy Policy</a> / <a href="/ja/legal/tokushoho/" lang="ja">特定商取引法に基づく表記</a></p>
   </footer>
   <script src="paw-trail.js?v=3"></script>
 </body>

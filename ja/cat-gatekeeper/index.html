@@ -26,7 +26,7 @@
   <link rel="icon" href="../../cat-gatekeeper/assets/favicon-cat-48.png" sizes="48x48" type="image/png">
   <link rel="shortcut icon" href="../../cat-gatekeeper/assets/favicon-cat-32.png" type="image/png">
   <link rel="apple-touch-icon" href="../../cat-gatekeeper/assets/apple-touch-cat.png">
-  <link rel="stylesheet" href="../../cat-gatekeeper/site.css?v=41">
+  <link rel="stylesheet" href="../../cat-gatekeeper/site.css?v=82">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -93,6 +93,7 @@
       <a href="#new-cats">新しい猫</a>
       <a href="#how-it-works">使い方</a>
       <a href="#privacy">プライバシー</a>
+      <a href="#faq">Q&amp;A</a>
       <a href="#support">サポート</a>
     </nav>
 
@@ -103,11 +104,9 @@
       </div>
     </section>
 
-    <section class="section" id="how-it-works" aria-labelledby="how-title">
+    <section class="section" id="how-it-works" aria-labelledby="how-heading">
       <div class="section-heading">
-        <p class="section-kicker">HOW TO</p>
-        <h2 id="how-title">時間が経つと猫が登場、<br>画面を占領して強制的に休憩を促します。</h2>
-        <p class="section-note">※他のタブに移動すると計測はリセットされます。</p>
+        <p class="section-kicker" id="how-heading">HOW TO</p>
       </div>
       <div class="steps">
         <article>
@@ -118,7 +117,7 @@
         <article>
           <span>02</span>
           <h3>時間を決める</h3>
-          <p>猫が現れる時間と<br>居座る時間を設定します<br><small>初期設定は60分使用、5分休憩です</small></p>
+          <p>猫が現れる時間と<br>居座る時間を設定します<br><small>※他のタブに移動すると計測はリセットされます</small></p>
         </article>
         <article>
           <span>03</span>
@@ -128,31 +127,67 @@
       </div>
     </section>
 
-    <section class="section" id="privacy" aria-labelledby="privacy-title">
+    <section class="section" id="privacy" aria-labelledby="privacy-heading">
       <div class="section-heading">
-        <p class="section-kicker">PRIVACY</p>
-        <h2 id="privacy-title">広告なし。データ収集なし。</h2>
-        <p class="section-body">設定とタイマーはブラウザ内に保存されます。<br>Cat Gatekeeperは閲覧データを収集、販売、送信しません。</p>
-        <div class="section-action">
-          <a class="section-button" href="https://zokuzoku.github.io/privacy-policy/cat-gatekeeper/">Privacy Policy</a>
+        <p class="section-kicker" id="privacy-heading">PRIVACY</p>
+        <div class="privacy-points" aria-label="プライバシーの概要">
+          <div>
+            <strong>広告なし</strong>
+            <span>トラッキングツールは使いません</span>
+          </div>
+          <div>
+            <strong>データ収集なし</strong>
+            <span>閲覧履歴やSNS内容を収集しません</span>
+          </div>
+          <div>
+            <strong>ブラウザ内保存</strong>
+            <span>設定は端末内に保存されます</span>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq" aria-labelledby="faq-heading">
+      <div class="section-heading">
+        <p class="section-kicker" id="faq-heading">Q&amp;A</p>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>どのサイトで使えますか？</summary>
+          <p>X、Threads、Reddit、Facebook、YouTube、Blueskyから選べます。</p>
+        </details>
+        <details>
+          <summary>データは収集されますか？</summary>
+          <p>Cat Gatekeeperは閲覧データを収集、販売、送信しません。</p>
+        </details>
+        <details>
+          <summary>猫は消せますか？</summary>
+          <p>拡張機能のメニューを開いて、退いてもらうことができます。</p>
+        </details>
+        <details>
+          <summary>Firefox版はありますか？</summary>
+          <p>Firefox版は近日公開予定です。</p>
+        </details>
+        <details>
+          <summary>新しい猫は追加されますか？</summary>
+          <p>今後のアップデートで追加予定です。</p>
+        </details>
       </div>
     </section>
 
     <section class="section compact" id="support" aria-labelledby="support-title">
       <div class="section-heading">
-        <p class="section-kicker">Support</p>
-        <h2 id="support-title">不具合報告・改善提案はこちら。</h2>
+        <p class="section-kicker" id="support-title">Support</p>
       </div>
       <div class="link-grid support-grid">
-        <a href="https://github.com/zokuzoku/cat-gatekeeper/issues">GitHub Issues</a>
+        <a href="https://github.com/zokuzoku/cat-gatekeeper/issues">不具合報告・改善提案はこちら</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <p>Cat Gatekeeper by ZOKUZOKU.</p>
-    <p><a href="/ja/legal/tokushoho/">特定商取引法に基づく表記</a></p>
+    <p><a href="https://zokuzoku.github.io/privacy-policy/cat-gatekeeper/">プライバシーポリシー</a> / <a href="/ja/legal/tokushoho/">特定商取引法に基づく表記</a></p>
   </footer>
   <script src="../../cat-gatekeeper/paw-trail.js?v=3"></script>
 </body>

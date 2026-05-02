@@ -507,7 +507,7 @@ nav a[aria-current="page"] {
   padding: 32px 24px 48px;
   border-radius: 8px;
   color: #fff;
-  background: #b94a2b;
+  background: #9f3f28;
   text-align: center;
 }
 
@@ -911,7 +911,7 @@ nav a[aria-current="page"] {
 }
 
 .support-grid a {
-  background: var(--leaf);
+  background: #5f8f38;
 }
 
 .support-note {

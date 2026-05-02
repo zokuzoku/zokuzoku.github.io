@@ -334,7 +334,7 @@ nav a[aria-current="page"] {
   padding-bottom: clamp(80px, 12vw, 140px);
   border-top: 0;
   border-bottom: 0;
-  background: var(--paper);
+  background: #f2eee8;
   text-align: center;
 }
 
@@ -349,17 +349,12 @@ nav a[aria-current="page"] {
 }
 
 .coming-soon h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: min(100%, 640px);
-  min-height: 112px;
   margin: 0 auto;
-  border-radius: 8px;
   color: var(--muted);
-  background: #e8e1da;
-  font-size: clamp(24px, 2.4vw, 34px);
+  font-size: clamp(34px, 4vw, 64px);
   font-weight: 850;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .coming-soon h2 {
@@ -428,6 +423,7 @@ nav a[aria-current="page"] {
 #notice .section-kicker,
 #how-it-works .section-kicker,
 #privacy .section-kicker,
+#faq .section-kicker,
 #support .section-kicker {
   font-size: clamp(24px, 3.4vw, 48px);
   letter-spacing: 0.06em;
@@ -437,6 +433,7 @@ nav a[aria-current="page"] {
 #notice h2,
 #how-it-works h2,
 #privacy h2,
+#faq h2,
 #support h2,
 #cats-title {
   font-size: clamp(18px, 2vw, 28px);

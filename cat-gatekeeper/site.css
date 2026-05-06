@@ -470,7 +470,7 @@ nav a[aria-current="page"] {
 
 #notice h2 {
   margin: 0 auto;
-  max-width: 820px;
+  max-width: 760px;
   color: var(--ink);
   font-size: clamp(18px, 1.65vw, 23px);
   font-weight: 700;
@@ -478,20 +478,31 @@ nav a[aria-current="page"] {
   letter-spacing: 0;
 }
 
-#notice h2 + p {
-  max-width: 900px;
-  margin: clamp(14px, 1.6vw, 22px) auto 0;
+#notice h2 ~ p {
+  max-width: 680px;
+  margin: 4px auto 0;
   color: var(--muted);
-  font-size: clamp(16px, 1.35vw, 19px);
+  font-size: clamp(13px, 1vw, 15px);
   line-height: 1.58;
 }
 
-#notice p:last-child {
+#notice .notice-main {
   max-width: 900px;
-  margin: 4px auto 0;
+  margin-top: clamp(12px, 1.4vw, 18px);
+  font-size: clamp(16px, 1.35vw, 19px);
+}
+
+#notice .notice-notes {
+  max-width: 680px;
+  margin: clamp(20px, 2.2vw, 32px) auto 0;
   color: var(--muted);
-  font-size: clamp(14px, 1.15vw, 17px);
-  line-height: 1.55;
+  font-size: clamp(13px, 1vw, 15px);
+  line-height: 1.58;
+  text-align: left;
+}
+
+#notice .notice-notes p + p {
+  margin-top: 4px;
 }
 
 .privacy-points {
@@ -1152,4 +1163,8 @@ nav a[aria-current="page"] {
     gap: 8px;
     padding: 18px 0;
   }
+}
+
+html[lang="en"] #notice .notice-notes {
+  font-size: clamp(14px, 1.05vw, 16px);
 }

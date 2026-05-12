@@ -120,7 +120,7 @@ nav {
   gap: 18px;
   color: var(--muted);
   font-size: 15px;
-  font-weight: 800;
+  font-weight: 760;
 }
 
 nav a {
@@ -214,13 +214,14 @@ nav a[aria-current="page"] {
   padding: 0 10px;
   border-radius: 6px;
   font-size: 13px;
-  font-weight: 900;
+  font-weight: 760;
   line-height: 1;
 }
 
 .language-switch a[aria-current="page"] {
   color: #fff;
   background: var(--orange);
+  font-weight: 820;
   box-shadow: 0 1px 3px rgba(25, 25, 25, 0.16);
 }
 
@@ -330,7 +331,7 @@ nav a[aria-current="page"] {
   min-height: 48px;
   padding: 0 22px;
   border-radius: 8px;
-  font-weight: 850;
+  font-weight: 760;
   text-decoration: none;
   white-space: nowrap;
 }

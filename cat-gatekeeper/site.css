@@ -729,11 +729,21 @@ nav a[aria-current="page"] {
   text-align: center;
 }
 
+.cat-gallery {
+  padding-top: clamp(80px, 12vw, 140px);
+  padding-bottom: clamp(80px, 12vw, 140px);
+  border-top: 0;
+  border-bottom: 0;
+  background: var(--paper);
+  text-align: center;
+}
+
 #how-it-works {
   background: var(--warm-band);
 }
 
-.coming-soon .section-kicker {
+.coming-soon .section-kicker,
+.cat-gallery .section-kicker {
   font-size: clamp(24px, 3.4vw, 48px);
   letter-spacing: 0.06em;
   margin-bottom: 34px;
@@ -754,6 +764,32 @@ nav a[aria-current="page"] {
   font-size: clamp(18px, 2vw, 28px);
   line-height: 1.22;
   font-weight: 600;
+}
+
+.cat-scroll {
+  display: flex;
+  gap: 14px;
+  width: min(100% - 40px, 1280px);
+  margin: clamp(26px, 4vw, 48px) auto 0;
+  overflow-x: auto;
+  padding: 0 0 14px;
+  scroll-padding-inline: max(20px, calc((100vw - 1280px) / 2));
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cat-card {
+  flex: 0 0 clamp(210px, 24vw, 300px);
+  padding: 18px;
+  border-radius: 8px;
+  background: var(--warm-band);
+  scroll-snap-align: start;
+}
+
+.cat-placeholder {
+  aspect-ratio: 1;
+  border-radius: 8px;
+  background: #9f3f28;
 }
 
 #notice .section-kicker {
@@ -842,20 +878,26 @@ nav a[aria-current="page"] {
 
 #notice h2 {
   margin: 0 auto;
-  max-width: 760px;
+  max-width: 680px;
   color: var(--ink);
   font-size: clamp(18px, 1.65vw, 23px);
   font-weight: 700;
   line-height: 1.35;
   letter-spacing: 0;
+  text-align: left;
 }
 
 #notice h2 ~ p {
   max-width: 680px;
-  margin: 4px auto 0;
+  margin: 12px auto 0;
   color: var(--muted);
   font-size: clamp(13px, 1vw, 15px);
   line-height: 1.58;
+  text-align: left;
+}
+
+#notice h2 ~ p + p {
+  margin-top: 4px;
 }
 
 #notice .notice-main {

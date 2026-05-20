@@ -27,7 +27,7 @@
   <link rel="icon" href="assets/favicon-cat-48.png" sizes="48x48" type="image/png">
   <link rel="shortcut icon" href="assets/favicon-cat-32.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/apple-touch-cat.png">
-  <link rel="stylesheet" href="site.css?v=97">
+  <link rel="stylesheet" href="site.css?v=101">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -50,7 +50,7 @@
     }
   </script>
 </head>
-<body>
+<body class="product-home-page">
   <header class="site-header" aria-label="Site header">
     <div class="header-brand">
       <span class="brand" aria-label="ZOKUZOKU">ZOKUZOKU</span>
@@ -66,8 +66,10 @@
       <details class="product-menu">
         <summary>Cat Gatekeeper</summary>
         <div>
-          <a href="/cat-gatekeeper/" aria-current="page">Browser Extension</a>
-          <span aria-disabled="true">Desktop App</span>
+          <a href="/cat-gatekeeper/" aria-current="page">Top</a>
+          <a href="/cat-gatekeeper/extension/">Browser Extension</a>
+          <a href="/cat-gatekeeper/desktop/">Desktop App</a>
+          <span aria-disabled="true">Mobile App</span>
         </div>
       </details>
       <span class="language-switch" aria-label="Language switch">
@@ -79,248 +81,36 @@
   </header>
 
   <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
+    <section class="hero product-home-hero" aria-labelledby="hero-title">
       <video class="hero-video" src="/assets/neko2.webm" autoplay muted loop playsinline aria-hidden="true"></video>
       <img class="hero-image" src="assets/neko2-mobile.apng" alt="" aria-hidden="true">
       <div class="hero-shade" aria-hidden="true"></div>
       <div class="hero-content">
         <h1 id="hero-title"><span>Cat</span><span>Gatekeeper</span></h1>
-        <p class="eyebrow">Official Browser Extension</p>
+        <p class="eyebrow">Official App &amp; Extension</p>
         <p class="hero-copy">Can’t stop scrolling?<br>The ultimate deterrent is here.</p>
-        <div class="actions" aria-label="Primary links">
-          <a class="button primary" href="https://chromewebstore.google.com/detail/cat-gatekeeper/elbikiflgfhjdjmficnigpeegjbhdidh">🐱 Chrome Store</a>
-          <a class="button primary" href="https://addons.mozilla.org/firefox/addon/cat-gatekeeper-zokuzoku/">🦊 Firefox Add-ons</a>
-          <a class="button secondary" href="https://ko-fi.com/zokuzoku">☕ Support me</a>
+        <div class="actions" aria-label="Choose a version">
+          <a class="button primary platform-button" href="/cat-gatekeeper/extension/">
+            <span>🐱 Use in Browser</span>
+          </a>
+          <a class="button disabled platform-button" href="/cat-gatekeeper/desktop/">
+            <span>💻 Use on Desktop</span>
+            <small>Coming soon</small>
+          </a>
+          <span class="button disabled platform-button" aria-disabled="true">
+            <span>📱 Use on Mobile</span>
+            <small>Coming soon</small>
+          </span>
         </div>
-        <p class="desktop-coming">💻 Desktop app coming soon</p>
-        <a class="bmc-note" href="https://buymeacoffee.com/zokuzoku2026">BMC (paused)</a>
         <a class="x-buzz" href="https://x.com/konekone2026/status/2048215520965709940" target="_blank" rel="noopener">Trending on X! 🔥</a>
+        <p class="support-links">
+          <a href="https://ko-fi.com/zokuzoku">☕ Ko-fi</a>
+          <span aria-hidden="true">/</span>
+          <a href="https://buymeacoffee.com/zokuzoku2026">BMC (paused)</a>
+        </p>
       </div>
     </section>
 
-    <nav class="page-nav" aria-label="Cat Gatekeeper page navigation">
-      <a href="#reactions">Voices</a>
-      <a href="#notice">What's New</a>
-      <a href="#new-cats">New Cats</a>
-      <a href="#how-it-works">How to</a>
-      <a href="#privacy">Privacy</a>
-      <a href="#faq">Q&amp;A</a>
-      <a href="#support">Support</a>
-    </nav>
-
-    <section class="section reactions-section" id="reactions" aria-labelledby="reactions-title">
-      <h2 class="visually-hidden" id="reactions-title">Reactions</h2>
-      <div class="reaction-marquee" aria-label="User posts">
-        <div class="reaction-track">
-          <article class="reaction-card">
-            <p>I installed it on one computer, and now it shows up on all my PCs. My social media life is better at home and at work (^^)/</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>It is so cute that I recommended it to my friends, and now everyone is using it. Love it.</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>It is so cute that I open social media just to make the cat appear.</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>A merciful blessing bestowed by the gods upon foolish humanity... this is it.</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>Cats are more useful than social media, so this is a wonderful feature.</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>I am allergic to cats and cannot keep one, so having one interrupt me on my PC screen feels like a dream.</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>Soooo cute.</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>I installed it on one computer, and now it shows up on all my PCs. My social media life is better at home and at work (^^)/</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>It is so cute that I recommended it to my friends, and now everyone is using it. Love it.</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>It is so cute that I open social media just to make the cat appear.</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>A merciful blessing bestowed by the gods upon foolish humanity... this is it.</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>Cats are more useful than social media, so this is a wonderful feature.</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>I am allergic to cats and cannot keep one, so having one interrupt me on my PC screen feels like a dream.</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>Soooo cute.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="notice" id="notice" aria-labelledby="notice-title">
-      <p class="section-kicker" id="notice-title">WHAT'S NEW</p>
-      <h2>May 18, 2026: A new cat has been added!</h2>
-      <p>Note: Cats appear at random.</p>
-      <p>Note: If you already have the extension installed, it may take several hours to about a day for the new cat to appear depending on the store and browser auto-update timing.</p>
-      <div class="notice-alert">
-        <p class="notice-alert-label">Important</p>
-        <p>Please install Cat Gatekeeper only from the official links on this site. An unofficial listing using the Cat Gatekeeper name and official materials has been reported to Mozilla.</p>
-      </div>
-      <details class="notice-history">
-        <summary>Past updates</summary>
-        <article>
-          <h3>May 12, 2026: Firefox extension released</h3>
-          <div class="notice-notes">
-            <p>Cat Gatekeeper is now available on Firefox Add-ons.</p>
-          </div>
-        </article>
-        <article>
-          <h3>May 6, 2026: Browser extension - custom sites added (v1.1.4)</h3>
-          <div class="notice-notes">
-            <p>Note: Tracking may reset on sites with frequent page changes or reloads. Cat Gatekeeper works best on social media and video sites where you stay on the same service for a while.</p>
-            <p>Note: To show the cat on custom sites, you will need to allow the new permission.</p>
-            <p>Note: If Cat Gatekeeper does not work after an update, please reload the target site once.</p>
-          </div>
-        </article>
-        <article>
-          <h3>May 1, 2026: Official website launched</h3>
-          <div class="notice-notes">
-            <p>The official Cat Gatekeeper website is now available.</p>
-          </div>
-        </article>
-        <article>
-          <h3>April 26, 2026: Chrome extension released</h3>
-          <div class="notice-notes">
-            <p>The official Chrome extension version of Cat Gatekeeper is now available.</p>
-          </div>
-        </article>
-      </details>
-    </section>
-
-    <section class="section cat-gallery" id="new-cats" aria-labelledby="cats-title">
-      <div class="section-heading">
-        <p class="section-kicker">New Cats</p>
-        <h2 id="cats-title" class="visually-hidden">New cats</h2>
-      </div>
-      <div class="cat-scroll" aria-label="Cat gallery">
-        <article class="cat-card">
-          <img src="assets/neko1-800.png" alt="Cat Gatekeeper cat">
-        </article>
-        <article class="cat-card is-new">
-          <img src="assets/neko2-800.png" alt="New Cat Gatekeeper cat">
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="how-it-works" aria-labelledby="how-heading">
-      <div class="section-heading">
-        <p class="section-kicker" id="how-heading">HOW TO</p>
-      </div>
-      <div class="steps">
-        <article>
-          <span>01</span>
-          <h3>Choose sites</h3>
-          <p>Select the sites you want to limit.<br><small>Social media / Video sites / Custom sites</small></p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Set the time</h3>
-          <p>Set when the cat appears<br>and how long it stays.<br><small>Switching tabs resets the timer.</small></p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>Take a break</h3>
-          <p>The cat takes over the page<br>until the countdown ends<br><small>You can also open the menu and dismiss it.</small></p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="privacy" aria-labelledby="privacy-heading">
-      <div class="section-heading">
-        <p class="section-kicker" id="privacy-heading">PRIVACY</p>
-        <div class="privacy-points" aria-label="Privacy highlights">
-          <div>
-            <strong>No ads</strong>
-            <span>No tracking tools are used</span>
-          </div>
-          <div>
-            <strong>No data</strong>
-            <span>No browsing or social media data<br>is collected</span>
-          </div>
-          <div>
-            <strong>Browser only</strong>
-            <span>Settings stay on your device</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section faq-section" id="faq" aria-labelledby="faq-heading">
-      <div class="section-heading">
-        <p class="section-kicker" id="faq-heading">Q&amp;A</p>
-      </div>
-      <div class="faq-list">
-        <details>
-          <summary>Which sites does it work on?</summary>
-          <p>You can add custom sites. Tracking may reset on sites with frequent page changes or reloads. Cat Gatekeeper works best on social media and video sites where you stay on the same service for a while.</p>
-        </details>
-        <details>
-          <summary>Is it free?</summary>
-          <p>Yes. Cat Gatekeeper is free to use.</p>
-        </details>
-        <details hidden>
-          <summary>Why is Cat Gatekeeper free?</summary>
-          <p>Making it paid would take time not only to build, but also to manage and support afterward. I would rather spend that time improving this project and turning even more new ideas into real things, so I decided to offer Cat Gatekeeper for free. Enjoying it? Your support would mean a lot.</p>
-        </details>
-        <details>
-          <summary>Why is site access needed?</summary>
-          <p>It needs site access to show the cat break screen on the sites you choose. Cat Gatekeeper does not collect, sell, or transmit your browsing history or page content. Your settings are stored in your browser.</p>
-        </details>
-        <details>
-          <summary>Can I change the timer?</summary>
-          <p>Yes. You can change it from the extension menu.</p>
-        </details>
-        <details>
-          <summary>The cat does not appear.</summary>
-          <p>If you switch tabs or use sites with frequent page changes or reloads, tracking may reset easily. Cat Gatekeeper works best on social media and video sites where you stay on the same service for a while. It may also be conflicting with another extension, so if needed, turn off other extensions and test it again.</p>
-        </details>
-        <details>
-          <summary>Where can I open the menu?</summary>
-          <p>You can open it from the extension icon near the address bar in the top-right of your browser.</p>
-        </details>
-        <details>
-          <summary>Can I dismiss the cat?</summary>
-          <p>Yes. Open the extension menu and press the dismiss button.</p>
-        </details>
-        <details>
-          <summary>Which browsers are supported?</summary>
-          <p>Cat Gatekeeper currently supports Chrome and Firefox. Other browsers are also under consideration.</p>
-        </details>
-        <details>
-          <summary>Are the cats real?</summary>
-          <p>They are ideal cats created one by one with the help of AI, carefully adjusted to become the ultimate lovable distraction. They are not real cats, but I’m very confident in their cuteness. Please treat them kindly as little gatekeepers for your desk.</p>
-        </details>
-        <details>
-          <summary>Can I use the assets in the extension?</summary>
-          <p>You are very welcome to share screenshots or posts about Cat Gatekeeper. Please do not use or redistribute the image or video assets themselves.</p>
-        </details>
-        <details>
-          <summary>Will new cats be added?</summary>
-          <p>Yes. More cats are planned for future updates.</p>
-        </details>
-      </div>
-    </section>
-
-    <section class="section compact" id="support" aria-labelledby="support-title">
-      <div class="section-heading">
-        <p class="section-kicker" id="support-title">Support</p>
-      </div>
-      <div class="link-grid support-grid">
-        <a href="https://github.com/zokuzoku/cat-gatekeeper/issues/new?labels=browser-extension">Report bugs and suggestions</a>
-      </div>
-      <p class="support-note"><a href="https://github.com/zokuzoku/cat-gatekeeper/issues?q=is%3Aissue%20label%3Abrowser-extension">View previous reports</a></p>
-    </section>
   </main>
 
   <footer class="site-footer">

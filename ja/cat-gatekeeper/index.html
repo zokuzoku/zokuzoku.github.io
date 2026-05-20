@@ -26,7 +26,7 @@
   <link rel="icon" href="../../cat-gatekeeper/assets/favicon-cat-48.png" sizes="48x48" type="image/png">
   <link rel="shortcut icon" href="../../cat-gatekeeper/assets/favicon-cat-32.png" type="image/png">
   <link rel="apple-touch-icon" href="../../cat-gatekeeper/assets/apple-touch-cat.png">
-  <link rel="stylesheet" href="../../cat-gatekeeper/site.css?v=97">
+  <link rel="stylesheet" href="../../cat-gatekeeper/site.css?v=101">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -49,7 +49,7 @@
     }
   </script>
 </head>
-<body>
+<body class="product-home-page">
   <header class="site-header" aria-label="サイトヘッダー">
     <div class="header-brand">
       <span class="brand" aria-label="ZOKUZOKU">ZOKUZOKU</span>
@@ -65,8 +65,10 @@
       <details class="product-menu">
         <summary>Cat Gatekeeper</summary>
         <div>
-          <a href="/ja/cat-gatekeeper/" aria-current="page">ブラウザ拡張版</a>
-          <span aria-disabled="true">デスクトップ版</span>
+          <a href="/ja/cat-gatekeeper/" aria-current="page">トップ</a>
+          <a href="/ja/cat-gatekeeper/extension/">ブラウザ拡張版</a>
+          <a href="/ja/cat-gatekeeper/desktop/">デスクトップ版</a>
+          <span aria-disabled="true">スマホ版</span>
         </div>
       </details>
       <span class="language-switch" aria-label="言語切り替え">
@@ -78,248 +80,36 @@
   </header>
 
   <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
+    <section class="hero product-home-hero" aria-labelledby="hero-title">
       <video class="hero-video" src="/assets/neko2.webm" autoplay muted loop playsinline aria-hidden="true"></video>
       <img class="hero-image" src="../../cat-gatekeeper/assets/neko2-mobile.apng" alt="" aria-hidden="true">
       <div class="hero-shade" aria-hidden="true"></div>
       <div class="hero-content">
         <h1 id="hero-title"><span>Cat</span><span>Gatekeeper</span></h1>
-        <p class="eyebrow">公式ブラウザ拡張機能</p>
+        <p class="eyebrow">公式アプリ＆拡張機能</p>
         <p class="hero-copy">画面から離れられないあなたに。<br>最強の抑止力、あらわる。</p>
-        <div class="actions" aria-label="主要リンク">
-          <a class="button primary" href="https://chromewebstore.google.com/detail/cat-gatekeeper/elbikiflgfhjdjmficnigpeegjbhdidh">🐱 Chromeストアへ</a>
-          <a class="button primary" href="https://addons.mozilla.org/firefox/addon/cat-gatekeeper-zokuzoku/">🦊 Firefoxストアへ</a>
-          <a class="button secondary" href="https://ko-fi.com/zokuzoku">☕ Support me</a>
+        <div class="actions" aria-label="利用する版を選ぶ">
+          <a class="button primary platform-button" href="/ja/cat-gatekeeper/extension/">
+            <span>🐱 ブラウザで使う</span>
+          </a>
+          <a class="button disabled platform-button" href="/ja/cat-gatekeeper/desktop/">
+            <span>💻 PCで使う</span>
+            <small>準備中</small>
+          </a>
+          <span class="button disabled platform-button" aria-disabled="true">
+            <span>📱 スマホで使う</span>
+            <small>準備中</small>
+          </span>
         </div>
-        <p class="desktop-coming">💻 Desktop app coming soon</p>
-        <a class="bmc-note" href="https://buymeacoffee.com/zokuzoku2026">BMC（休止中）</a>
         <a class="x-buzz" href="https://x.com/konekone2026/status/2048215520965709940" target="_blank" rel="noopener">Xで大反響！🔥</a>
+        <p class="support-links">
+          <a href="https://ko-fi.com/zokuzoku">☕ Ko-fi</a>
+          <span aria-hidden="true">/</span>
+          <a href="https://buymeacoffee.com/zokuzoku2026">BMC（休止中）</a>
+        </p>
       </div>
     </section>
 
-    <nav class="page-nav" aria-label="Cat Gatekeeperページ内ナビゲーション">
-      <a href="#reactions">皆の声</a>
-      <a href="#notice">最新情報</a>
-      <a href="#new-cats">新しい猫</a>
-      <a href="#how-it-works">使い方</a>
-      <a href="#privacy">プライバシー</a>
-      <a href="#faq">Q&amp;A</a>
-      <a href="#support">サポート</a>
-    </nav>
-
-    <section class="section reactions-section" id="reactions" aria-labelledby="reactions-title">
-      <h2 class="visually-hidden" id="reactions-title">反応</h2>
-      <div class="reaction-marquee" aria-label="ユーザーの投稿">
-        <div class="reaction-track">
-          <article class="reaction-card">
-            <p>一台のパソコンに入れると、他のPC全部で表示されるように成ったので、家でも会社でも快適SNSライフです(^^)/</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>かわいすぎて周りの友人にも紹介してみんな使ってる大好き</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>かわいくて、猫を登場させるためにSNSを起動してる。</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>愚かな人類に神が与えたもうた慈愛の恵み･･･それがこれだ。</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>SNSよりも猫の方が有用なので素晴らしい機能です</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>ねこアレルギーで飼いたいのに飼えない私の人生でしたので、PC画面の前で邪魔してくれるなんて夢みたいです。</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>かわいいいいいいい</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>一台のパソコンに入れると、他のPC全部で表示されるように成ったので、家でも会社でも快適SNSライフです(^^)/</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>かわいすぎて周りの友人にも紹介してみんな使ってる大好き</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>かわいくて、猫を登場させるためにSNSを起動してる。</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>愚かな人類に神が与えたもうた慈愛の恵み･･･それがこれだ。</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>SNSよりも猫の方が有用なので素晴らしい機能です</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>ねこアレルギーで飼いたいのに飼えない私の人生でしたので、PC画面の前で邪魔してくれるなんて夢みたいです。</p>
-          </article>
-          <article class="reaction-card" aria-hidden="true">
-            <p>かわいいいいいいい</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="notice" id="notice" aria-labelledby="notice-title">
-      <p class="section-kicker" id="notice-title">WHAT'S NEW</p>
-      <h2>2026年5月18日：新しい猫を追加しました！</h2>
-      <p>※猫はランダムで登場します。</p>
-      <p>※すでに拡張機能をインストール済みの場合、ストアやブラウザ側の自動アップデート反映タイミングにより、新しい猫が表示されるまで数時間〜1日ほどかかる場合があります。</p>
-      <div class="notice-alert">
-        <p class="notice-alert-label">重要</p>
-        <p>Cat Gatekeeperは、このサイトに掲載している公式リンクからのみインストールしてください。同名で公式素材を使用した非公式掲載についてはMozillaへ報告済みです。</p>
-      </div>
-      <details class="notice-history">
-        <summary>過去の更新</summary>
-        <article>
-          <h3>2026年5月12日：Firefox拡張版を公開しました</h3>
-          <div class="notice-notes">
-            <p>Firefox Add-onsでCat Gatekeeperを公開しました。</p>
-          </div>
-        </article>
-        <article>
-          <h3>2026年5月6日：ブラウザ拡張版 - 任意サイト追加（v1.1.4）</h3>
-          <div class="notice-notes">
-            <p>※ページ移動や読み込みが多いサイトでは計測がリセットされやすいため、SNSや動画サイトなど、同じサイト内で長く見続けるサービスでの利用をおすすめします。</p>
-            <p>※任意のサイトで猫を表示するには、新しい権限の許可が必要になります。</p>
-            <p>※アップデート後に動かない場合は、対象サイトのページを一度再読み込みしてください。</p>
-          </div>
-        </article>
-        <article>
-          <h3>2026年5月1日：公式サイト公開</h3>
-          <div class="notice-notes">
-            <p>Cat Gatekeeperの公式サイトを公開しました。</p>
-          </div>
-        </article>
-        <article>
-          <h3>2026年4月26日：Chrome拡張版リリース</h3>
-          <div class="notice-notes">
-            <p>Cat GatekeeperのChrome拡張版を公開しました。</p>
-          </div>
-        </article>
-      </details>
-    </section>
-
-    <section class="section cat-gallery" id="new-cats" aria-labelledby="cats-title">
-      <div class="section-heading">
-        <p class="section-kicker">New Cats</p>
-        <h2 id="cats-title" class="visually-hidden">新しい猫</h2>
-      </div>
-      <div class="cat-scroll" aria-label="猫一覧">
-        <article class="cat-card">
-          <img src="../../cat-gatekeeper/assets/neko1-800.png" alt="Cat Gatekeeperの猫">
-        </article>
-        <article class="cat-card is-new">
-          <img src="../../cat-gatekeeper/assets/neko2-800.png" alt="Cat Gatekeeperの新しい猫">
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="how-it-works" aria-labelledby="how-heading">
-      <div class="section-heading">
-        <p class="section-kicker" id="how-heading">HOW TO</p>
-      </div>
-      <div class="steps">
-        <article>
-          <span>01</span>
-          <h3>サイトを選ぶ</h3>
-          <p>対象にしたいサイトを選びます<br><small>SNS / 動画サイト / 任意のサイト</small></p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>時間を決める</h3>
-          <p>猫が現れる時間と<br>居座る時間を設定します<br><small>※他のタブに移動すると計測はリセットされます</small></p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>休憩する</h3>
-          <p>カウントダウンが終わるまで<br>猫がページを占領します<br><small>メニューを開いて退いてもらうことも可能です</small></p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="privacy" aria-labelledby="privacy-heading">
-      <div class="section-heading">
-        <p class="section-kicker" id="privacy-heading">PRIVACY</p>
-        <div class="privacy-points" aria-label="プライバシーの概要">
-          <div>
-            <strong>広告なし</strong>
-            <span>トラッキングツールは使いません</span>
-          </div>
-          <div>
-            <strong>データ収集なし</strong>
-            <span>閲覧履歴やSNS内容を収集しません</span>
-          </div>
-          <div>
-            <strong>ブラウザ内保存</strong>
-            <span>設定は端末内に保存されます</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section faq-section" id="faq" aria-labelledby="faq-heading">
-      <div class="section-heading">
-        <p class="section-kicker" id="faq-heading">Q&amp;A</p>
-      </div>
-      <div class="faq-list">
-        <details>
-          <summary>どのサイトで使えますか？</summary>
-          <p>任意のサイトを追加できます。ページ移動や読み込みが多いサイトでは計測がリセットされやすいため、SNSや動画サイトなど、同じサイト内で長く見続けるサービスでの利用をおすすめします。</p>
-        </details>
-        <details>
-          <summary>無料で使えますか？</summary>
-          <p>はい。Cat Gatekeeperは無料でご利用いただけます。</p>
-        </details>
-        <details hidden>
-          <summary>なぜ無料なのですか？</summary>
-          <p>有料にすると、実装だけでなく、その後の管理や対応にも時間がかかります。私はその時間を、プロジェクトの改善や、さらなる新しいアイデアを形にすることに使いたいので、無料で提供することに決めました。作品を気に入ってもらえたら、応援してくれると嬉しいです。</p>
-        </details>
-        <details>
-          <summary>なぜサイトへのアクセス権限が必要ですか？</summary>
-          <p>選んだサイト上に猫の休憩画面を表示するために必要です。Cat Gatekeeperは閲覧履歴やページ内容を収集、販売、送信しません。設定はブラウザ内に保存されます。</p>
-        </details>
-        <details>
-          <summary>設定時間は変えられますか？</summary>
-          <p>メニュー画面で変更可能です。</p>
-        </details>
-        <details>
-          <summary>猫が出てきません。</summary>
-          <p>他のタブに移動した場合や、ページ移動や読み込みが多いサイトでは計測がリセットされやすいため、SNSや動画サイトなど同じサイト内で長く見続けるサービスでの利用をおすすめします。また、他の拡張機能と干渉している可能性もありますので、必要に応じて他の拡張機能をオフにして再度お試しください。</p>
-        </details>
-        <details>
-          <summary>メニューはどこから開けますか？</summary>
-          <p>ブラウザ右上、アドレスバー横の拡張機能アイコンから開けます。</p>
-        </details>
-        <details>
-          <summary>猫は消せますか？</summary>
-          <p>拡張機能のメニューを開いて、「退いてもらう」ボタンを押してください。</p>
-        </details>
-        <details>
-          <summary>対応ブラウザはなんですか？</summary>
-          <p>現在はChromeとFirefoxに対応しています。その他のブラウザについても検討中です。</p>
-        </details>
-        <details>
-          <summary>この猫は実在する？</summary>
-          <p>「最高の邪魔者」になってもらうべく、AIの力を借りて一匹ずつ調整を重ねて生み出した理想の猫たちになります。実在の猫ではありませんが、可愛さには自信があります。ぜひ、デスクの門番として可愛がってあげてください。</p>
-        </details>
-        <details>
-          <summary>拡張機能内の素材を使ってもいいですか？</summary>
-          <p>紹介や感想の投稿で、Cat Gatekeeperの画面を載せるのは大歓迎です。画像・動画素材そのものの利用や再配布はご遠慮ください。</p>
-        </details>
-        <details>
-          <summary>新しい猫は追加されますか？</summary>
-          <p>今後のアップデートで追加予定です。</p>
-        </details>
-      </div>
-    </section>
-
-    <section class="section compact" id="support" aria-labelledby="support-title">
-      <div class="section-heading">
-        <p class="section-kicker" id="support-title">Support</p>
-      </div>
-      <div class="link-grid support-grid">
-        <a href="https://github.com/zokuzoku/cat-gatekeeper/issues/new?labels=browser-extension">不具合報告・改善提案はこちら</a>
-      </div>
-      <p class="support-note"><a href="https://github.com/zokuzoku/cat-gatekeeper/issues?q=is%3Aissue%20label%3Abrowser-extension">過去の報告を見る</a></p>
-    </section>
   </main>
 
   <footer class="site-footer">

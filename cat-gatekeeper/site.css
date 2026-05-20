@@ -345,14 +345,37 @@ nav a[aria-current="page"] {
 }
 
 .product-home-hero .platform-button {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 5px;
+  align-items: center;
+  gap: 8px;
   min-width: 158px;
   min-height: 64px;
   padding: 10px 22px 11px;
   line-height: 1.08;
   text-align: left;
+}
+
+:lang(ja) .product-home-hero .platform-button {
+  min-height: 54px;
+  padding-block: 8px;
+}
+
+.product-home-hero .platform-icon {
+  flex: 0 0 1.25em;
+  text-align: center;
+  line-height: 1;
+}
+
+.product-home-hero .platform-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+:lang(ja) .product-home-hero .platform-copy {
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
 }
 
 .product-home-hero .platform-button small {
@@ -463,10 +486,8 @@ nav a[aria-current="page"] {
   grid-template-columns: minmax(0, 1fr);
   gap: clamp(22px, 3vw, 40px);
   min-height: auto;
-  padding: clamp(54px, 7vw, 92px) clamp(20px, 7vw, 88px) clamp(36px, 4vw, 58px);
-  background:
-    linear-gradient(180deg, rgba(255, 250, 244, 0.92), rgba(255, 241, 232, 0.94)),
-    var(--paper);
+  padding: clamp(54px, 7vw, 92px) clamp(20px, 7vw, 88px);
+  background: var(--warm-band);
   overflow: hidden;
 }
 
@@ -483,10 +504,6 @@ nav a[aria-current="page"] {
   letter-spacing: 0.01em;
 }
 
-:lang(ja) .desktop-hero-copy h1 {
-  font-size: clamp(44px, 6.4vw, 82px);
-}
-
 .desktop-hero-copy > p:last-of-type {
   max-width: 760px;
   margin: clamp(12px, 1.5vw, 18px) auto 0;
@@ -501,6 +518,40 @@ nav a[aria-current="page"] {
   margin-top: clamp(18px, 2vw, 24px);
 }
 
+:lang(en) .desktop-hero .actions > .button {
+  width: 184px;
+}
+
+.desktop-hero .desktop-platform-button {
+  align-items: center;
+  gap: 8px;
+  min-width: 184px;
+  min-height: 64px;
+  padding: 10px 22px 11px;
+  line-height: 1.08;
+  text-align: left;
+}
+
+.desktop-hero .platform-icon {
+  flex: 0 0 1.25em;
+  text-align: center;
+  line-height: 1;
+}
+
+.desktop-hero .platform-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.desktop-hero .platform-copy small {
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 800;
+  opacity: 0.72;
+}
+
 .desktop-app-preview {
   position: relative;
   width: min(100%, 820px);
@@ -509,7 +560,7 @@ nav a[aria-current="page"] {
 
 .desktop-preview-section {
   padding: clamp(24px, 3vw, 40px) 0 clamp(58px, 7vw, 92px);
-  background: var(--warm-band);
+  background: var(--paper);
   overflow: hidden;
 }
 
@@ -709,6 +760,10 @@ nav a[aria-current="page"] {
   gap: 14px;
   width: min(100%, 980px);
   margin: 34px auto 0;
+}
+
+.desktop-difference {
+  background: var(--warm-band);
 }
 
 .version-grid article {
@@ -1102,7 +1157,7 @@ nav a[aria-current="page"] {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
-  width: min(100%, 1280px);
+  width: min(100%, 1140px);
   margin: 34px auto 0;
 }
 
@@ -1138,6 +1193,7 @@ nav a[aria-current="page"] {
 #notice,
 #reactions,
 #new-cats,
+#preview,
 #how-it-works,
 #privacy,
 #faq,
@@ -1334,7 +1390,7 @@ nav a[aria-current="page"] {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
-  width: min(100%, 1280px);
+  width: min(100%, 1140px);
   margin-top: 34px;
   margin-left: auto;
   margin-right: auto;

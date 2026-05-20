@@ -24,7 +24,7 @@
   <link rel="icon" href="../../../cat-gatekeeper/assets/favicon-cat-48.png" sizes="48x48" type="image/png">
   <link rel="shortcut icon" href="../../../cat-gatekeeper/assets/favicon-cat-32.png" type="image/png">
   <link rel="apple-touch-icon" href="../../../cat-gatekeeper/assets/apple-touch-cat.png">
-  <link rel="stylesheet" href="../../../cat-gatekeeper/site.css?v=101">
+  <link rel="stylesheet" href="../../../cat-gatekeeper/site.css?v=102">
 </head>
 <body class="desktop-page">
   <header class="site-header" aria-label="サイトヘッダー">
@@ -61,52 +61,47 @@
       <div class="desktop-hero-copy">
         <p class="eyebrow">公式デスクトップアプリ</p>
         <h1 id="desktop-title">Cat Gatekeeper</h1>
-        <p>作業時間を決めてスタート。<br>時間が来たら、猫が休憩のタイミングを知らせます。</p>
+        <p>作業時間を決めてスタート<br>時間が来たら、猫が休憩のタイミングを知らせます</p>
         <div class="actions" aria-label="ダウンロードリンク">
           <span class="button primary disabled" aria-disabled="true">💻 macOS版 準備中</span>
           <span class="button disabled" aria-disabled="true">Windows版 準備中</span>
           <a class="button secondary" href="https://ko-fi.com/zokuzoku">☕ Support me</a>
         </div>
-        <a class="bmc-note" href="https://buymeacoffee.com/zokuzoku2026">Buy Me a Coffee（休止中）</a>
-      </div>
-    </section>
-
-    <section class="desktop-preview-section" aria-label="Cat Gatekeeper Desktopのスクリーンショット">
-      <div class="screenshot-carousel" data-carousel>
-        <input type="radio" name="desktop-preview" id="preview-1" checked>
-        <input type="radio" name="desktop-preview" id="preview-2">
-        <input type="radio" name="desktop-preview" id="preview-3">
-        <input type="radio" name="desktop-preview" id="preview-4">
-        <div class="screenshot-slides">
-          <figure class="screenshot-card">
-            <img src="../../../cat-gatekeeper/assets/desktop-preview-2.png" alt="猫が画面に現れるCat Gatekeeper Desktopの表示例">
-          </figure>
-          <figure class="screenshot-card screenshot-card-clean">
-            <img src="../../../cat-gatekeeper/assets/desktop-preview-timer-transparent.png" alt="Cat Gatekeeper Desktopのタイマー設定ウィンドウ">
-          </figure>
-          <figure class="screenshot-card">
-            <img src="../../../cat-gatekeeper/assets/desktop-preview-3.png" alt="猫が表示されたCat Gatekeeper Desktopの休憩画面">
-          </figure>
-          <figure class="screenshot-card">
-            <img src="../../../cat-gatekeeper/assets/desktop-preview-1.png" alt="Cat Gatekeeper Desktopのタイマー設定画面">
-          </figure>
-        </div>
-        <div class="screenshot-dots" aria-label="スクリーンショットを選択">
-          <label for="preview-1"><span class="visually-hidden">猫が登場</span></label>
-          <label for="preview-2"><span class="visually-hidden">タイマー設定</span></label>
-          <label for="preview-3"><span class="visually-hidden">休憩画面</span></label>
-          <label for="preview-4"><span class="visually-hidden">休憩カウントダウン</span></label>
-        </div>
       </div>
     </section>
 
     <nav class="page-nav" aria-label="Cat Gatekeeper Desktopページ内ナビゲーション">
+      <a href="#preview">プレビュー</a>
       <a href="#difference">違い</a>
       <a href="#how-it-works">使い方</a>
       <a href="#privacy">プライバシー</a>
       <a href="#faq">Q&amp;A</a>
       <a href="#support">サポート</a>
     </nav>
+
+    <section class="desktop-preview-section" id="preview" aria-label="Cat Gatekeeper Desktopのスクリーンショット">
+      <div class="screenshot-carousel" data-carousel data-start-slide="2">
+        <input type="radio" name="desktop-preview" id="preview-1">
+        <input type="radio" name="desktop-preview" id="preview-2" checked>
+        <input type="radio" name="desktop-preview" id="preview-3">
+        <div class="screenshot-slides">
+          <figure class="screenshot-card">
+            <img src="../../../cat-gatekeeper/assets/desktop14-win.png" alt="Cat Gatekeeper Desktop Windows版のタイマー設定ウィンドウ">
+          </figure>
+          <figure class="screenshot-card">
+            <img src="../../../cat-gatekeeper/assets/desktop13-appstore.png" alt="Cat Gatekeeper Desktopのタイマー設定画面">
+          </figure>
+          <figure class="screenshot-card">
+            <img src="../../../cat-gatekeeper/assets/desktop15-win.png" alt="猫が表示されたCat Gatekeeper Desktop Windows版の休憩画面">
+          </figure>
+        </div>
+        <div class="screenshot-dots" aria-label="スクリーンショットを選択">
+          <label for="preview-1"><span class="visually-hidden">Windows版タイマー設定</span></label>
+          <label for="preview-2"><span class="visually-hidden">タイマー画面</span></label>
+          <label for="preview-3"><span class="visually-hidden">Windows版休憩画面</span></label>
+        </div>
+      </div>
+    </section>
 
     <section class="section desktop-difference" id="difference" aria-labelledby="difference-title">
       <div class="section-heading">
@@ -131,7 +126,6 @@
     <section class="section" id="how-it-works" aria-labelledby="how-title">
       <div class="section-heading">
         <p class="section-kicker" id="how-title">HOW TO</p>
-        <h2>作業を始めて、終わりは猫に任せる。</h2>
       </div>
       <div class="steps">
         <article>
@@ -142,12 +136,12 @@
         <article>
           <span>02</span>
           <h3>作業する</h3>
-          <p>小さなアプリをデスクトップに置いておきます。</p>
+          <p>タイマーは最小化したまま<br>いつもの作業を進めます。</p>
         </article>
         <article>
           <span>03</span>
           <h3>休憩する</h3>
-          <p>時間が来たら、Cat Gatekeeperが休憩を促します。</p>
+          <p>時間が来たら<br>猫が現れて休憩を知らせます。</p>
         </article>
       </div>
     </section>

@@ -7,6 +7,11 @@
 
     if (!slides || inputs.length < 2) return;
 
+    const startSlide = Number.parseInt(carousel.dataset.startSlide, 10);
+    if (startSlide >= 1 && startSlide <= inputs.length) {
+      inputs[startSlide - 1].checked = true;
+    }
+
     slides.setAttribute("role", "button");
     slides.setAttribute("tabindex", "0");
 

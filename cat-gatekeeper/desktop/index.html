@@ -24,7 +24,7 @@
   <link rel="icon" href="../assets/favicon-cat-48.png" sizes="48x48" type="image/png">
   <link rel="shortcut icon" href="../assets/favicon-cat-32.png" type="image/png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-cat.png">
-  <link rel="stylesheet" href="../site.css?v=101">
+  <link rel="stylesheet" href="../site.css?v=102">
 </head>
 <body class="desktop-page">
   <header class="site-header" aria-label="Site header">
@@ -61,52 +61,59 @@
       <div class="desktop-hero-copy">
         <p class="eyebrow">Official Desktop App</p>
         <h1 id="desktop-title">Cat Gatekeeper</h1>
-        <p>Set a work timer.<br>When time is up, the cat steps in and asks you to take a break.</p>
+        <p>Set a work timer<br>When time is up, the cat makes you take a break</p>
         <div class="actions" aria-label="Download links">
-          <span class="button primary disabled" aria-disabled="true">💻 macOS coming soon</span>
-          <span class="button disabled" aria-disabled="true">Windows coming soon</span>
+          <span class="button primary disabled desktop-platform-button" aria-disabled="true">
+            <span class="platform-icon" aria-hidden="true">💻</span>
+            <span class="platform-copy">
+              <span>macOS</span>
+              <small>coming soon</small>
+            </span>
+          </span>
+          <span class="button disabled desktop-platform-button" aria-disabled="true">
+            <span class="platform-icon" aria-hidden="true">💻</span>
+            <span class="platform-copy">
+              <span>Windows</span>
+              <small>coming soon</small>
+            </span>
+          </span>
           <a class="button secondary" href="https://ko-fi.com/zokuzoku">☕ Support me</a>
-        </div>
-        <a class="bmc-note" href="https://buymeacoffee.com/zokuzoku2026">Buy Me a Coffee (paused)</a>
-      </div>
-    </section>
-
-    <section class="desktop-preview-section" aria-label="Cat Gatekeeper Desktop screenshots">
-      <div class="screenshot-carousel" data-carousel>
-        <input type="radio" name="desktop-preview" id="preview-1" checked>
-        <input type="radio" name="desktop-preview" id="preview-2">
-        <input type="radio" name="desktop-preview" id="preview-3">
-        <input type="radio" name="desktop-preview" id="preview-4">
-        <div class="screenshot-slides">
-          <figure class="screenshot-card">
-            <img src="../assets/desktop-preview-2.png" alt="Cat Gatekeeper Desktop cat interruption screen">
-          </figure>
-          <figure class="screenshot-card screenshot-card-clean">
-            <img src="../assets/desktop-preview-timer-transparent.png" alt="Cat Gatekeeper Desktop timer setup window">
-          </figure>
-          <figure class="screenshot-card">
-            <img src="../assets/desktop-preview-3.png" alt="Cat Gatekeeper Desktop break screen with a cat">
-          </figure>
-          <figure class="screenshot-card">
-            <img src="../assets/desktop-preview-1.png" alt="Cat Gatekeeper Desktop timer screen">
-          </figure>
-        </div>
-        <div class="screenshot-dots" aria-label="Choose screenshot">
-          <label for="preview-1"><span class="visually-hidden">Cat interruption</span></label>
-          <label for="preview-2"><span class="visually-hidden">Timer setup</span></label>
-          <label for="preview-3"><span class="visually-hidden">Break screen</span></label>
-          <label for="preview-4"><span class="visually-hidden">Break countdown</span></label>
         </div>
       </div>
     </section>
 
     <nav class="page-nav" aria-label="Cat Gatekeeper Desktop page navigation">
+      <a href="#preview">Preview</a>
       <a href="#difference">Difference</a>
       <a href="#how-it-works">How to</a>
       <a href="#privacy">Privacy</a>
       <a href="#faq">Q&amp;A</a>
       <a href="#support">Support</a>
     </nav>
+
+    <section class="desktop-preview-section" id="preview" aria-label="Cat Gatekeeper Desktop screenshots">
+      <div class="screenshot-carousel" data-carousel data-start-slide="2">
+        <input type="radio" name="desktop-preview" id="preview-1">
+        <input type="radio" name="desktop-preview" id="preview-2" checked>
+        <input type="radio" name="desktop-preview" id="preview-3">
+        <div class="screenshot-slides">
+          <figure class="screenshot-card">
+            <img src="../assets/desktop14-win.png" alt="Cat Gatekeeper Desktop Windows timer setup window">
+          </figure>
+          <figure class="screenshot-card">
+            <img src="../assets/desktop10-appstore.png" alt="Cat Gatekeeper Desktop cat interruption screen">
+          </figure>
+          <figure class="screenshot-card">
+            <img src="../assets/desktop15-win.png" alt="Cat Gatekeeper Desktop Windows break screen with a cat">
+          </figure>
+        </div>
+        <div class="screenshot-dots" aria-label="Choose screenshot">
+          <label for="preview-1"><span class="visually-hidden">Windows timer setup</span></label>
+          <label for="preview-2"><span class="visually-hidden">Cat interruption</span></label>
+          <label for="preview-3"><span class="visually-hidden">Windows break screen</span></label>
+        </div>
+      </div>
+    </section>
 
     <section class="section desktop-difference" id="difference" aria-labelledby="difference-title">
       <div class="section-heading">
@@ -131,7 +138,6 @@
     <section class="section" id="how-it-works" aria-labelledby="how-title">
       <div class="section-heading">
         <p class="section-kicker" id="how-title">HOW TO</p>
-        <h2>Start a focused session, then let the cat handle the ending.</h2>
       </div>
       <div class="steps">
         <article>
@@ -142,12 +148,12 @@
         <article>
           <span>02</span>
           <h3>Start working</h3>
-          <p>Keep the small app ready on your desktop.</p>
+          <p>Keep the timer minimized<br>while you work.</p>
         </article>
         <article>
           <span>03</span>
           <h3>Take the break</h3>
-          <p>When time is up, Cat Gatekeeper gives you the nudge.</p>
+          <p>When time is up,<br>the cat appears with a break reminder.</p>
         </article>
       </div>
     </section>

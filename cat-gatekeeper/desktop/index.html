@@ -24,7 +24,7 @@
   <link rel="icon" href="../assets/favicon-cat-48.png" sizes="48x48" type="image/png">
   <link rel="shortcut icon" href="../assets/favicon-cat-32.png" type="image/png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-cat.png">
-  <link rel="stylesheet" href="../site.css?v=102">
+  <link rel="stylesheet" href="../site.css?v=124">
 </head>
 <body class="desktop-page">
   <header class="site-header" aria-label="Site header">
@@ -61,7 +61,7 @@
       <div class="desktop-hero-copy">
         <p class="eyebrow">Official Desktop App</p>
         <h1 id="desktop-title">Cat Gatekeeper</h1>
-        <p>Set a work timer<br>When time is up, the cat makes you take a break</p>
+        <p>Set a work timer<br>When time is up, the cat appears with a break reminder</p>
         <div class="actions" aria-label="Download links">
           <span class="button primary disabled desktop-platform-button" aria-disabled="true">
             <span class="platform-icon" aria-hidden="true">💻</span>
@@ -84,6 +84,8 @@
 
     <nav class="page-nav" aria-label="Cat Gatekeeper Desktop page navigation">
       <a href="#preview">Preview</a>
+      <a href="#notice">What's New</a>
+      <a href="#new-cats">New Cats</a>
       <a href="#difference">Difference</a>
       <a href="#how-it-works">How to</a>
       <a href="#privacy">Privacy</a>
@@ -115,23 +117,47 @@
       </div>
     </section>
 
+    <section class="notice" id="notice" aria-labelledby="notice-title">
+      <p class="section-kicker" id="notice-title">WHAT'S NEW</p>
+      <h2>May 2026: Desktop app page launched!</h2>
+      <p>The Cat Gatekeeper Desktop introduction page is now available.</p>
+      <details class="notice-history">
+        <summary>Past updates</summary>
+        <article>
+          <h3>May 1, 2026: Official website launched</h3>
+          <div class="notice-notes">
+            <p>The official Cat Gatekeeper website is now available.</p>
+          </div>
+        </article>
+      </details>
+    </section>
+
+    <section class="section cat-gallery" id="new-cats" aria-labelledby="cats-title">
+      <div class="section-heading">
+        <p class="section-kicker">New Cats</p>
+        <h2 id="cats-title" class="visually-hidden">New cats</h2>
+      </div>
+      <div class="cat-scroll" aria-label="Cat gallery">
+        <article class="cat-card">
+          <img src="../assets/neko1-800.png" alt="Cat Gatekeeper cat">
+        </article>
+      </div>
+    </section>
+
     <section class="section desktop-difference" id="difference" aria-labelledby="difference-title">
       <div class="section-heading">
-        <p class="section-kicker" id="difference-title">VERSION GUIDE</p>
-        <h2>Browser extension or desktop app?</h2>
-        <p class="section-body">Use the browser extension for selected websites. Use the desktop app when you want a simple break timer that lives outside the browser.</p>
+        <p class="section-kicker" id="difference-title">Which one?</p>
       </div>
       <div class="version-grid">
-        <article>
-          <h3>Browser Extension</h3>
-          <p>Works inside Chrome and Firefox, watching selected websites and showing the cat in your browser.</p>
-          <a href="/cat-gatekeeper/">Open browser extension page</a>
-        </article>
-        <article>
-          <h3>Desktop App</h3>
-          <p>Runs as a small desktop timer for work and break sessions, with Cat Gatekeeper's familiar interruption energy.</p>
-          <span>Download coming soon</span>
-        </article>
+        <a class="version-choice" href="/cat-gatekeeper/">
+          <span class="version-choice-title">Browser Extension</span>
+          <span class="version-choice-text">For cutting back on social media scrolling</span>
+        </a>
+        <div class="version-choice is-disabled" aria-disabled="true">
+          <span class="version-choice-title">Desktop App</span>
+          <span class="version-choice-text">For when you get too focused on work</span>
+          <span class="version-choice-note">Coming soon</span>
+        </div>
       </div>
     </section>
 

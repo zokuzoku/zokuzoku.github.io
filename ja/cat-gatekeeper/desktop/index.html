@@ -24,7 +24,7 @@
   <link rel="icon" href="../../../cat-gatekeeper/assets/favicon-cat-48.png" sizes="48x48" type="image/png">
   <link rel="shortcut icon" href="../../../cat-gatekeeper/assets/favicon-cat-32.png" type="image/png">
   <link rel="apple-touch-icon" href="../../../cat-gatekeeper/assets/apple-touch-cat.png">
-  <link rel="stylesheet" href="../../../cat-gatekeeper/site.css?v=102">
+  <link rel="stylesheet" href="../../../cat-gatekeeper/site.css?v=124">
 </head>
 <body class="desktop-page">
   <header class="site-header" aria-label="サイトヘッダー">
@@ -61,7 +61,7 @@
       <div class="desktop-hero-copy">
         <p class="eyebrow">公式デスクトップアプリ</p>
         <h1 id="desktop-title">Cat Gatekeeper</h1>
-        <p>作業時間を決めてスタート<br>時間が来たら、猫が休憩のタイミングを知らせます</p>
+        <p>作業時間を決めてスタート<br>時間が来たら、猫があらわれて休憩を知らせます</p>
         <div class="actions" aria-label="ダウンロードリンク">
           <span class="button primary disabled" aria-disabled="true">💻 macOS版 準備中</span>
           <span class="button disabled" aria-disabled="true">Windows版 準備中</span>
@@ -72,6 +72,8 @@
 
     <nav class="page-nav" aria-label="Cat Gatekeeper Desktopページ内ナビゲーション">
       <a href="#preview">プレビュー</a>
+      <a href="#notice">最新情報</a>
+      <a href="#new-cats">新しい猫</a>
       <a href="#difference">違い</a>
       <a href="#how-it-works">使い方</a>
       <a href="#privacy">プライバシー</a>
@@ -103,23 +105,47 @@
       </div>
     </section>
 
+    <section class="notice" id="notice" aria-labelledby="notice-title">
+      <p class="section-kicker" id="notice-title">WHAT'S NEW</p>
+      <h2>2026年5月：デスクトップ版ページを公開しました！</h2>
+      <p>Cat Gatekeeper Desktopの紹介ページを公開しました。</p>
+      <details class="notice-history">
+        <summary>過去の更新</summary>
+        <article>
+          <h3>2026年5月1日：公式サイト公開</h3>
+          <div class="notice-notes">
+            <p>Cat Gatekeeperの公式サイトを公開しました。</p>
+          </div>
+        </article>
+      </details>
+    </section>
+
+    <section class="section cat-gallery" id="new-cats" aria-labelledby="cats-title">
+      <div class="section-heading">
+        <p class="section-kicker">New Cats</p>
+        <h2 id="cats-title" class="visually-hidden">新しい猫</h2>
+      </div>
+      <div class="cat-scroll" aria-label="猫一覧">
+        <article class="cat-card">
+          <img src="../../../cat-gatekeeper/assets/neko1-800.png" alt="Cat Gatekeeperの猫">
+        </article>
+      </div>
+    </section>
+
     <section class="section desktop-difference" id="difference" aria-labelledby="difference-title">
       <div class="section-heading">
-        <p class="section-kicker" id="difference-title">VERSION GUIDE</p>
-        <h2>ブラウザ拡張版とデスクトップ版の違い</h2>
-        <p class="section-body">選んだWebサイトを止めたいときはブラウザ拡張版。ブラウザの外でも使えるシンプルな作業タイマーが欲しいときはデスクトップ版がおすすめです。</p>
+        <p class="section-kicker" id="difference-title">Which one?</p>
       </div>
       <div class="version-grid">
-        <article>
-          <h3>ブラウザ拡張版</h3>
-          <p>ChromeやFirefox内で、選んだWebサイトを見すぎたときに猫を表示します。</p>
-          <a href="/ja/cat-gatekeeper/">ブラウザ拡張版ページへ</a>
-        </article>
-        <article>
-          <h3>デスクトップ版</h3>
-          <p>作業時間と休憩時間を決めて使う、Cat Gatekeeperらしい小さなデスクトップタイマーです。</p>
-          <span>ダウンロード準備中</span>
-        </article>
+        <a class="version-choice" href="/ja/cat-gatekeeper/">
+          <span class="version-choice-title">ブラウザ拡張版</span>
+          <span class="version-choice-text">SNSの見すぎをやめたいときに</span>
+        </a>
+        <div class="version-choice is-disabled" aria-disabled="true">
+          <span class="version-choice-title">デスクトップ版</span>
+          <span class="version-choice-text">作業に集中しすぎるときに</span>
+          <span class="version-choice-note">準備中</span>
+        </div>
       </div>
     </section>
 

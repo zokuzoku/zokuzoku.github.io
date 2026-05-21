@@ -94,17 +94,49 @@
       </div>
     </section>
 
-    <nav class="page-nav" aria-label="Cat Gatekeeper page navigation">
-      <a class="nav-optional" href="#reactions">Voices</a>
-      <a class="nav-optional" href="#preview">Preview</a>
-      <a href="#notice">What's New</a>
-      <a href="#new-cats">New Cats</a>
-      <a class="nav-optional" href="#difference" hidden>Guide</a>
-      <a href="#how-it-works">How to</a>
-      <a class="nav-optional" href="#privacy">Privacy</a>
-      <a href="#faq">Q&amp;A</a>
-      <a href="#support">Support</a>
-    </nav>
+    <section class="store-preview-section" id="preview" aria-label="Cat Gatekeeper preview images">
+      <div class="store-preview-gallery">
+        <input type="radio" name="store-preview" id="store-preview-1" checked>
+        <input type="radio" name="store-preview" id="store-preview-2">
+        <input type="radio" name="store-preview" id="store-preview-3">
+
+        <div class="store-preview-stage">
+          <label class="store-preview-slide" for="store-preview-2">
+            <img src="../assets/shotneko1.png" alt="Cat Gatekeeper preview with a cat appearing on the screen">
+          </label>
+          <label class="store-preview-slide" for="store-preview-3">
+            <img src="../assets/shotneko4.png" alt="Cat Gatekeeper settings screen preview">
+          </label>
+          <label class="store-preview-slide" for="store-preview-1">
+            <img src="../assets/shotneko2.png" alt="Cat Gatekeeper preview with a cat lying across the screen">
+          </label>
+
+          <div class="store-preview-arrows" aria-hidden="true">
+            <label class="store-preview-arrow prev prev-1" for="store-preview-3">‹</label>
+            <label class="store-preview-arrow next next-1" for="store-preview-2">›</label>
+            <label class="store-preview-arrow prev prev-2" for="store-preview-1">‹</label>
+            <label class="store-preview-arrow next next-2" for="store-preview-3">›</label>
+            <label class="store-preview-arrow prev prev-3" for="store-preview-2">‹</label>
+            <label class="store-preview-arrow next next-3" for="store-preview-1">›</label>
+          </div>
+        </div>
+
+        <div class="store-preview-thumbs" aria-label="Choose preview">
+          <label for="store-preview-1">
+            <img src="../assets/shotneko1.png" alt="">
+            <span class="visually-hidden">Cat appearing on screen</span>
+          </label>
+          <label for="store-preview-2">
+            <img src="../assets/shotneko4.png" alt="">
+            <span class="visually-hidden">Settings screen</span>
+          </label>
+          <label for="store-preview-3">
+            <img src="../assets/shotneko2.png" alt="">
+            <span class="visually-hidden">Cat lying across screen</span>
+          </label>
+        </div>
+      </div>
+    </section>
 
     <section class="section reactions-section" id="reactions" aria-labelledby="reactions-title">
       <h2 class="visually-hidden" id="reactions-title">Reactions</h2>
@@ -156,31 +188,18 @@
       </div>
     </section>
 
-    <section class="desktop-preview-section" id="preview" aria-label="Cat Gatekeeper preview images">
-      <div class="screenshot-carousel" data-carousel data-start-slide="1">
-        <input type="radio" name="extension-preview" id="preview-1" checked>
-        <input type="radio" name="extension-preview" id="preview-2">
-        <input type="radio" name="extension-preview" id="preview-3">
-        <div class="screenshot-slides">
-          <figure class="screenshot-card">
-            <img src="../assets/desktop10-appstore.png" alt="Cat Gatekeeper preview screen">
-          </figure>
-          <figure class="screenshot-card">
-            <img src="../assets/desktop14-win.png" alt="Cat Gatekeeper settings screen">
-          </figure>
-          <figure class="screenshot-card">
-            <img src="../assets/desktop15-win.png" alt="Cat Gatekeeper screen with a cat">
-          </figure>
-        </div>
-        <div class="screenshot-dots" aria-label="Choose preview">
-          <label for="preview-1"><span class="visually-hidden">Preview screen</span></label>
-          <label for="preview-2"><span class="visually-hidden">Settings screen</span></label>
-          <label for="preview-3"><span class="visually-hidden">Cat screen</span></label>
-        </div>
-      </div>
-    </section>
+    <nav class="page-nav" aria-label="Cat Gatekeeper page navigation">
+      <a href="#notice">What's New</a>
+      <a href="#new-cats">New Cats</a>
+      <a class="nav-optional" href="#difference" hidden>Guide</a>
+      <a href="#how-it-works">How to</a>
+      <a class="nav-optional" href="#privacy">Privacy</a>
+      <a href="#faq">Q&amp;A</a>
+      <a href="#support">Support</a>
+    </nav>
 
     <section class="notice" id="notice" aria-labelledby="notice-title">
+      <div class="section-inner">
       <p class="section-kicker" id="notice-title">WHAT'S NEW</p>
       <h2>May 18, 2026: A new cat has been added!</h2>
       <p>Note: Cats appear at random.</p>
@@ -218,9 +237,11 @@
           </div>
         </article>
       </details>
+      </div>
     </section>
 
     <section class="section cat-gallery" id="new-cats" aria-labelledby="cats-title">
+      <div class="section-inner">
       <div class="section-heading">
         <p class="section-kicker">New Cats</p>
         <h2 id="cats-title" class="visually-hidden">New cats</h2>
@@ -232,6 +253,7 @@
         <article class="cat-card is-new">
           <img src="../assets/neko2-800.png" alt="New Cat Gatekeeper cat">
         </article>
+      </div>
       </div>
     </section>
 
@@ -252,6 +274,7 @@
     </section>
 
     <section class="section" id="how-it-works" aria-labelledby="how-heading">
+      <div class="section-inner">
       <div class="section-heading">
         <p class="section-kicker" id="how-heading">HOW TO</p>
       </div>
@@ -272,29 +295,33 @@
           <p>The cat takes over the page<br>until the countdown ends<br><small>You can also open the menu and dismiss it.</small></p>
         </article>
       </div>
+      </div>
     </section>
 
     <section class="section" id="privacy" aria-labelledby="privacy-heading">
+      <div class="section-inner">
       <div class="section-heading">
         <p class="section-kicker" id="privacy-heading">PRIVACY</p>
-        <div class="privacy-points" aria-label="Privacy highlights">
-          <div>
-            <strong>No ads</strong>
-            <span>No tracking tools are used</span>
-          </div>
-          <div>
-            <strong>No data</strong>
-            <span>No browsing or social media data<br>is collected</span>
-          </div>
-          <div>
-            <strong>Browser only</strong>
-            <span>Settings stay on your device</span>
-          </div>
+      </div>
+      <div class="privacy-points" aria-label="Privacy highlights">
+        <div>
+          <strong>No ads</strong>
+          <span>No tracking tools are used</span>
         </div>
+        <div>
+          <strong>No data</strong>
+          <span>No browsing or social media data<br>is collected</span>
+        </div>
+        <div>
+          <strong>Browser only</strong>
+          <span>Settings stay on your device</span>
+        </div>
+      </div>
       </div>
     </section>
 
     <section class="section faq-section" id="faq" aria-labelledby="faq-heading">
+      <div class="section-inner">
       <div class="section-heading">
         <p class="section-kicker" id="faq-heading">Q&amp;A</p>
       </div>
@@ -348,15 +375,18 @@
           <p>Yes. More cats are planned for future updates.</p>
         </details>
       </div>
+      </div>
     </section>
 
     <section class="section compact" id="support" aria-labelledby="support-title">
+      <div class="section-inner">
       <div class="section-heading">
         <p class="section-kicker" id="support-title">Support</p>
       </div>
       <div class="link-grid support-grid">
         <a href="https://github.com/zokuzoku/cat-gatekeeper/issues/new?labels=browser-extension">Contact us</a>
         <a href="https://github.com/zokuzoku/cat-gatekeeper/issues?q=is%3Aissue%20label%3Abrowser-extension">View past reports</a>
+      </div>
       </div>
     </section>
   </main>

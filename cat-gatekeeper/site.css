@@ -629,6 +629,141 @@ nav a[aria-current="page"] {
   cursor: pointer;
 }
 
+.store-preview-section {
+  padding: clamp(28px, 4vw, 56px) 0 clamp(58px, 7vw, 92px);
+  background: var(--warm-band);
+  overflow: hidden;
+}
+
+.extension-page .desktop-hero {
+  padding-bottom: clamp(34px, 4vw, 56px);
+  background: var(--paper);
+}
+
+.extension-page .store-preview-section {
+  padding-top: clamp(18px, 2.4vw, 32px);
+  padding-bottom: clamp(2px, 0.6vw, 10px);
+  background: var(--paper);
+}
+
+.store-preview-gallery {
+  width: min(100% - 120px, 1280px);
+  margin: 0 auto;
+}
+
+.store-preview-gallery > input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.store-preview-stage {
+  position: relative;
+  display: grid;
+  align-items: center;
+  min-height: clamp(210px, 45vw, 560px);
+}
+
+.store-preview-slide {
+  display: none;
+  grid-area: 1 / 1;
+  margin: 0 auto;
+  width: min(100%, 940px);
+  cursor: pointer;
+}
+
+.store-preview-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(66, 49, 35, 0.12);
+  border-radius: 8px;
+  box-shadow: 0 18px 48px rgba(25, 25, 25, 0.1);
+}
+
+.store-preview-gallery > input:nth-of-type(1):checked ~ .store-preview-stage .store-preview-slide:nth-of-type(1),
+.store-preview-gallery > input:nth-of-type(2):checked ~ .store-preview-stage .store-preview-slide:nth-of-type(2),
+.store-preview-gallery > input:nth-of-type(3):checked ~ .store-preview-stage .store-preview-slide:nth-of-type(3) {
+  display: block;
+}
+
+.store-preview-arrows {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.store-preview-arrow {
+  position: absolute;
+  top: 50%;
+  display: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: rgba(66, 49, 35, 0.9);
+  font-size: 44px;
+  line-height: 36px;
+  text-align: center;
+  transform: translateY(-50%);
+  cursor: pointer;
+  pointer-events: auto;
+  user-select: none;
+}
+
+.store-preview-arrow.prev {
+  left: -54px;
+}
+
+.store-preview-arrow.next {
+  right: -54px;
+}
+
+.store-preview-gallery > input:nth-of-type(1):checked ~ .store-preview-stage .prev-1,
+.store-preview-gallery > input:nth-of-type(1):checked ~ .store-preview-stage .next-1,
+.store-preview-gallery > input:nth-of-type(2):checked ~ .store-preview-stage .prev-2,
+.store-preview-gallery > input:nth-of-type(2):checked ~ .store-preview-stage .next-2,
+.store-preview-gallery > input:nth-of-type(3):checked ~ .store-preview-stage .prev-3,
+.store-preview-gallery > input:nth-of-type(3):checked ~ .store-preview-stage .next-3 {
+  display: block;
+}
+
+.store-preview-thumbs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 18px;
+  overflow-x: auto;
+  padding: 4px 2px 8px;
+  scrollbar-width: none;
+}
+
+.store-preview-thumbs::-webkit-scrollbar {
+  display: none;
+}
+
+.store-preview-thumbs label {
+  flex: 0 0 auto;
+  width: clamp(72px, 9vw, 110px);
+  padding: 3px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.store-preview-thumbs img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.store-preview-gallery > input:nth-of-type(1):checked ~ .store-preview-thumbs label:nth-child(1),
+.store-preview-gallery > input:nth-of-type(2):checked ~ .store-preview-thumbs label:nth-child(2),
+.store-preview-gallery > input:nth-of-type(3):checked ~ .store-preview-thumbs label:nth-child(3) {
+  border-color: #1a73e8;
+}
+
 .screenshot-carousel > input:nth-of-type(1):checked ~ .screenshot-dots label:nth-child(1),
 .screenshot-carousel > input:nth-of-type(2):checked ~ .screenshot-dots label:nth-child(2),
 .screenshot-carousel > input:nth-of-type(3):checked ~ .screenshot-dots label:nth-child(3),
@@ -1047,7 +1182,7 @@ nav a[aria-current="page"] {
 }
 
 #notice h2 {
-  margin: 0 auto;
+  margin: 28px auto 0;
   max-width: 680px;
   color: var(--ink);
   font-size: clamp(18px, 1.65vw, 23px);
@@ -1241,6 +1376,14 @@ nav a[aria-current="page"] {
   background: var(--paper);
 }
 
+.extension-page .reactions-section {
+  padding-bottom: 24px;
+}
+
+.reactions-section + #notice {
+  padding-top: clamp(44px, 6vw, 72px);
+}
+
 .reaction-marquee {
   width: 100%;
   overflow: hidden;
@@ -1394,6 +1537,11 @@ nav a[aria-current="page"] {
 .page-nav a:focus-visible {
   color: var(--ink);
   background: #ffe2d4;
+}
+
+.extension-page .reactions-section + .page-nav {
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .section-heading {
@@ -1583,11 +1731,11 @@ nav a[aria-current="page"] {
 }
 
 .extension-page #notice {
-  background: var(--paper);
+  background: var(--warm-band);
 }
 
 .extension-page .cat-gallery {
-  background: var(--warm-band);
+  background: var(--paper);
 }
 
 .extension-page .desktop-difference {
@@ -1608,6 +1756,38 @@ nav a[aria-current="page"] {
 
 .extension-page #support {
   background: var(--paper);
+}
+
+.extension-page #notice,
+.extension-page #new-cats,
+.extension-page #how-it-works,
+.extension-page #privacy,
+.extension-page #faq,
+.extension-page #support {
+  padding-top: clamp(64px, 7vw, 88px);
+  padding-bottom: clamp(64px, 7vw, 88px);
+}
+
+.extension-page .section-inner {
+  display: grid;
+  gap: 65px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.extension-page #notice .section-inner {
+  display: block;
+}
+
+.extension-page :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner .section-kicker,
+.extension-page :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .section-heading,
+.extension-page :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .cat-scroll,
+.extension-page :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .steps,
+.extension-page :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .privacy-points,
+.extension-page :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .faq-list,
+.extension-page :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .link-grid {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .link-grid {
@@ -1928,6 +2108,39 @@ nav a[aria-current="page"] {
 
   .screenshot-carousel {
     width: calc(100% - 40px);
+  }
+
+  .store-preview-gallery {
+    width: calc(100% - 28px);
+  }
+
+  .store-preview-stage {
+    min-height: 0;
+  }
+
+  .store-preview-slide {
+    display: none;
+    width: 100%;
+  }
+
+  .store-preview-gallery > input:nth-of-type(1):checked ~ .store-preview-stage .store-preview-slide:nth-of-type(1),
+  .store-preview-gallery > input:nth-of-type(2):checked ~ .store-preview-stage .store-preview-slide:nth-of-type(2),
+  .store-preview-gallery > input:nth-of-type(3):checked ~ .store-preview-stage .store-preview-slide:nth-of-type(3) {
+    display: block;
+  }
+
+  .store-preview-arrow {
+    display: none !important;
+  }
+
+  .store-preview-thumbs {
+    justify-content: flex-start;
+    gap: 9px;
+    margin-top: 14px;
+  }
+
+  .store-preview-thumbs label {
+    width: 82px;
   }
 
   .version-grid {

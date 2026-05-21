@@ -84,7 +84,7 @@
       <div class="desktop-hero-copy">
         <p class="eyebrow">公式ブラウザ拡張機能</p>
         <h1 id="hero-title">Cat Gatekeeper</h1>
-        <p>SNSを使いすぎると猫があらわれて画面をジャック<br>かわいい強制休憩ブラウザ拡張</p>
+        <p>SNSを使いすぎると猫があらわれて画面をジャック<br>かわいい強制休憩ブラウザ拡張機能</p>
         <div class="actions" aria-label="主要リンク">
           <a class="button primary" href="https://chromewebstore.google.com/detail/cat-gatekeeper/elbikiflgfhjdjmficnigpeegjbhdidh">🐱 Chromeストアへ</a>
           <a class="button primary" href="https://addons.mozilla.org/firefox/addon/cat-gatekeeper-zokuzoku/">🦊 Firefoxストアへ</a>
@@ -93,16 +93,49 @@
       </div>
     </section>
 
-    <nav class="page-nav" aria-label="Cat Gatekeeperページ内ナビゲーション">
-      <a class="nav-optional" href="#reactions">皆の声</a>
-      <a href="#notice">最新情報</a>
-      <a href="#new-cats">新しい猫</a>
-      <a class="nav-optional" href="#difference" hidden>選び方</a>
-      <a href="#how-it-works">使い方</a>
-      <a class="nav-optional" href="#privacy">プライバシー</a>
-      <a href="#faq">Q&amp;A</a>
-      <a href="#support">サポート</a>
-    </nav>
+    <section class="store-preview-section" id="preview" aria-label="Cat Gatekeeperのプレビュー画像">
+      <div class="store-preview-gallery">
+        <input type="radio" name="store-preview" id="store-preview-1" checked>
+        <input type="radio" name="store-preview" id="store-preview-2">
+        <input type="radio" name="store-preview" id="store-preview-3">
+
+        <div class="store-preview-stage">
+          <label class="store-preview-slide" for="store-preview-2">
+            <img src="../../../cat-gatekeeper/assets/shotneko1.png" alt="猫が画面にあらわれたCat Gatekeeperのプレビュー">
+          </label>
+          <label class="store-preview-slide" for="store-preview-3">
+            <img src="../../../cat-gatekeeper/assets/shotneko4.png" alt="Cat Gatekeeperの設定画面プレビュー">
+          </label>
+          <label class="store-preview-slide" for="store-preview-1">
+            <img src="../../../cat-gatekeeper/assets/shotneko2.png" alt="猫が画面で寝そべるCat Gatekeeperのプレビュー">
+          </label>
+
+          <div class="store-preview-arrows" aria-hidden="true">
+            <label class="store-preview-arrow prev prev-1" for="store-preview-3">‹</label>
+            <label class="store-preview-arrow next next-1" for="store-preview-2">›</label>
+            <label class="store-preview-arrow prev prev-2" for="store-preview-1">‹</label>
+            <label class="store-preview-arrow next next-2" for="store-preview-3">›</label>
+            <label class="store-preview-arrow prev prev-3" for="store-preview-2">‹</label>
+            <label class="store-preview-arrow next next-3" for="store-preview-1">›</label>
+          </div>
+        </div>
+
+        <div class="store-preview-thumbs" aria-label="プレビューを選択">
+          <label for="store-preview-1">
+            <img src="../../../cat-gatekeeper/assets/shotneko1.png" alt="">
+            <span class="visually-hidden">猫があらわれる画面</span>
+          </label>
+          <label for="store-preview-2">
+            <img src="../../../cat-gatekeeper/assets/shotneko4.png" alt="">
+            <span class="visually-hidden">設定画面</span>
+          </label>
+          <label for="store-preview-3">
+            <img src="../../../cat-gatekeeper/assets/shotneko2.png" alt="">
+            <span class="visually-hidden">寝そべる猫の画面</span>
+          </label>
+        </div>
+      </div>
+    </section>
 
     <section class="section reactions-section" id="reactions" aria-labelledby="reactions-title">
       <h2 class="visually-hidden" id="reactions-title">反応</h2>
@@ -154,7 +187,18 @@
       </div>
     </section>
 
+    <nav class="page-nav" aria-label="Cat Gatekeeperページ内ナビゲーション">
+      <a href="#notice">最新情報</a>
+      <a href="#new-cats">新しい猫</a>
+      <a class="nav-optional" href="#difference" hidden>選び方</a>
+      <a href="#how-it-works">使い方</a>
+      <a class="nav-optional" href="#privacy">プライバシー</a>
+      <a href="#faq">Q&amp;A</a>
+      <a href="#support">サポート</a>
+    </nav>
+
     <section class="notice" id="notice" aria-labelledby="notice-title">
+      <div class="section-inner">
       <p class="section-kicker" id="notice-title">WHAT'S NEW</p>
       <h2>2026年5月18日：新しい猫を追加しました！</h2>
       <p>※猫はランダムで登場します。</p>
@@ -192,9 +236,11 @@
           </div>
         </article>
       </details>
+      </div>
     </section>
 
     <section class="section cat-gallery" id="new-cats" aria-labelledby="cats-title">
+      <div class="section-inner">
       <div class="section-heading">
         <p class="section-kicker">New Cats</p>
         <h2 id="cats-title" class="visually-hidden">新しい猫</h2>
@@ -206,6 +252,7 @@
         <article class="cat-card is-new">
           <img src="../../../cat-gatekeeper/assets/neko2-800.png" alt="Cat Gatekeeperの新しい猫">
         </article>
+      </div>
       </div>
     </section>
 
@@ -226,6 +273,7 @@
     </section>
 
     <section class="section" id="how-it-works" aria-labelledby="how-heading">
+      <div class="section-inner">
       <div class="section-heading">
         <p class="section-kicker" id="how-heading">HOW TO</p>
       </div>
@@ -246,29 +294,33 @@
           <p>カウントダウンが終わるまで<br>猫がページを占領します<br><small>メニューを開いて退いてもらうことも可能です</small></p>
         </article>
       </div>
+      </div>
     </section>
 
     <section class="section" id="privacy" aria-labelledby="privacy-heading">
+      <div class="section-inner">
       <div class="section-heading">
         <p class="section-kicker" id="privacy-heading">PRIVACY</p>
-        <div class="privacy-points" aria-label="プライバシーの概要">
-          <div>
-            <strong>広告なし</strong>
-            <span>トラッキングツールは使いません</span>
-          </div>
-          <div>
-            <strong>データ収集なし</strong>
-            <span>閲覧履歴やSNS内容を収集しません</span>
-          </div>
-          <div>
-            <strong>ブラウザ内保存</strong>
-            <span>設定は端末内に保存されます</span>
-          </div>
+      </div>
+      <div class="privacy-points" aria-label="プライバシーの概要">
+        <div>
+          <strong>広告なし</strong>
+          <span>トラッキングツールは使いません</span>
         </div>
+        <div>
+          <strong>データ収集なし</strong>
+          <span>閲覧履歴やSNS内容を収集しません</span>
+        </div>
+        <div>
+          <strong>ブラウザ内保存</strong>
+          <span>設定は端末内に保存されます</span>
+        </div>
+      </div>
       </div>
     </section>
 
     <section class="section faq-section" id="faq" aria-labelledby="faq-heading">
+      <div class="section-inner">
       <div class="section-heading">
         <p class="section-kicker" id="faq-heading">Q&amp;A</p>
       </div>
@@ -322,15 +374,18 @@
           <p>今後のアップデートで追加予定です。</p>
         </details>
       </div>
+      </div>
     </section>
 
     <section class="section compact" id="support" aria-labelledby="support-title">
+      <div class="section-inner">
       <div class="section-heading">
         <p class="section-kicker" id="support-title">Support</p>
       </div>
       <div class="link-grid support-grid">
         <a href="https://github.com/zokuzoku/cat-gatekeeper/issues/new?labels=browser-extension">お問い合わせはこちら</a>
         <a href="https://github.com/zokuzoku/cat-gatekeeper/issues?q=is%3Aissue%20label%3Abrowser-extension">過去の報告を見る</a>
+      </div>
       </div>
     </section>
   </main>

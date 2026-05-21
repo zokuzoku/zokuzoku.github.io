@@ -19,12 +19,12 @@
   <meta name="twitter:title" content="Cat Gatekeeper Desktop">
   <meta name="twitter:description" content="A desktop cat break timer for your computer.">
   <meta name="twitter:image" content="https://zokuzoku.github.io/cat-gatekeeper/assets/og-cat-icon.png">
-  <link rel="icon" href="../assets/favicon-cat-16.png" sizes="16x16" type="image/png">
-  <link rel="icon" href="../assets/favicon-cat-32.png" sizes="32x32" type="image/png">
-  <link rel="icon" href="../assets/favicon-cat-48.png" sizes="48x48" type="image/png">
+  <link rel="icon" href="https://zokuzoku.github.io/cat-gatekeeper/assets/favicon-cat-48.png" sizes="48x48" type="image/png">
+  <link rel="icon" href="https://zokuzoku.github.io/cat-gatekeeper/assets/favicon-cat-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="https://zokuzoku.github.io/cat-gatekeeper/assets/favicon-cat-16.png" sizes="16x16" type="image/png">
   <link rel="shortcut icon" href="../assets/favicon-cat-32.png" type="image/png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-cat.png">
-  <link rel="stylesheet" href="../site.css?v=124">
+  <link rel="stylesheet" href="../site.css?v=135">
 </head>
 <body class="desktop-page">
   <header class="site-header" aria-label="Site header">
@@ -45,7 +45,7 @@
           <a href="/cat-gatekeeper/">Top</a>
           <a href="/cat-gatekeeper/extension/">Browser Extension</a>
           <a href="/cat-gatekeeper/desktop/" aria-current="page">Desktop App</a>
-          <span aria-disabled="true">Mobile App</span>
+          <span aria-disabled="true">Mobile App (coming soon)</span>
         </div>
       </details>
       <span class="language-switch" aria-label="Language switch">
@@ -61,7 +61,7 @@
       <div class="desktop-hero-copy">
         <p class="eyebrow">Official Desktop App</p>
         <h1 id="desktop-title">Cat Gatekeeper</h1>
-        <p>Set a work timer<br>When time is up, the cat appears with a break reminder</p>
+        <p>Set a work timer<br>The cat takes over your screen when it is time for a break</p>
         <div class="actions" aria-label="Download links">
           <span class="button primary disabled desktop-platform-button" aria-disabled="true">
             <span class="platform-icon" aria-hidden="true">💻</span>
@@ -83,35 +83,35 @@
     </section>
 
     <nav class="page-nav" aria-label="Cat Gatekeeper Desktop page navigation">
-      <a href="#preview">Preview</a>
+      <a class="nav-optional" href="#preview">Preview</a>
       <a href="#notice">What's New</a>
       <a href="#new-cats">New Cats</a>
-      <a href="#difference">Difference</a>
+      <a class="nav-optional" href="#difference">Guide</a>
       <a href="#how-it-works">How to</a>
-      <a href="#privacy">Privacy</a>
+      <a class="nav-optional" href="#privacy">Privacy</a>
       <a href="#faq">Q&amp;A</a>
       <a href="#support">Support</a>
     </nav>
 
     <section class="desktop-preview-section" id="preview" aria-label="Cat Gatekeeper Desktop screenshots">
-      <div class="screenshot-carousel" data-carousel data-start-slide="2">
-        <input type="radio" name="desktop-preview" id="preview-1">
-        <input type="radio" name="desktop-preview" id="preview-2" checked>
+      <div class="screenshot-carousel" data-carousel data-start-slide="1">
+        <input type="radio" name="desktop-preview" id="preview-1" checked>
+        <input type="radio" name="desktop-preview" id="preview-2">
         <input type="radio" name="desktop-preview" id="preview-3">
         <div class="screenshot-slides">
           <figure class="screenshot-card">
-            <img src="../assets/desktop14-win.png" alt="Cat Gatekeeper Desktop Windows timer setup window">
+            <img src="../assets/desktop10-appstore.png" alt="Cat Gatekeeper Desktop cat interruption screen">
           </figure>
           <figure class="screenshot-card">
-            <img src="../assets/desktop10-appstore.png" alt="Cat Gatekeeper Desktop cat interruption screen">
+            <img src="../assets/desktop14-win.png" alt="Cat Gatekeeper Desktop Windows timer setup window">
           </figure>
           <figure class="screenshot-card">
             <img src="../assets/desktop15-win.png" alt="Cat Gatekeeper Desktop Windows break screen with a cat">
           </figure>
         </div>
         <div class="screenshot-dots" aria-label="Choose screenshot">
-          <label for="preview-1"><span class="visually-hidden">Windows timer setup</span></label>
-          <label for="preview-2"><span class="visually-hidden">Cat interruption</span></label>
+          <label for="preview-1"><span class="visually-hidden">Cat interruption</span></label>
+          <label for="preview-2"><span class="visually-hidden">Windows timer setup</span></label>
           <label for="preview-3"><span class="visually-hidden">Windows break screen</span></label>
         </div>
       </div>
@@ -153,11 +153,10 @@
           <span class="version-choice-title">Browser Extension</span>
           <span class="version-choice-text">For cutting back on social media scrolling</span>
         </a>
-        <div class="version-choice is-disabled" aria-disabled="true">
+        <a class="version-choice" href="#top">
           <span class="version-choice-title">Desktop App</span>
           <span class="version-choice-text">For when you get too focused on work</span>
-          <span class="version-choice-note">Coming soon</span>
-        </div>
+        </a>
       </div>
     </section>
 
@@ -211,19 +210,35 @@
       <div class="faq-list">
         <details>
           <summary>Is this the same as the browser extension?</summary>
-          <p>No. The browser extension is for selected websites in your browser. The desktop app is a separate timer-style app for your computer.</p>
+          <p>No. The browser extension is for social media sites in your browser. The desktop app is a timer-style app for your computer, and it also works for tasks outside the browser.</p>
         </details>
         <details>
           <summary>Which platforms are supported?</summary>
-          <p>macOS is planned first. Windows support is under consideration.</p>
+          <p>It works on macOS and Windows.</p>
         </details>
         <details>
-          <summary>Is it free?</summary>
-          <p>The desktop app is planned as a free app.</p>
+          <summary>Can I change the timer length?</summary>
+          <p>Yes. You can change both the time before the cat appears and the break time from the app menu.</p>
         </details>
         <details>
-          <summary>Can I use it together with the browser extension?</summary>
-          <p>Yes. They are separate tools, so you can use whichever fits your workflow.</p>
+          <summary>Does it need an internet connection?</summary>
+          <p>No. The basic timer runs on your device.</p>
+        </details>
+        <details>
+          <summary>Can I dismiss the cat?</summary>
+          <p>Yes. You can dismiss it from the app menu, or by pressing the dismiss button that appears in the bottom-right corner of the screen when the cat appears.</p>
+        </details>
+        <details>
+          <summary>Are the cats real?</summary>
+          <p>They are ideal cats created one by one with the help of AI, carefully adjusted to become the ultimate lovable distraction. They are not real cats, but I’m very confident in their cuteness. Please treat them kindly as little gatekeepers for your desk.</p>
+        </details>
+        <details>
+          <summary>Can I use the assets in the app?</summary>
+          <p>You are very welcome to share screenshots or posts about Cat Gatekeeper. Please do not use or redistribute the image or video assets themselves.</p>
+        </details>
+        <details>
+          <summary>Will new cats be added?</summary>
+          <p>Yes. More cats are planned for future updates.</p>
         </details>
       </div>
     </section>
@@ -233,9 +248,9 @@
         <p class="section-kicker" id="support-title">Support</p>
       </div>
       <div class="link-grid support-grid">
-        <a href="https://github.com/zokuzoku/cat-gatekeeper/issues/new?labels=desktop-app">Report bugs and suggestions</a>
+        <a href="https://github.com/zokuzoku/cat-gatekeeper/issues/new?labels=desktop-app">Contact us</a>
+        <a href="https://github.com/zokuzoku/cat-gatekeeper/issues?q=is%3Aissue%20label%3Adesktop-app">View past reports</a>
       </div>
-      <p class="support-note"><a href="https://github.com/zokuzoku/cat-gatekeeper/issues?q=is%3Aissue%20label%3Adesktop-app">View previous reports</a></p>
     </section>
   </main>
 

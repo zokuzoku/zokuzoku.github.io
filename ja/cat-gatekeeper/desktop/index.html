@@ -19,12 +19,12 @@
   <meta name="twitter:title" content="Cat Gatekeeper Desktop">
   <meta name="twitter:description" content="作業時間が過ぎたら、猫が画面に現れて休憩を促します。">
   <meta name="twitter:image" content="https://zokuzoku.github.io/cat-gatekeeper/assets/og-cat-icon.png">
-  <link rel="icon" href="../../../cat-gatekeeper/assets/favicon-cat-16.png" sizes="16x16" type="image/png">
-  <link rel="icon" href="../../../cat-gatekeeper/assets/favicon-cat-32.png" sizes="32x32" type="image/png">
-  <link rel="icon" href="../../../cat-gatekeeper/assets/favicon-cat-48.png" sizes="48x48" type="image/png">
+  <link rel="icon" href="https://zokuzoku.github.io/cat-gatekeeper/assets/favicon-cat-48.png" sizes="48x48" type="image/png">
+  <link rel="icon" href="https://zokuzoku.github.io/cat-gatekeeper/assets/favicon-cat-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="https://zokuzoku.github.io/cat-gatekeeper/assets/favicon-cat-16.png" sizes="16x16" type="image/png">
   <link rel="shortcut icon" href="../../../cat-gatekeeper/assets/favicon-cat-32.png" type="image/png">
   <link rel="apple-touch-icon" href="../../../cat-gatekeeper/assets/apple-touch-cat.png">
-  <link rel="stylesheet" href="../../../cat-gatekeeper/site.css?v=124">
+  <link rel="stylesheet" href="../../../cat-gatekeeper/site.css?v=135">
 </head>
 <body class="desktop-page">
   <header class="site-header" aria-label="サイトヘッダー">
@@ -45,7 +45,7 @@
           <a href="/ja/cat-gatekeeper/">トップ</a>
           <a href="/ja/cat-gatekeeper/extension/">ブラウザ拡張版</a>
           <a href="/ja/cat-gatekeeper/desktop/" aria-current="page">デスクトップ版</a>
-          <span aria-disabled="true">スマホ版</span>
+          <span aria-disabled="true">スマホ版（準備中）</span>
         </div>
       </details>
       <span class="language-switch" aria-label="言語切り替え">
@@ -61,7 +61,7 @@
       <div class="desktop-hero-copy">
         <p class="eyebrow">公式デスクトップアプリ</p>
         <h1 id="desktop-title">Cat Gatekeeper</h1>
-        <p>作業時間を決めてスタート<br>時間が来たら、猫があらわれて休憩を知らせます</p>
+        <p>作業時間を決めてスタート<br>猫が画面を占領して、休憩のタイミングを知らせます</p>
         <div class="actions" aria-label="ダウンロードリンク">
           <span class="button primary disabled" aria-disabled="true">💻 macOS版 準備中</span>
           <span class="button disabled" aria-disabled="true">Windows版 準備中</span>
@@ -71,35 +71,35 @@
     </section>
 
     <nav class="page-nav" aria-label="Cat Gatekeeper Desktopページ内ナビゲーション">
-      <a href="#preview">プレビュー</a>
+      <a class="nav-optional" href="#preview">プレビュー</a>
       <a href="#notice">最新情報</a>
       <a href="#new-cats">新しい猫</a>
-      <a href="#difference">違い</a>
+      <a class="nav-optional" href="#difference">選び方</a>
       <a href="#how-it-works">使い方</a>
-      <a href="#privacy">プライバシー</a>
+      <a class="nav-optional" href="#privacy">プライバシー</a>
       <a href="#faq">Q&amp;A</a>
       <a href="#support">サポート</a>
     </nav>
 
     <section class="desktop-preview-section" id="preview" aria-label="Cat Gatekeeper Desktopのスクリーンショット">
-      <div class="screenshot-carousel" data-carousel data-start-slide="2">
-        <input type="radio" name="desktop-preview" id="preview-1">
-        <input type="radio" name="desktop-preview" id="preview-2" checked>
+      <div class="screenshot-carousel" data-carousel data-start-slide="1">
+        <input type="radio" name="desktop-preview" id="preview-1" checked>
+        <input type="radio" name="desktop-preview" id="preview-2">
         <input type="radio" name="desktop-preview" id="preview-3">
         <div class="screenshot-slides">
           <figure class="screenshot-card">
-            <img src="../../../cat-gatekeeper/assets/desktop14-win.png" alt="Cat Gatekeeper Desktop Windows版のタイマー設定ウィンドウ">
+            <img src="../../../cat-gatekeeper/assets/desktop13-appstore.png" alt="Cat Gatekeeper Desktopのタイマー設定画面">
           </figure>
           <figure class="screenshot-card">
-            <img src="../../../cat-gatekeeper/assets/desktop13-appstore.png" alt="Cat Gatekeeper Desktopのタイマー設定画面">
+            <img src="../../../cat-gatekeeper/assets/desktop14-win.png" alt="Cat Gatekeeper Desktop Windows版のタイマー設定ウィンドウ">
           </figure>
           <figure class="screenshot-card">
             <img src="../../../cat-gatekeeper/assets/desktop15-win.png" alt="猫が表示されたCat Gatekeeper Desktop Windows版の休憩画面">
           </figure>
         </div>
         <div class="screenshot-dots" aria-label="スクリーンショットを選択">
-          <label for="preview-1"><span class="visually-hidden">Windows版タイマー設定</span></label>
-          <label for="preview-2"><span class="visually-hidden">タイマー画面</span></label>
+          <label for="preview-1"><span class="visually-hidden">タイマー画面</span></label>
+          <label for="preview-2"><span class="visually-hidden">Windows版タイマー設定</span></label>
           <label for="preview-3"><span class="visually-hidden">Windows版休憩画面</span></label>
         </div>
       </div>
@@ -141,11 +141,10 @@
           <span class="version-choice-title">ブラウザ拡張版</span>
           <span class="version-choice-text">SNSの見すぎをやめたいときに</span>
         </a>
-        <div class="version-choice is-disabled" aria-disabled="true">
+        <a class="version-choice" href="#top">
           <span class="version-choice-title">デスクトップ版</span>
           <span class="version-choice-text">作業に集中しすぎるときに</span>
-          <span class="version-choice-note">準備中</span>
-        </div>
+        </a>
       </div>
     </section>
 
@@ -199,19 +198,35 @@
       <div class="faq-list">
         <details>
           <summary>ブラウザ拡張版と同じものですか？</summary>
-          <p>別のアプリです。ブラウザ拡張版はブラウザ内のWebサイト向け、デスクトップ版はPC上で使うタイマー型のアプリです。</p>
+          <p>別のアプリです。ブラウザ拡張版はブラウザ内のSNSサイト向け、デスクトップ版はPC上で使うタイマー型のアプリです。ブラウザ以外の作業にも使えます。</p>
         </details>
         <details>
           <summary>対応OSはなんですか？</summary>
-          <p>まずはmacOS版を予定しています。Windows版についても検討中です。</p>
+          <p>macOS版とWindows版で使えます。</p>
         </details>
         <details>
-          <summary>無料で使えますか？</summary>
-          <p>デスクトップ版も無料アプリとして提供予定です。</p>
+          <summary>設定時間は変えられますか？</summary>
+          <p>メニュー画面で、猫が現れるまでの時間と休憩時間を変更できます。</p>
         </details>
         <details>
-          <summary>ブラウザ拡張版と一緒に使えますか？</summary>
-          <p>はい。別々のツールなので、使い方に合わせて併用できます。</p>
+          <summary>インターネット接続は必要ですか？</summary>
+          <p>いいえ。基本的なタイマー機能は端末内で動作します。</p>
+        </details>
+        <details>
+          <summary>猫は消せますか？</summary>
+          <p>アプリのメニュー、または猫が登場した画面の右下に出る「退いてもらう」ボタンから消せます。</p>
+        </details>
+        <details>
+          <summary>この猫は実在する？</summary>
+          <p>「最高の邪魔者」になってもらうべく、AIの力を借りて一匹ずつ調整を重ねて生み出した理想の猫たちになります。実在の猫ではありませんが、可愛さには自信があります。ぜひ、デスクの門番として可愛がってあげてください。</p>
+        </details>
+        <details>
+          <summary>アプリ内の素材を使ってもいいですか？</summary>
+          <p>紹介や感想の投稿で、Cat Gatekeeperの画面を載せるのは大歓迎です。画像・動画素材そのものの利用や再配布はご遠慮ください。</p>
+        </details>
+        <details>
+          <summary>新しい猫は追加されますか？</summary>
+          <p>今後のアップデートで追加予定です。</p>
         </details>
       </div>
     </section>
@@ -221,9 +236,9 @@
         <p class="section-kicker" id="support-title">Support</p>
       </div>
       <div class="link-grid support-grid">
-        <a href="https://github.com/zokuzoku/cat-gatekeeper/issues/new?labels=desktop-app">不具合報告・改善提案はこちら</a>
+        <a href="https://github.com/zokuzoku/cat-gatekeeper/issues/new?labels=desktop-app">お問い合わせはこちら</a>
+        <a href="https://github.com/zokuzoku/cat-gatekeeper/issues?q=is%3Aissue%20label%3Adesktop-app">過去の報告を見る</a>
       </div>
-      <p class="support-note"><a href="https://github.com/zokuzoku/cat-gatekeeper/issues?q=is%3Aissue%20label%3Adesktop-app">過去の報告を見る</a></p>
     </section>
   </main>
 

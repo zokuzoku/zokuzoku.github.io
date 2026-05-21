@@ -22,12 +22,12 @@
   <meta name="twitter:title" content="Cat Gatekeeper - Official Chrome Extension">
   <meta name="twitter:description" content="A cat appears when you spend too long on social media and selected websites.">
   <meta name="twitter:image" content="https://zokuzoku.github.io/cat-gatekeeper/assets/og-cat-icon.png">
-  <link rel="icon" href="../assets/favicon-cat-16.png" sizes="16x16" type="image/png">
-  <link rel="icon" href="../assets/favicon-cat-32.png" sizes="32x32" type="image/png">
-  <link rel="icon" href="../assets/favicon-cat-48.png" sizes="48x48" type="image/png">
+  <link rel="icon" href="https://zokuzoku.github.io/cat-gatekeeper/assets/favicon-cat-48.png" sizes="48x48" type="image/png">
+  <link rel="icon" href="https://zokuzoku.github.io/cat-gatekeeper/assets/favicon-cat-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="https://zokuzoku.github.io/cat-gatekeeper/assets/favicon-cat-16.png" sizes="16x16" type="image/png">
   <link rel="shortcut icon" href="../assets/favicon-cat-32.png" type="image/png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-cat.png">
-  <link rel="stylesheet" href="../site.css?v=124">
+  <link rel="stylesheet" href="../site.css?v=135">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -50,7 +50,7 @@
     }
   </script>
 </head>
-<body>
+<body class="extension-page">
   <header class="site-header" aria-label="Site header">
     <div class="header-brand">
       <span class="brand" aria-label="ZOKUZOKU">ZOKUZOKU</span>
@@ -69,7 +69,7 @@
           <a href="/cat-gatekeeper/">Top</a>
           <a href="/cat-gatekeeper/extension/" aria-current="page">Browser Extension</a>
           <a href="/cat-gatekeeper/desktop/">Desktop App</a>
-          <span aria-disabled="true">Mobile App</span>
+          <span aria-disabled="true">Mobile App (coming soon)</span>
         </div>
       </details>
       <span class="language-switch" aria-label="Language switch">
@@ -81,31 +81,27 @@
   </header>
 
   <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <video class="hero-video" src="/assets/neko2.webm" autoplay muted loop playsinline aria-hidden="true"></video>
-      <img class="hero-image" src="../assets/neko2-mobile.apng" alt="" aria-hidden="true">
-      <div class="hero-shade" aria-hidden="true"></div>
-      <div class="hero-content">
-        <h1 id="hero-title"><span>Cat</span><span>Gatekeeper</span></h1>
+    <section class="desktop-hero extension-hero" aria-labelledby="hero-title">
+      <div class="desktop-hero-copy">
         <p class="eyebrow">Official Browser Extension</p>
-        <p class="hero-copy">Can’t stop scrolling?<br>The ultimate deterrent is here.</p>
+        <h1 id="hero-title">Cat Gatekeeper</h1>
+        <p>At the time you set, a cat appears and blocks the screen<br>For social media habits, choose a chubby cat</p>
         <div class="actions" aria-label="Primary links">
           <a class="button primary" href="https://chromewebstore.google.com/detail/cat-gatekeeper/elbikiflgfhjdjmficnigpeegjbhdidh">🐱 Chrome Store</a>
           <a class="button primary" href="https://addons.mozilla.org/firefox/addon/cat-gatekeeper-zokuzoku/">🦊 Firefox Add-ons</a>
           <a class="button secondary" href="https://ko-fi.com/zokuzoku">☕ Support me</a>
         </div>
-        <p class="desktop-coming">💻 Desktop app coming soon</p>
-        <a class="bmc-note" href="https://buymeacoffee.com/zokuzoku2026">BMC (paused)</a>
-        <a class="x-buzz" href="https://x.com/konekone2026/status/2048215520965709940" target="_blank" rel="noopener">Trending on X! 🔥</a>
       </div>
     </section>
 
     <nav class="page-nav" aria-label="Cat Gatekeeper page navigation">
-      <a href="#reactions">Voices</a>
+      <a class="nav-optional" href="#reactions">Voices</a>
+      <a class="nav-optional" href="#preview">Preview</a>
       <a href="#notice">What's New</a>
       <a href="#new-cats">New Cats</a>
+      <a class="nav-optional" href="#difference">Guide</a>
       <a href="#how-it-works">How to</a>
-      <a href="#privacy">Privacy</a>
+      <a class="nav-optional" href="#privacy">Privacy</a>
       <a href="#faq">Q&amp;A</a>
       <a href="#support">Support</a>
     </nav>
@@ -156,6 +152,30 @@
           <article class="reaction-card" aria-hidden="true">
             <p>Soooo cute.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="desktop-preview-section" id="preview" aria-label="Cat Gatekeeper preview images">
+      <div class="screenshot-carousel" data-carousel data-start-slide="1">
+        <input type="radio" name="extension-preview" id="preview-1" checked>
+        <input type="radio" name="extension-preview" id="preview-2">
+        <input type="radio" name="extension-preview" id="preview-3">
+        <div class="screenshot-slides">
+          <figure class="screenshot-card">
+            <img src="../assets/desktop10-appstore.png" alt="Cat Gatekeeper preview screen">
+          </figure>
+          <figure class="screenshot-card">
+            <img src="../assets/desktop14-win.png" alt="Cat Gatekeeper settings screen">
+          </figure>
+          <figure class="screenshot-card">
+            <img src="../assets/desktop15-win.png" alt="Cat Gatekeeper screen with a cat">
+          </figure>
+        </div>
+        <div class="screenshot-dots" aria-label="Choose preview">
+          <label for="preview-1"><span class="visually-hidden">Preview screen</span></label>
+          <label for="preview-2"><span class="visually-hidden">Settings screen</span></label>
+          <label for="preview-3"><span class="visually-hidden">Cat screen</span></label>
         </div>
       </div>
     </section>
@@ -212,6 +232,22 @@
         <article class="cat-card is-new">
           <img src="../assets/neko2-800.png" alt="New Cat Gatekeeper cat">
         </article>
+      </div>
+    </section>
+
+    <section class="section desktop-difference" id="difference" aria-labelledby="difference-title">
+      <div class="section-heading">
+        <p class="section-kicker" id="difference-title">Which one?</p>
+      </div>
+      <div class="version-grid">
+        <a class="version-choice" href="#top">
+          <span class="version-choice-title">Browser Extension</span>
+          <span class="version-choice-text">For cutting back on social media scrolling</span>
+        </a>
+        <a class="version-choice" href="/cat-gatekeeper/desktop/">
+          <span class="version-choice-title">Desktop App</span>
+          <span class="version-choice-text">For when you get too focused on work</span>
+        </a>
       </div>
     </section>
 
@@ -319,9 +355,9 @@
         <p class="section-kicker" id="support-title">Support</p>
       </div>
       <div class="link-grid support-grid">
-        <a href="https://github.com/zokuzoku/cat-gatekeeper/issues/new?labels=browser-extension">Report bugs and suggestions</a>
+        <a href="https://github.com/zokuzoku/cat-gatekeeper/issues/new?labels=browser-extension">Contact us</a>
+        <a href="https://github.com/zokuzoku/cat-gatekeeper/issues?q=is%3Aissue%20label%3Abrowser-extension">View past reports</a>
       </div>
-      <p class="support-note"><a href="https://github.com/zokuzoku/cat-gatekeeper/issues?q=is%3Aissue%20label%3Abrowser-extension">View previous reports</a></p>
     </section>
   </main>
 
@@ -330,5 +366,6 @@
     <p><a href="https://zokuzoku.github.io/privacy-policy/cat-gatekeeper/en/">Privacy Policy</a> / <a href="/ja/legal/tokushoho/" lang="ja">特定商取引法に基づく表記</a></p>
   </footer>
   <script src="../paw-trail.js?v=3"></script>
+  <script src="../desktop-carousel.js?v=1"></script>
 </body>
 </html>

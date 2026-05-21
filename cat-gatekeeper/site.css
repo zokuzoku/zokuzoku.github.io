@@ -408,7 +408,8 @@ nav a[aria-current="page"] {
 }
 
 .x-buzz {
-  display: inline-block;
+  display: block;
+  width: fit-content;
   margin-top: 6px;
   font-weight: 700;
   font-size: 0.95rem;

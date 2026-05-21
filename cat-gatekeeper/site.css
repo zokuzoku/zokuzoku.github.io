@@ -418,6 +418,15 @@ nav a[aria-current="page"] {
   opacity: 0.85;
 }
 
+.install-milestone {
+  width: fit-content;
+  margin: 16px 0 0;
+  color: #171717;
+  font-size: clamp(18px, 1.65vw, 24px);
+  font-weight: 900;
+  line-height: 1.2;
+}
+
 .desktop-coming {
   display: block;
   width: fit-content;
@@ -469,6 +478,11 @@ nav a[aria-current="page"] {
 
 .product-home-hero .support-links {
   margin-top: 16px;
+}
+
+.product-home-hero .install-milestone + .x-buzz,
+.product-home-hero .install-milestone + .x-buzz + .support-links {
+  margin-top: 8px;
 }
 
 .desktop-hero .bmc-note {

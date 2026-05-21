@@ -482,7 +482,10 @@ nav a[aria-current="page"] {
   margin-top: 16px;
 }
 
-.product-home-hero .install-milestone + .x-buzz,
+.product-home-hero .install-milestone + .x-buzz {
+  margin-top: 4px;
+}
+
 .product-home-hero .install-milestone + .x-buzz + .support-links {
   margin-top: 6px;
 }

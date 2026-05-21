@@ -519,7 +519,7 @@ nav a[aria-current="page"] {
   margin-top: clamp(18px, 2vw, 24px);
 }
 
-:lang(en) .desktop-hero .actions > .button {
+.extension-hero .actions > .button {
   width: 184px;
 }
 
@@ -2081,6 +2081,10 @@ nav a[aria-current="page"] {
 
   .desktop-hero .actions {
     align-items: stretch;
+  }
+
+  .extension-hero .actions {
+    align-items: flex-start;
   }
 
   .desktop-window {

@@ -2138,7 +2138,13 @@ nav a[aria-current="page"] {
   }
 
   .store-preview-thumbs {
-    display: none;
+    justify-content: flex-start;
+    gap: 9px;
+    margin-top: 14px;
+  }
+
+  .store-preview-thumbs label {
+    width: 82px;
   }
 
   .version-grid {

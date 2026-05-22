@@ -581,7 +581,7 @@ nav a[aria-current="page"] {
 
 .desktop-preview-section {
   padding: clamp(24px, 3vw, 40px) 0 clamp(58px, 7vw, 92px);
-  background: var(--warm-band);
+  background: var(--paper);
   overflow: hidden;
 }
 
@@ -655,7 +655,7 @@ nav a[aria-current="page"] {
   overflow: hidden;
 }
 
-.extension-page .desktop-hero {
+:is(.extension-page, .desktop-page) .desktop-hero {
   padding-bottom: clamp(34px, 4vw, 56px);
   background: var(--paper);
 }
@@ -664,6 +664,11 @@ nav a[aria-current="page"] {
   padding-top: clamp(18px, 2.4vw, 32px);
   padding-bottom: clamp(2px, 0.6vw, 10px);
   background: var(--paper);
+}
+
+.desktop-page .desktop-preview-section {
+  padding-top: clamp(18px, 2.4vw, 32px);
+  padding-bottom: 24px;
 }
 
 .store-preview-gallery {
@@ -1757,62 +1762,62 @@ nav a[aria-current="page"] {
   background: var(--paper);
 }
 
-.extension-page #notice {
+:is(.extension-page, .desktop-page) #notice {
   background: var(--warm-band);
 }
 
-.extension-page .cat-gallery {
+:is(.extension-page, .desktop-page) .cat-gallery {
   background: var(--paper);
 }
 
-.extension-page .desktop-difference {
+:is(.extension-page, .desktop-page) .desktop-difference {
   background: var(--paper);
 }
 
-.extension-page #how-it-works {
+:is(.extension-page, .desktop-page) #how-it-works {
   background: var(--warm-band);
 }
 
-.extension-page #privacy {
+:is(.extension-page, .desktop-page) #privacy {
   background: var(--paper);
 }
 
-.extension-page .faq-section {
+:is(.extension-page, .desktop-page) .faq-section {
   background: var(--warm-band);
 }
 
-.extension-page #support {
+:is(.extension-page, .desktop-page) #support {
   background: var(--paper);
 }
 
-.extension-page #notice,
-.extension-page #new-cats,
-.extension-page #how-it-works,
-.extension-page #privacy,
-.extension-page #faq,
-.extension-page #support {
+:is(.extension-page, .desktop-page) #notice,
+:is(.extension-page, .desktop-page) #new-cats,
+:is(.extension-page, .desktop-page) #how-it-works,
+:is(.extension-page, .desktop-page) #privacy,
+:is(.extension-page, .desktop-page) #faq,
+:is(.extension-page, .desktop-page) #support {
   padding-top: clamp(64px, 7vw, 88px);
   padding-bottom: clamp(64px, 7vw, 88px);
 }
 
-.extension-page .section-inner {
+:is(.extension-page, .desktop-page) .section-inner {
   display: grid;
   gap: 65px;
   width: 100%;
   margin: 0 auto;
 }
 
-.extension-page #notice .section-inner {
+:is(.extension-page, .desktop-page) #notice .section-inner {
   display: block;
 }
 
-.extension-page :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner .section-kicker,
-.extension-page :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .section-heading,
-.extension-page :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .cat-scroll,
-.extension-page :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .steps,
-.extension-page :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .privacy-points,
-.extension-page :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .faq-list,
-.extension-page :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .link-grid {
+:is(.extension-page, .desktop-page) :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner .section-kicker,
+:is(.extension-page, .desktop-page) :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .section-heading,
+:is(.extension-page, .desktop-page) :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .cat-scroll,
+:is(.extension-page, .desktop-page) :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .steps,
+:is(.extension-page, .desktop-page) :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .privacy-points,
+:is(.extension-page, .desktop-page) :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .faq-list,
+:is(.extension-page, .desktop-page) :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .link-grid {
   margin-top: 0;
   margin-bottom: 0;
 }

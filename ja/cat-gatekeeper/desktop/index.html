@@ -24,7 +24,7 @@
   <link rel="icon" href="https://zokuzoku.github.io/cat-gatekeeper/assets/favicon-cat-16.png" sizes="16x16" type="image/png">
   <link rel="shortcut icon" href="../../../cat-gatekeeper/assets/favicon-cat-32.png" type="image/png">
   <link rel="apple-touch-icon" href="../../../cat-gatekeeper/assets/apple-touch-cat.png">
-  <link rel="stylesheet" href="../../../cat-gatekeeper/site.css?v=135">
+  <link rel="stylesheet" href="../../../cat-gatekeeper/site.css?v=139">
 </head>
 <body class="desktop-page">
   <header class="site-header" aria-label="サイトヘッダー">
@@ -70,8 +70,51 @@
       </div>
     </section>
 
+    <section class="desktop-preview-section" id="preview" aria-label="Cat Gatekeeper Desktopのスクリーンショット">
+      <div class="store-preview-gallery">
+        <input type="radio" name="desktop-preview" id="preview-1" checked>
+        <input type="radio" name="desktop-preview" id="preview-2">
+        <input type="radio" name="desktop-preview" id="preview-3">
+
+        <div class="store-preview-stage">
+          <label class="store-preview-slide" for="preview-2">
+            <img src="../../../cat-gatekeeper/assets/desktop13-appstore.png" alt="Cat Gatekeeper Desktopのタイマー設定画面">
+          </label>
+          <label class="store-preview-slide" for="preview-3">
+            <img src="../../../cat-gatekeeper/assets/desktop14-win.png" alt="Cat Gatekeeper Desktop Windows版のタイマー設定ウィンドウ">
+          </label>
+          <label class="store-preview-slide" for="preview-1">
+            <img src="../../../cat-gatekeeper/assets/desktop15-win.png" alt="猫が表示されたCat Gatekeeper Desktop Windows版の休憩画面">
+          </label>
+
+          <div class="store-preview-arrows" aria-hidden="true">
+            <label class="store-preview-arrow prev prev-1" for="preview-3">‹</label>
+            <label class="store-preview-arrow next next-1" for="preview-2">›</label>
+            <label class="store-preview-arrow prev prev-2" for="preview-1">‹</label>
+            <label class="store-preview-arrow next next-2" for="preview-3">›</label>
+            <label class="store-preview-arrow prev prev-3" for="preview-2">‹</label>
+            <label class="store-preview-arrow next next-3" for="preview-1">›</label>
+          </div>
+        </div>
+
+        <div class="store-preview-thumbs" aria-label="スクリーンショットを選択">
+          <label for="preview-1">
+            <img src="../../../cat-gatekeeper/assets/desktop13-appstore.png" alt="">
+            <span class="visually-hidden">タイマー画面</span>
+          </label>
+          <label for="preview-2">
+            <img src="../../../cat-gatekeeper/assets/desktop14-win.png" alt="">
+            <span class="visually-hidden">Windows版タイマー設定</span>
+          </label>
+          <label for="preview-3">
+            <img src="../../../cat-gatekeeper/assets/desktop15-win.png" alt="">
+            <span class="visually-hidden">Windows版休憩画面</span>
+          </label>
+        </div>
+      </div>
+    </section>
+
     <nav class="page-nav" aria-label="Cat Gatekeeper Desktopページ内ナビゲーション">
-      <a class="nav-optional" href="#preview">プレビュー</a>
       <a href="#notice">最新情報</a>
       <a href="#new-cats">新しい猫</a>
       <a class="nav-optional" href="#difference" hidden>選び方</a>
@@ -81,31 +124,8 @@
       <a href="#support">サポート</a>
     </nav>
 
-    <section class="desktop-preview-section" id="preview" aria-label="Cat Gatekeeper Desktopのスクリーンショット">
-      <div class="screenshot-carousel" data-carousel data-start-slide="1">
-        <input type="radio" name="desktop-preview" id="preview-1" checked>
-        <input type="radio" name="desktop-preview" id="preview-2">
-        <input type="radio" name="desktop-preview" id="preview-3">
-        <div class="screenshot-slides">
-          <figure class="screenshot-card">
-            <img src="../../../cat-gatekeeper/assets/desktop13-appstore.png" alt="Cat Gatekeeper Desktopのタイマー設定画面">
-          </figure>
-          <figure class="screenshot-card">
-            <img src="../../../cat-gatekeeper/assets/desktop14-win.png" alt="Cat Gatekeeper Desktop Windows版のタイマー設定ウィンドウ">
-          </figure>
-          <figure class="screenshot-card">
-            <img src="../../../cat-gatekeeper/assets/desktop15-win.png" alt="猫が表示されたCat Gatekeeper Desktop Windows版の休憩画面">
-          </figure>
-        </div>
-        <div class="screenshot-dots" aria-label="スクリーンショットを選択">
-          <label for="preview-1"><span class="visually-hidden">タイマー画面</span></label>
-          <label for="preview-2"><span class="visually-hidden">Windows版タイマー設定</span></label>
-          <label for="preview-3"><span class="visually-hidden">Windows版休憩画面</span></label>
-        </div>
-      </div>
-    </section>
-
     <section class="notice" id="notice" aria-labelledby="notice-title">
+      <div class="section-inner">
       <p class="section-kicker" id="notice-title">WHAT'S NEW</p>
       <h2>2026年5月：デスクトップ版ページを公開しました！</h2>
       <p>Cat Gatekeeper Desktopの紹介ページを公開しました。</p>
@@ -118,9 +138,11 @@
           </div>
         </article>
       </details>
+      </div>
     </section>
 
     <section class="section cat-gallery" id="new-cats" aria-labelledby="cats-title">
+      <div class="section-inner">
       <div class="section-heading">
         <p class="section-kicker">New Cats</p>
         <h2 id="cats-title" class="visually-hidden">新しい猫</h2>
@@ -129,6 +151,7 @@
         <article class="cat-card">
           <img src="../../../cat-gatekeeper/assets/neko1-800.png" alt="Cat Gatekeeperの猫">
         </article>
+      </div>
       </div>
     </section>
 
@@ -149,6 +172,7 @@
     </section>
 
     <section class="section" id="how-it-works" aria-labelledby="how-title">
+      <div class="section-inner">
       <div class="section-heading">
         <p class="section-kicker" id="how-title">HOW TO</p>
       </div>
@@ -169,12 +193,15 @@
           <p>時間が来たら<br>猫が現れて休憩を知らせます。</p>
         </article>
       </div>
+      </div>
     </section>
 
     <section class="section" id="privacy" aria-labelledby="privacy-heading">
+      <div class="section-inner">
       <div class="section-heading">
         <p class="section-kicker" id="privacy-heading">PRIVACY</p>
-        <div class="privacy-points" aria-label="プライバシーの概要">
+      </div>
+      <div class="privacy-points" aria-label="プライバシーの概要">
           <div>
             <strong>広告なし</strong>
             <span>トラッキングツールは使いません</span>
@@ -192,6 +219,7 @@
     </section>
 
     <section class="section faq-section" id="faq" aria-labelledby="faq-heading">
+      <div class="section-inner">
       <div class="section-heading">
         <p class="section-kicker" id="faq-heading">Q&amp;A</p>
       </div>
@@ -229,15 +257,18 @@
           <p>今後のアップデートで追加予定です。</p>
         </details>
       </div>
+      </div>
     </section>
 
     <section class="section compact" id="support" aria-labelledby="support-title">
+      <div class="section-inner">
       <div class="section-heading">
         <p class="section-kicker" id="support-title">Support</p>
       </div>
       <div class="link-grid support-grid">
         <a href="https://github.com/zokuzoku/cat-gatekeeper/issues/new?labels=desktop-app">お問い合わせはこちら</a>
         <a href="https://github.com/zokuzoku/cat-gatekeeper/issues?q=is%3Aissue%20label%3Adesktop-app">過去の報告を見る</a>
+      </div>
       </div>
     </section>
   </main>

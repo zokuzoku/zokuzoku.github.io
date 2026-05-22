@@ -924,9 +924,9 @@ nav a[aria-current="page"] {
 
 .version-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
-  width: min(100%, 760px);
+  width: min(100%, 980px);
   margin: 32px auto 0;
 }
 
@@ -979,11 +979,20 @@ nav a[aria-current="page"] {
   line-height: 1.55;
 }
 
+:is(.extension-page, .desktop-page) .version-choice-title {
+  color: #3a332f;
+}
+
+:is(.extension-page, .desktop-page) .version-choice-text {
+  color: var(--muted);
+  font-weight: 500;
+}
+
 .version-choice-note {
-  margin-top: 8px;
+  margin-top: 10px;
   color: var(--muted);
   font-size: clamp(15px, 1.15vw, 17px);
-  font-weight: 850;
+  font-weight: 500;
 }
 
 .version-choice.is-disabled {
@@ -991,6 +1000,11 @@ nav a[aria-current="page"] {
   border-color: transparent;
   background: #f2eee8;
   cursor: default;
+}
+
+:is(.extension-page, .desktop-page) .version-choice.is-disabled {
+  border-color: rgba(25, 25, 25, 0.16);
+  background: #f2eee8;
 }
 
 .version-choice.is-disabled .version-choice-note {
@@ -1790,6 +1804,26 @@ nav a[aria-current="page"] {
   background: var(--paper);
 }
 
+.desktop-page .desktop-difference {
+  background: var(--warm-band);
+}
+
+.desktop-page #how-it-works {
+  background: var(--paper);
+}
+
+.desktop-page #privacy {
+  background: var(--warm-band);
+}
+
+.desktop-page .faq-section {
+  background: var(--paper);
+}
+
+.desktop-page #support {
+  background: var(--warm-band);
+}
+
 :is(.extension-page, .desktop-page) #notice,
 :is(.extension-page, .desktop-page) #new-cats,
 :is(.extension-page, .desktop-page) #how-it-works,
@@ -1869,8 +1903,8 @@ nav a[aria-current="page"] {
 }
 
 .support-grid a:nth-child(2) {
-  color: var(--ink);
-  background: #f2eee8;
+  color: var(--paper);
+  background: #3a332f;
 }
 
 .site-footer {
@@ -1892,6 +1926,10 @@ nav a[aria-current="page"] {
 .site-footer a {
   color: inherit;
   text-underline-offset: 3px;
+}
+
+.desktop-page .site-footer {
+  background: var(--warm-band);
 }
 
 .legal-page {

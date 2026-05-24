@@ -359,6 +359,49 @@ nav a[aria-current="page"] {
   padding-block: 8px;
 }
 
+.product-home-hero .platform-button.is-new {
+  position: relative;
+  overflow: visible;
+  padding-right: 34px;
+}
+
+.product-home-hero .button-badge {
+  position: absolute;
+  top: -8px;
+  right: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 18px;
+  padding: 1px 7px 0;
+  border-radius: 999px;
+  color: #fffaf4;
+  background: #171717;
+  box-shadow: 0 4px 10px rgba(23, 23, 23, 0.18);
+  font-size: 0.66rem;
+  font-weight: 900;
+  line-height: 1;
+  animation: desktop-badge-pop 2.8s ease-in-out infinite;
+}
+
+@keyframes desktop-badge-pop {
+  0%,
+  72%,
+  100% {
+    transform: scale(1);
+  }
+
+  80% {
+    transform: scale(1.12);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .product-home-hero .button-badge {
+    animation: none;
+  }
+}
+
 .product-home-hero .platform-icon {
   flex: 0 0 1.25em;
   text-align: center;

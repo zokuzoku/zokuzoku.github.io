@@ -2194,7 +2194,11 @@ nav a[aria-current="page"] {
   }
 
   .desktop-hero .actions {
-    align-items: stretch;
+    align-items: flex-start;
+  }
+
+  .desktop-hero .actions > .button {
+    width: fit-content;
   }
 
   .extension-hero .actions {

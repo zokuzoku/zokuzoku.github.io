@@ -513,10 +513,6 @@ nav a[aria-current="page"] {
   color: rgba(23, 23, 23, 0.78);
 }
 
-.support-links .is-paused {
-  color: rgba(23, 23, 23, 0.58);
-}
-
 .bmc-note:hover,
 .bmc-note:focus-visible {
   color: rgba(23, 23, 23, 0.78);

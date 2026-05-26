@@ -1827,24 +1827,28 @@ nav a[aria-current="page"] {
   background: var(--paper);
 }
 
-:is(.extension-page, .desktop-page) .desktop-difference {
-  background: var(--paper);
-}
-
-:is(.extension-page, .desktop-page) #how-it-works {
+.extension-page .desktop-difference {
   background: var(--warm-band);
 }
 
-:is(.extension-page, .desktop-page) #privacy {
+.extension-page .desktop-difference .version-choice[href] {
   background: var(--paper);
 }
 
-:is(.extension-page, .desktop-page) .faq-section {
+.extension-page #how-it-works {
+  background: var(--paper);
+}
+
+.extension-page #privacy {
   background: var(--warm-band);
 }
 
-:is(.extension-page, .desktop-page) #support {
+.extension-page .faq-section {
   background: var(--paper);
+}
+
+.extension-page #support {
+  background: var(--warm-band);
 }
 
 .desktop-page .desktop-difference {
@@ -1971,6 +1975,7 @@ nav a[aria-current="page"] {
   text-underline-offset: 3px;
 }
 
+.extension-page .site-footer,
 .desktop-page .site-footer {
   background: var(--warm-band);
 }

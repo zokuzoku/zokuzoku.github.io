@@ -2291,6 +2291,10 @@ nav a[aria-current="page"] {
     width: 82px;
   }
 
+  .howto-video {
+    display: none;
+  }
+
   .version-grid {
     grid-template-columns: 1fr;
   }

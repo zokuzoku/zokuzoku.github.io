@@ -1827,12 +1827,12 @@ nav a[aria-current="page"] {
   background: var(--paper);
 }
 
-.extension-page .desktop-difference {
-  background: var(--warm-band);
+.desktop-difference .version-choice[href] {
+  background: #fff7ef;
 }
 
-.extension-page .desktop-difference .version-choice[href] {
-  background: var(--paper);
+.extension-page .desktop-difference {
+  background: var(--warm-band);
 }
 
 .extension-page #how-it-works {

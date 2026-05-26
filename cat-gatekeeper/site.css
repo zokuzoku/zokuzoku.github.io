@@ -993,7 +993,7 @@ nav a[aria-current="page"] {
   min-height: 156px;
   padding: 24px;
   border-radius: 8px;
-  border: 2px solid rgba(255, 102, 51, 0.28);
+  border: 2px solid rgba(255, 102, 51, 0.42);
   background: var(--warm-band);
   color: var(--ink);
   text-align: center;
@@ -1311,7 +1311,7 @@ nav a[aria-current="page"] {
   max-width: 680px;
   margin: clamp(16px, 1.8vw, 24px) auto 0;
   padding: 14px 16px;
-  border: 1px solid rgba(255, 92, 54, 0.24);
+  border: 1px solid rgba(255, 102, 51, 0.42);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.5);
   color: var(--muted);
@@ -1744,6 +1744,26 @@ nav a[aria-current="page"] {
 
 #how-it-works .steps {
   margin-top: 34px;
+}
+
+.howto-video {
+  width: min(100%, 920px);
+  margin: 0 auto;
+  overflow: hidden;
+  border: 2px solid rgba(255, 102, 51, 0.42);
+  border-radius: 8px;
+  box-shadow: 0 18px 48px rgba(25, 25, 25, 0.1);
+}
+
+.howto-video video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 0;
+  background: #171717;
+  object-fit: cover;
+  transform: scale(1.01);
 }
 
 .section-heading a {

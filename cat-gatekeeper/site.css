@@ -445,6 +445,20 @@ nav a[aria-current="page"] {
   cursor: not-allowed;
 }
 
+.official-warning {
+  width: fit-content;
+  max-width: min(100%, 560px);
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: clamp(11px, 0.82vw, 13px);
+  line-height: 1.5;
+  text-align: left;
+}
+
+.official-warning p {
+  margin: 0;
+}
+
 .button.secondary:hover,
 .button.secondary:focus-visible {
   background: var(--coffee-hover);

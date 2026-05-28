@@ -450,7 +450,7 @@ nav a[aria-current="page"] {
   max-width: min(100%, 560px);
   margin-top: 10px;
   color: var(--muted);
-  font-size: clamp(11px, 0.82vw, 13px);
+  font-size: clamp(12px, 0.9vw, 14px);
   line-height: 1.5;
   text-align: left;
 }
@@ -475,6 +475,10 @@ nav a[aria-current="page"] {
   text-decoration: underline;
   text-underline-offset: 3px;
   opacity: 0.85;
+}
+
+.official-warning + .install-milestone {
+  margin-top: 10px;
 }
 
 .install-milestone {

@@ -1956,6 +1956,11 @@ nav a[aria-current="page"] {
   width: min(100%, 720px);
 }
 
+.support-grid.single-link {
+  grid-template-columns: minmax(0, 1fr);
+  width: min(100%, 360px);
+}
+
 .link-grid a {
   display: flex;
   align-items: center;

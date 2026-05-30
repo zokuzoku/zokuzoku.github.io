@@ -1325,6 +1325,31 @@ nav a[aria-current="page"] {
   margin-top: 4px;
 }
 
+#notice .notice-main strong {
+  color: var(--ink);
+}
+
+#notice .notice-followup {
+  max-width: 680px;
+  margin: clamp(14px, 1.6vw, 22px) auto 0;
+  color: var(--muted);
+  font-size: clamp(13px, 1vw, 15px);
+  line-height: 1.58;
+  text-align: left;
+}
+
+#notice .notice-followup p {
+  margin: 0;
+}
+
+#notice .notice-followup p + p {
+  margin-top: 4px;
+}
+
+#notice .notice-followup strong {
+  color: var(--ink);
+}
+
 #notice .notice-alert {
   max-width: 680px;
   margin: clamp(16px, 1.8vw, 24px) auto 0;

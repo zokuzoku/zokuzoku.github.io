@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <title>X Timeline Test - Cat Gatekeeper</title>
+  <title>X Post Embed Test - Cat Gatekeeper</title>
   <link rel="icon" href="../../assets/favicon-cat-32.png" sizes="32x32" type="image/png">
   <style>
     :root {
@@ -76,8 +76,8 @@
       text-decoration: none;
     }
 
-    .timeline-shell {
-      min-height: 600px;
+    .post-shell {
+      min-height: 420px;
       padding: 12px;
       border: 1px solid rgba(25, 25, 25, 0.1);
       border-radius: 8px;
@@ -93,8 +93,12 @@
       text-align: center;
     }
 
-    .timeline-shell iframe {
+    .post-shell iframe {
       border-radius: 8px;
+    }
+
+    .post-shell .twitter-tweet {
+      margin: 0 auto;
     }
 
     @media (max-width: 780px) {
@@ -107,8 +111,8 @@
         font-size: clamp(38px, 11vw, 52px);
       }
 
-      .timeline-shell {
-        min-height: 560px;
+      .post-shell {
+        min-height: 420px;
       }
     }
   </style>
@@ -117,21 +121,23 @@
   <main>
     <section aria-labelledby="test-title">
       <p class="kicker">X Embed Test</p>
-      <h1 id="test-title">Timeline preview</h1>
-      <p>This page is only for checking whether the official X timeline embed works outside the normal site layout.</p>
-      <a class="button" href="https://x.com/konekone2026" target="_blank" rel="noopener">Open @konekone2026</a>
+      <h1 id="test-title">Post preview</h1>
+      <p>This page is only for checking whether a single official X post embed works outside the normal site layout.</p>
+      <a class="button" href="https://x.com/konekone2026/status/2048215520965709940" target="_blank" rel="noopener">Open this post</a>
     </section>
 
-    <section class="timeline-shell" aria-label="Latest posts from @konekone2026 on X">
+    <section class="post-shell" aria-label="Embedded X post from @konekone2026">
       <p class="status" id="x-status">Loading X widget script...</p>
-      <a class="twitter-timeline" data-height="560" data-theme="light" data-dnt="true" href="https://twitter.com/konekone2026?ref_src=twsrc%5Etfw">Posts by @konekone2026</a>
+      <blockquote class="twitter-tweet" data-dnt="true" data-theme="light">
+        <a href="https://x.com/konekone2026/status/2048215520965709940?ref_src=twsrc%5Etfw">Post by @konekone2026</a>
+      </blockquote>
     </section>
   </main>
 
   <script>
     window.__xWidgetLoaded = function () {
       var status = document.getElementById("x-status");
-      if (status) status.textContent = "X widget script loaded. Rendering timeline...";
+      if (status) status.textContent = "X widget script loaded. Rendering post...";
       if (window.twttr && window.twttr.widgets) {
         window.twttr.widgets.load().then(function () {
           if (status) status.textContent = "Render request completed.";

@@ -600,6 +600,10 @@ nav a[aria-current="page"] {
   margin-top: clamp(18px, 2vw, 24px);
 }
 
+.desktop-hero .actions > .button.primary {
+  width: 160px;
+}
+
 .extension-hero .actions > .button {
   width: 184px;
 }

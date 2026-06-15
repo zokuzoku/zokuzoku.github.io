@@ -4,8 +4,8 @@
   "releasedAt": "2026-06-15T00:00:00+09:00",
   "updateNoticeAfter": "2026-06-22T00:00:00+09:00",
   "storeUrls": {
-    "mac": "",
-    "windows": ""
+    "mac": "https://apps.apple.com/us/app/cat-gatekeeper/id6767100971?mt=12",
+    "windows": "https://apps.microsoft.com/detail/9pfl2gmh6cz8"
   },
   "featureNotice": {
     "enabled": false,

@@ -1394,7 +1394,7 @@ nav a[aria-current="page"] {
 }
 
 #notice .notice-alert-label {
-  color: var(--accent);
+  color: var(--orange);
   font-size: clamp(12px, 0.9vw, 13px);
   font-weight: 800;
   letter-spacing: 0.04em;
@@ -2419,4 +2419,85 @@ nav a[aria-current="page"] {
 
 html[lang="en"] #notice .notice-notes {
   font-size: clamp(14px, 1.05vw, 16px);
+}
+
+
+/* Community cat guidelines page. */
+.guidelines-page main > .section {
+  padding-top: clamp(36px, 5vw, 58px);
+}
+
+.guidelines-page .section-inner {
+  display: block;
+  max-width: 900px;
+}
+
+.guidelines-page #guidelines-title {
+  margin: 0 0 22px;
+  max-width: 900px;
+  font-size: clamp(22px, 2.55vw, 30px);
+  line-height: 1.18;
+  text-align: center;
+}
+
+.guidelines-page .guidelines-event-date {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--orange);
+  font-size: clamp(20px, 2.2vw, 25px);
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.guidelines-page .section-inner > .guidelines-section:first-of-type {
+  padding-top: 72px;
+}
+
+.guidelines-page .guidelines-section {
+  display: block;
+  margin: 0 0 16px;
+}
+
+.guidelines-page .guidelines-section:last-child {
+  margin-bottom: 0;
+}
+
+.guidelines-page .guidelines-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 16px;
+  color: var(--ink);
+  font-size: clamp(15px, 1.45vw, 18px);
+  line-height: 1.28;
+}
+
+.guidelines-page .guidelines-section h2::before {
+  content: "";
+  width: 4px;
+  height: 1.05em;
+  border-radius: 999px;
+  background: var(--orange);
+  flex: 0 0 auto;
+}
+
+.guidelines-page .guidelines-section p,
+.guidelines-page .guidelines-section ul {
+  margin: 0;
+}
+
+.guidelines-page .guidelines-section p,
+.guidelines-page .guidelines-section li {
+  font-size: clamp(15px, 1.25vw, 17px);
+  line-height: 1.8;
+}
+
+.guidelines-page .guidelines-section ul {
+  padding-left: 1.35em;
 }

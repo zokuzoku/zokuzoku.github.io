@@ -2501,3 +2501,26 @@ html[lang="en"] #notice .notice-notes {
 .guidelines-page .guidelines-section ul {
   padding-left: 1.35em;
 }
+
+.guidelines-page .guidelines-photo-examples {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.guidelines-page .guidelines-photo-examples img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgba(26, 22, 18, 0.12);
+  box-shadow: 0 12px 28px rgba(26, 22, 18, 0.1);
+}
+
+@media (max-width: 640px) {
+  .guidelines-page .guidelines-photo-examples {
+    grid-template-columns: 1fr;
+  }
+}

@@ -601,8 +601,18 @@ nav a[aria-current="page"] {
   margin-top: clamp(18px, 2vw, 24px);
 }
 
+.desktop-hero .actions > .button {
+  min-height: 52px;
+  padding: 0 24px;
+  font-size: 17px;
+}
+
 .desktop-hero .actions > .button.primary {
-  width: 176px;
+  width: 208px;
+}
+
+.desktop-page .desktop-hero .actions > .button.secondary {
+  width: 208px;
 }
 
 .desktop-download-milestone {
@@ -623,7 +633,11 @@ nav a[aria-current="page"] {
 }
 
 .extension-hero .actions > .button {
-  width: 184px;
+  width: 208px;
+}
+
+.extension-hero .actions > .button.primary {
+  width: 208px;
 }
 
 .desktop-hero .desktop-platform-button {
@@ -1066,7 +1080,7 @@ nav a[aria-current="page"] {
 .version-choice-text {
   max-width: 320px;
   margin-top: 10px;
-  color: var(--muted);
+  color: var(--ink);
   font-size: 17px;
   font-weight: 650;
   line-height: 1.55;
@@ -1077,13 +1091,13 @@ nav a[aria-current="page"] {
 }
 
 :is(.extension-page, .desktop-page) .version-choice-text {
-  color: var(--muted);
+  color: var(--ink);
   font-weight: 500;
 }
 
 .version-choice-note {
   margin-top: 10px;
-  color: var(--muted);
+  color: var(--ink);
   font-size: 17px;
   font-weight: 500;
 }
@@ -1415,7 +1429,7 @@ nav a[aria-current="page"] {
 #notice .notice-notes {
   max-width: 680px;
   margin: clamp(20px, 2.2vw, 32px) auto 0;
-  color: var(--muted);
+  color: var(--ink);
   font-size: 17px;
   line-height: 1.58;
   text-align: left;
@@ -1428,7 +1442,7 @@ nav a[aria-current="page"] {
 #notice .notice-item {
   max-width: 680px;
   margin: 28px auto 0;
-  color: var(--muted);
+  color: var(--ink);
   text-align: left;
 }
 
@@ -2030,7 +2044,7 @@ nav a[aria-current="page"] {
 
 .custom-cat-feature-card p {
   margin: 8px 0 0;
-  color: var(--muted);
+  color: var(--ink);
   font-size: 17px;
   line-height: 1.6;
 }

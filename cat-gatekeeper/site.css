@@ -1058,8 +1058,8 @@ nav a[aria-current="page"] {
 }
 
 .version-choice-title {
-  font-size: clamp(22px, 2vw, 30px);
-  font-weight: 900;
+  font-size: clamp(20px, 1.75vw, 26px);
+  font-weight: 800;
   line-height: 1.2;
 }
 
@@ -1067,13 +1067,13 @@ nav a[aria-current="page"] {
   max-width: 320px;
   margin-top: 10px;
   color: var(--muted);
-  font-size: clamp(15px, 1.25vw, 17px);
+  font-size: 17px;
   font-weight: 650;
   line-height: 1.55;
 }
 
 :is(.extension-page, .desktop-page) .version-choice-title {
-  color: #3a332f;
+  color: var(--ink);
 }
 
 :is(.extension-page, .desktop-page) .version-choice-text {
@@ -1084,7 +1084,7 @@ nav a[aria-current="page"] {
 .version-choice-note {
   margin-top: 10px;
   color: var(--muted);
-  font-size: clamp(15px, 1.15vw, 17px);
+  font-size: 17px;
   font-weight: 500;
 }
 
@@ -1416,7 +1416,7 @@ nav a[aria-current="page"] {
   max-width: 680px;
   margin: clamp(20px, 2.2vw, 32px) auto 0;
   color: var(--muted);
-  font-size: clamp(13px, 1vw, 15px);
+  font-size: 17px;
   line-height: 1.58;
   text-align: left;
 }
@@ -1715,7 +1715,7 @@ nav a[aria-current="page"] {
   border-radius: 8px;
   color: var(--ink);
   background: #f2eee8;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 750;
   text-decoration: none;
 }
@@ -1827,8 +1827,9 @@ nav a[aria-current="page"] {
 
 .section-body {
   margin: clamp(12px, 1.4vw, 20px) 0 0;
-  color: var(--muted);
-  font-size: clamp(16px, 1.4vw, 19px);
+  color: var(--ink);
+  font-size: clamp(18px, 1.55vw, 22px);
+  font-weight: 500;
   line-height: 1.6;
 }
 
@@ -2030,7 +2031,7 @@ nav a[aria-current="page"] {
 .custom-cat-feature-card p {
   margin: 8px 0 0;
   color: var(--muted);
-  font-size: clamp(13px, 1vw, 15px);
+  font-size: 17px;
   line-height: 1.6;
 }
 
@@ -2482,10 +2483,6 @@ nav a[aria-current="page"] {
     gap: 8px;
     padding: 18px 0;
   }
-}
-
-html[lang="en"] #notice .notice-notes {
-  font-size: clamp(14px, 1.05vw, 16px);
 }
 
 

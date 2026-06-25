@@ -3,7 +3,7 @@
 :root {
   color-scheme: light;
   --ink: #191919;
-  --muted: #3f3833;
+  --muted: #191919;
   --line: #ded8d2;
   --paper: #fffaf4;
   --warm-band: #fff1e8;
@@ -1080,7 +1080,7 @@ nav a[aria-current="page"] {
 .version-choice-text {
   max-width: 320px;
   margin-top: 10px;
-  color: var(--ink);
+  color: var(--muted);
   font-size: 17px;
   font-weight: 650;
   line-height: 1.55;
@@ -1091,13 +1091,13 @@ nav a[aria-current="page"] {
 }
 
 :is(.extension-page, .desktop-page) .version-choice-text {
-  color: var(--ink);
+  color: var(--muted);
   font-weight: 500;
 }
 
 .version-choice-note {
   margin-top: 10px;
-  color: var(--ink);
+  color: var(--muted);
   font-size: 17px;
   font-weight: 500;
 }
@@ -1429,7 +1429,7 @@ nav a[aria-current="page"] {
 #notice .notice-notes {
   max-width: 680px;
   margin: clamp(20px, 2.2vw, 32px) auto 0;
-  color: var(--ink);
+  color: var(--muted);
   font-size: 17px;
   line-height: 1.58;
   text-align: left;
@@ -1442,7 +1442,7 @@ nav a[aria-current="page"] {
 #notice .notice-item {
   max-width: 680px;
   margin: 28px auto 0;
-  color: var(--ink);
+  color: var(--muted);
   text-align: left;
 }
 
@@ -1555,7 +1555,7 @@ nav a[aria-current="page"] {
   font-size: 17px;
   font-weight: 400;
   line-height: 1.6;
-  color: rgba(255, 253, 248, 0.82);
+  color: #fffdf8;
 }
 
 #notice,
@@ -1829,7 +1829,7 @@ nav a[aria-current="page"] {
 }
 
 .steps p {
-  color: rgba(255, 253, 248, 0.82);
+  color: #fffdf8;
 }
 
 .steps small {
@@ -2044,7 +2044,7 @@ nav a[aria-current="page"] {
 
 .custom-cat-feature-card p {
   margin: 8px 0 0;
-  color: var(--ink);
+  color: var(--muted);
   font-size: 17px;
   line-height: 1.6;
 }

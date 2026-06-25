@@ -573,7 +573,7 @@ nav a[aria-current="page"] {
 }
 
 .desktop-hero-copy {
-  width: min(100%, 980px);
+  width: min(100%, 1080px);
   margin: 0 auto;
   text-align: center;
 }
@@ -945,7 +945,7 @@ nav a[aria-current="page"] {
 
 .desktop-controls {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
   margin-top: 34px;
 }
@@ -1009,7 +1009,7 @@ nav a[aria-current="page"] {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
-  width: min(100%, 980px);
+  width: min(100%, 1080px);
   margin: 32px auto 0;
 }
 
@@ -1281,6 +1281,7 @@ nav a[aria-current="page"] {
 }
 
 #notice .section-kicker,
+#custom-cat-feature .section-kicker,
 #difference .section-kicker,
 #how-it-works .section-kicker,
 #privacy .section-kicker,
@@ -1500,7 +1501,7 @@ nav a[aria-current="page"] {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
-  width: min(100%, 1140px);
+  width: min(100%, 1080px);
   margin: 34px auto 0;
 }
 
@@ -1535,13 +1536,15 @@ nav a[aria-current="page"] {
 
 #notice,
 #reactions,
+#custom-cat-feature,
 #new-cats,
+#difference,
 #preview,
 #how-it-works,
 #privacy,
 #faq,
 #support {
-  scroll-margin-top: 124px;
+  scroll-margin-top: 88px;
 }
 
 .reactions-section {
@@ -1737,7 +1740,7 @@ nav a[aria-current="page"] {
 }
 
 .desktop-difference .section-heading {
-  width: min(100%, 980px);
+  width: min(100%, 1080px);
   text-align: center;
 }
 
@@ -1758,7 +1761,7 @@ nav a[aria-current="page"] {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
-  width: min(100%, 1140px);
+  width: min(100%, 1080px);
   margin-top: 34px;
   margin-left: auto;
   margin-right: auto;
@@ -1956,28 +1959,75 @@ nav a[aria-current="page"] {
   background: var(--warm-band);
 }
 
-.desktop-page .desktop-difference {
+.desktop-page .custom-cat-feature {
+  background: var(--paper);
+}
+
+.desktop-page #new-cats {
   background: var(--warm-band);
+}
+
+.desktop-page .desktop-difference {
+  background: var(--paper);
 }
 
 .desktop-page #how-it-works {
-  background: var(--paper);
+  background: var(--warm-band);
 }
 
 .desktop-page #privacy {
-  background: var(--warm-band);
-}
-
-.desktop-page .faq-section {
   background: var(--paper);
 }
 
-.desktop-page #support {
+.desktop-page .faq-section {
   background: var(--warm-band);
 }
 
+.desktop-page #support {
+  background: var(--paper);
+}
+
+.custom-cat-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  width: min(100%, 1080px);
+  margin: 0 auto;
+}
+
+.custom-cat-feature-card {
+  min-width: 0;
+}
+
+.custom-cat-feature-card img,
+.custom-cat-feature-card video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid rgba(26, 22, 18, 0.12);
+  box-shadow: 0 14px 30px rgba(26, 22, 18, 0.12);
+}
+
+.custom-cat-feature-card h3 {
+  margin: 16px 0 0;
+  color: var(--ink);
+  font-size: clamp(17px, 1.35vw, 20px);
+  line-height: 1.3;
+}
+
+.custom-cat-feature-card p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: clamp(13px, 1vw, 15px);
+  line-height: 1.6;
+}
+
 :is(.extension-page, .desktop-page) #notice,
+:is(.extension-page, .desktop-page) #custom-cat-feature,
 :is(.extension-page, .desktop-page) #new-cats,
+:is(.extension-page, .desktop-page) #difference,
 :is(.extension-page, .desktop-page) #how-it-works,
 :is(.extension-page, .desktop-page) #privacy,
 :is(.extension-page, .desktop-page) #faq,
@@ -1997,13 +2047,13 @@ nav a[aria-current="page"] {
   display: block;
 }
 
-:is(.extension-page, .desktop-page) :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner .section-kicker,
-:is(.extension-page, .desktop-page) :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .section-heading,
-:is(.extension-page, .desktop-page) :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .cat-scroll,
-:is(.extension-page, .desktop-page) :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .steps,
-:is(.extension-page, .desktop-page) :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .privacy-points,
-:is(.extension-page, .desktop-page) :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .faq-list,
-:is(.extension-page, .desktop-page) :is(#new-cats, #how-it-works, #privacy, #faq, #support) .section-inner > .link-grid {
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner .section-kicker,
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .section-heading,
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .cat-scroll,
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .steps,
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .privacy-points,
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .faq-list,
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .link-grid {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -2085,9 +2135,12 @@ nav a[aria-current="page"] {
   text-underline-offset: 3px;
 }
 
-.extension-page .site-footer,
-.desktop-page .site-footer {
+.extension-page .site-footer {
   background: var(--warm-band);
+}
+
+.desktop-page .site-footer {
+  background: var(--paper);
 }
 
 .legal-page {
@@ -2387,6 +2440,10 @@ nav a[aria-current="page"] {
   }
 
   .version-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .custom-cat-feature-grid {
     grid-template-columns: 1fr;
   }
 

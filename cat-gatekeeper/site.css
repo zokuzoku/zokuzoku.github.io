@@ -15,6 +15,8 @@
   --teal: #007f73;
   --leaf: #7db343;
   --soft-line: rgba(25, 25, 25, 0.08);
+  --section-heading-gap: 34px;
+  --section-inner-gap: 65px;
 }
 
 * {
@@ -1034,7 +1036,7 @@ nav a[aria-current="page"] {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
   width: min(100%, 1080px);
-  margin: 32px auto 0;
+  margin: 0 auto;
 }
 
 .desktop-difference {
@@ -1175,7 +1177,7 @@ nav a[aria-current="page"] {
 .cat-gallery .section-kicker {
   font-size: clamp(24px, 3.4vw, 48px);
   letter-spacing: 0.06em;
-  margin-bottom: 34px;
+  margin-bottom: var(--section-heading-gap);
 }
 
 .coming-soon h2 {
@@ -1249,10 +1251,6 @@ nav a[aria-current="page"] {
   object-fit: cover;
 }
 
-#notice .section-kicker {
-  margin-bottom: clamp(10px, 1.4vw, 18px);
-}
-
 .section-kicker {
   display: inline-flex;
   align-items: center;
@@ -1306,14 +1304,23 @@ nav a[aria-current="page"] {
 
 #notice .section-kicker,
 #custom-cat-feature .section-kicker,
+#community-cats .section-kicker,
 #difference .section-kicker,
 #how-it-works .section-kicker,
 #privacy .section-kicker,
 #faq .section-kicker,
 #support .section-kicker {
+  display: flex;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
   font-size: clamp(24px, 3.4vw, 48px);
   letter-spacing: 0.06em;
-  margin-bottom: clamp(20px, 2.2vw, 30px);
+}
+
+#notice .section-kicker {
+  margin-bottom: var(--section-inner-gap);
 }
 
 #notice h2,
@@ -1561,6 +1568,7 @@ nav a[aria-current="page"] {
 #notice,
 #reactions,
 #custom-cat-feature,
+#community-cats,
 #new-cats,
 #difference,
 #preview,
@@ -1753,7 +1761,32 @@ nav a[aria-current="page"] {
   max-width: 1280px;
 }
 
+#community-cats .section-heading,
+#custom-cat-feature .section-heading {
+  gap: var(--section-inner-gap);
+}
+
+#community-cats .section-inner {
+  gap: 28px;
+}
+
+#community-cats .section-action {
+  margin-top: 0;
+}
+
+#community-cats .section-action a {
+  display: inline-block;
+  color: #5f8f38;
+  font-size: clamp(20px, 2vw, 26px);
+  font-weight: 850;
+  text-underline-offset: 3px;
+}
+
 .section .section-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--section-heading-gap);
   margin: 0 auto;
   text-align: center;
 }
@@ -1764,7 +1797,6 @@ nav a[aria-current="page"] {
 }
 
 .desktop-difference .section-heading {
-  width: min(100%, 1080px);
   text-align: center;
 }
 
@@ -1845,6 +1877,15 @@ nav a[aria-current="page"] {
   font-size: clamp(18px, 1.55vw, 22px);
   font-weight: 500;
   line-height: 1.6;
+}
+
+:is(.extension-page, .desktop-page) .section-heading .section-body {
+  margin-top: 0;
+}
+
+#community-cats .section-body {
+  font-size: clamp(28px, 3.2vw, 40px);
+  font-weight: 800;
 }
 
 .section-note {
@@ -1988,28 +2029,32 @@ nav a[aria-current="page"] {
   background: var(--paper);
 }
 
-.desktop-page #new-cats {
+.desktop-page .community-cats {
   background: var(--warm-band);
+}
+
+.desktop-page #new-cats {
+  background: var(--paper);
 }
 
 .desktop-page .desktop-difference {
-  background: var(--paper);
+  background: var(--warm-band);
 }
 
 .desktop-page #how-it-works {
-  background: var(--warm-band);
+  background: var(--paper);
 }
 
 .desktop-page #privacy {
-  background: var(--paper);
-}
-
-.desktop-page .faq-section {
   background: var(--warm-band);
 }
 
-.desktop-page #support {
+.desktop-page .faq-section {
   background: var(--paper);
+}
+
+.desktop-page #support {
+  background: var(--warm-band);
 }
 
 .custom-cat-feature-grid {
@@ -2049,8 +2094,10 @@ nav a[aria-current="page"] {
   line-height: 1.6;
 }
 
+
 :is(.extension-page, .desktop-page) #notice,
 :is(.extension-page, .desktop-page) #custom-cat-feature,
+.desktop-page #community-cats,
 :is(.extension-page, .desktop-page) #new-cats,
 :is(.extension-page, .desktop-page) #difference,
 :is(.extension-page, .desktop-page) #how-it-works,
@@ -2063,7 +2110,7 @@ nav a[aria-current="page"] {
 
 :is(.extension-page, .desktop-page) .section-inner {
   display: grid;
-  gap: 65px;
+  gap: var(--section-inner-gap);
   width: 100%;
   margin: 0 auto;
 }
@@ -2072,13 +2119,15 @@ nav a[aria-current="page"] {
   display: block;
 }
 
-:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner .section-kicker,
-:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .section-heading,
-:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .cat-scroll,
-:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .steps,
-:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .privacy-points,
-:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .faq-list,
-:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .link-grid {
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner .section-kicker,
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .section-heading,
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .custom-cat-feature-grid,
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .cat-scroll,
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .version-grid,
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .steps,
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .privacy-points,
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .faq-list,
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .link-grid {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -2165,7 +2214,7 @@ nav a[aria-current="page"] {
 }
 
 .desktop-page .site-footer {
-  background: var(--paper);
+  background: var(--warm-band);
 }
 
 .legal-page {

@@ -600,7 +600,7 @@ nav a[aria-current="page"] {
 .desktop-hero .actions {
   gap: 14px;
   justify-content: center;
-  margin-top: clamp(18px, 2vw, 24px);
+  margin-top: clamp(28px, 3vw, 36px);
 }
 
 .desktop-hero .actions > .button {

@@ -2562,7 +2562,8 @@ nav a[aria-current="page"] {
 .guidelines-page #guidelines-title {
   margin: 0 0 22px;
   max-width: 900px;
-  font-size: clamp(22px, 2.55vw, 30px);
+  color: var(--orange);
+  font-size: clamp(26px, 3vw, 36px);
   line-height: 1.18;
   text-align: center;
 }
@@ -2583,7 +2584,7 @@ nav a[aria-current="page"] {
 }
 
 .guidelines-page .section-inner > .guidelines-section:first-of-type {
-  padding-top: 72px;
+  padding-top: 44px;
 }
 
 .guidelines-page .guidelines-section {
@@ -2603,6 +2604,15 @@ nav a[aria-current="page"] {
   color: var(--ink);
   font-size: clamp(15px, 1.45vw, 18px);
   line-height: 1.28;
+}
+
+/* Latin headings read smaller than kanji at the same size. */
+html[lang="en"] .guidelines-page .guidelines-section h2 {
+  font-size: clamp(16px, 1.6vw, 20px);
+}
+
+.guidelines-page .guidelines-hashtag {
+  color: #1d4ed8;
 }
 
 .guidelines-page .guidelines-section h2::before {

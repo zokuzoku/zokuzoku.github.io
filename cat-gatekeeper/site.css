@@ -2186,7 +2186,7 @@ nav a[aria-current="page"] {
 
 .support-grid a:nth-child(2) {
   color: var(--paper);
-  background: #3a332f;
+  background: #9f3f28;
 }
 
 .site-footer {
@@ -2632,7 +2632,8 @@ html[lang="en"] .guidelines-page .guidelines-section h2 {
   min-height: 64px;
   padding: 0 52px;
   margin-top: 0;
-  color: #171717;
+  color: #fff;
+  background: #171717;
   font-size: 20px;
   font-weight: 760;
 }
@@ -2640,6 +2641,7 @@ html[lang="en"] .guidelines-page .guidelines-section h2 {
 #follow .follow-x-button img {
   width: 22px;
   height: 22px;
+  filter: invert(1);
 }
 
 .follow-x-button img {

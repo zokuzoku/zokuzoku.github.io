@@ -1309,7 +1309,8 @@ nav a[aria-current="page"] {
 #how-it-works .section-kicker,
 #privacy .section-kicker,
 #faq .section-kicker,
-#support .section-kicker {
+#support .section-kicker,
+#follow .section-kicker {
   display: flex;
   width: fit-content;
   margin-left: auto;
@@ -2119,15 +2120,15 @@ nav a[aria-current="page"] {
   display: block;
 }
 
-:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner .section-kicker,
-:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .section-heading,
-:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .custom-cat-feature-grid,
-:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .cat-scroll,
-:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .version-grid,
-:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .steps,
-:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .privacy-points,
-:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .faq-list,
-:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support) .section-inner > .link-grid {
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support, #follow) .section-inner .section-kicker,
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support, #follow) .section-inner > .section-heading,
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support, #follow) .section-inner > .custom-cat-feature-grid,
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support, #follow) .section-inner > .cat-scroll,
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support, #follow) .section-inner > .version-grid,
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support, #follow) .section-inner > .steps,
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support, #follow) .section-inner > .privacy-points,
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support, #follow) .section-inner > .faq-list,
+:is(.extension-page, .desktop-page) :is(#custom-cat-feature, #community-cats, #new-cats, #difference, #how-it-works, #privacy, #faq, #support, #follow) .section-inner > .link-grid {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -2210,11 +2211,11 @@ nav a[aria-current="page"] {
 }
 
 .extension-page .site-footer {
-  background: var(--warm-band);
+  background: var(--paper);
 }
 
 .desktop-page .site-footer {
-  background: var(--warm-band);
+  background: var(--paper);
 }
 
 .legal-page {
@@ -2613,6 +2614,37 @@ html[lang="en"] .guidelines-page .guidelines-section h2 {
 
 .guidelines-page .guidelines-hashtag {
   color: #1d4ed8;
+}
+
+#follow .section-heading {
+  gap: var(--section-inner-gap);
+}
+
+#follow .follow-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+#follow .follow-x-button {
+  display: inline-flex;
+  min-height: 64px;
+  padding: 0 52px;
+  margin-top: 0;
+  color: #171717;
+  font-size: 20px;
+  font-weight: 760;
+}
+
+#follow .follow-x-button img {
+  width: 22px;
+  height: 22px;
+}
+
+.follow-x-button img {
+  width: 18px;
+  height: 18px;
 }
 
 .guidelines-page .guidelines-section h2::before {

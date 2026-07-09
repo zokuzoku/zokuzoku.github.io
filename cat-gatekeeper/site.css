@@ -2644,6 +2644,25 @@ html[lang="en"] .guidelines-page .guidelines-section h2 {
   filter: invert(1);
 }
 
+@media (max-width: 640px) {
+  #follow .section-heading {
+    width: 100%;
+  }
+
+  #follow .follow-cta {
+    width: 100%;
+  }
+
+  #follow .follow-x-button {
+    width: min(100%, 320px);
+    min-height: 56px;
+    padding: 10px 18px;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.25;
+  }
+}
+
 .follow-x-button img {
   width: 18px;
   height: 18px;

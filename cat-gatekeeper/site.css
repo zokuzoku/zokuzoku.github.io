@@ -333,6 +333,24 @@ nav a[aria-current="page"] {
   margin-top: clamp(20px, 2.4vw, 30px);
 }
 
+.store-badges {
+  align-items: center;
+}
+
+.store-badge {
+  display: inline-flex;
+}
+
+.store-badge img {
+  display: block;
+  height: 48px;
+  width: auto;
+}
+
+.desktop-hero .store-badge img {
+  height: 64px;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -604,9 +622,9 @@ nav a[aria-current="page"] {
 }
 
 .desktop-hero .actions > .button {
-  min-height: 52px;
-  padding: 0 24px;
-  font-size: 17px;
+  min-height: 64px;
+  padding: 0 28px;
+  font-size: 19px;
 }
 
 .desktop-hero .actions > .button.primary {

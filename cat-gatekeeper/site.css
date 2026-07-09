@@ -2406,6 +2406,20 @@ nav a[aria-current="page"] {
     top: 104px;
   }
 
+  #notice,
+  #reactions,
+  #custom-cat-feature,
+  #community-cats,
+  #new-cats,
+  #difference,
+  #preview,
+  #how-it-works,
+  #privacy,
+  #faq,
+  #support {
+    scroll-margin-top: 122px;
+  }
+
   .page-nav .nav-optional {
     display: none;
   }

@@ -2654,10 +2654,13 @@ html[lang="en"] .guidelines-page .guidelines-section h2 {
   }
 
   #follow .follow-x-button {
-    width: min(100%, 320px);
+    width: fit-content;
+    max-width: 100%;
     min-height: 56px;
-    padding: 10px 18px;
-    white-space: normal;
+    gap: 5px;
+    padding: 10px;
+    font-size: 16px;
+    white-space: nowrap;
     text-align: center;
     line-height: 1.25;
   }

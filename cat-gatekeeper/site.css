@@ -2336,6 +2336,10 @@ nav a[aria-current="page"] {
     padding: 14px 20px;
   }
 
+  .page-nav {
+    display: none;
+  }
+
   .header-brand {
     display: flex;
     justify-content: flex-start;

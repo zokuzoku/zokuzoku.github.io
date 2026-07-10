@@ -1907,6 +1907,14 @@ nav a[aria-current="page"] {
   font-weight: 800;
 }
 
+#community-cats .section-body a {
+  color: #5f8f38;
+  font: inherit;
+  margin-top: 0;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
 .section-note {
   margin: 0;
   color: var(--muted);

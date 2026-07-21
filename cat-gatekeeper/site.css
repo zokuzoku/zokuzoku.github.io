@@ -1962,7 +1962,7 @@ nav a[aria-current="page"] {
 }
 
 #community-cats .section-body {
-  font-size: clamp(28px, 3.2vw, 40px);
+  font-size: clamp(19px, 2.2vw, 28px);
   font-weight: 800;
 }
 

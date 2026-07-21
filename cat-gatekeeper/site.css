@@ -1789,6 +1789,65 @@ nav a[aria-current="page"] {
   gap: 28px;
 }
 
+.desktop-page .community-cats {
+  overflow: hidden;
+}
+
+.community-cat-marquee {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+}
+
+.community-cat-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.community-cat-marquee.is-ready .community-cat-track {
+  animation: community-cat-slide 50s linear infinite;
+}
+
+.community-cat-set {
+  display: flex;
+  flex: none;
+  gap: 12px;
+  padding-right: 12px;
+}
+
+.community-cat-set img {
+  display: block;
+  width: clamp(132px, 15vw, 200px);
+  aspect-ratio: 1;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+#community-cats .community-cats-cta {
+  margin: 0;
+  text-align: center;
+}
+
+@keyframes community-cat-slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .community-cat-marquee.is-ready .community-cat-track {
+    animation: none;
+    transform: none;
+  }
+}
+
 #community-cats .section-action {
   margin-top: 0;
 }

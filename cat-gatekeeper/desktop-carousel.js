@@ -51,4 +51,22 @@
       }
     });
   }
+
+  document.querySelectorAll("[data-community-cat-marquee]").forEach((marquee) => {
+    const track = marquee.querySelector(".community-cat-track");
+    const sourceSet = track?.querySelector(".community-cat-set");
+
+    if (!track || !sourceSet) return;
+
+    for (let copyIndex = 1; copyIndex < 4; copyIndex += 1) {
+      const clone = sourceSet.cloneNode(true);
+      clone.setAttribute("aria-hidden", "true");
+      clone.querySelectorAll("img").forEach((image) => {
+        image.alt = "";
+      });
+      track.append(clone);
+    }
+
+    marquee.classList.add("is-ready");
+  });
 })();

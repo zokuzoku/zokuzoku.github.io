@@ -1594,6 +1594,7 @@ nav a[aria-current="page"] {
 #how-it-works,
 #privacy,
 #faq,
+#follow,
 #support {
   scroll-margin-top: 88px;
 }
@@ -2107,8 +2108,12 @@ nav a[aria-current="page"] {
   background: var(--paper);
 }
 
-.extension-page #support {
+.extension-page #follow {
   background: var(--warm-band);
+}
+
+.extension-page #support {
+  background: var(--paper);
 }
 
 .desktop-page .custom-cat-feature {
@@ -2116,11 +2121,11 @@ nav a[aria-current="page"] {
 }
 
 .desktop-page .community-cats {
-  background: var(--warm-band);
+  background: var(--paper);
 }
 
 .desktop-page #new-cats {
-  background: var(--paper);
+  background: var(--warm-band);
 }
 
 .desktop-page .desktop-difference {
@@ -2139,8 +2144,12 @@ nav a[aria-current="page"] {
   background: var(--paper);
 }
 
-.desktop-page #support {
+.desktop-page #follow {
   background: var(--warm-band);
+}
+
+.desktop-page #support {
+  background: var(--paper);
 }
 
 .custom-cat-feature-grid {
@@ -2487,6 +2496,7 @@ nav a[aria-current="page"] {
   #how-it-works,
   #privacy,
   #faq,
+  #follow,
   #support {
     scroll-margin-top: 122px;
   }

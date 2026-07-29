@@ -24,7 +24,7 @@
   <link rel="icon" href="https://zokuzoku.github.io/cat-gatekeeper/assets/favicon-cat-16.png" sizes="16x16" type="image/png">
   <link rel="shortcut icon" href="../../../cat-gatekeeper/assets/favicon-cat-32.png" type="image/png">
   <link rel="apple-touch-icon" href="../../../cat-gatekeeper/assets/apple-touch-cat.png">
-  <link rel="stylesheet" href="../../../cat-gatekeeper/site.css?v=217">
+  <link rel="stylesheet" href="../../../cat-gatekeeper/site.css?v=219">
 </head>
 <body class="desktop-page">
   <header class="site-header" aria-label="サイトヘッダー">
@@ -87,10 +87,11 @@
     <nav class="page-nav" aria-label="Cat Gatekeeper Desktopページ内ナビゲーション">
       <a href="#notice">最新情報</a>
       <a href="#custom-cat-feature">機能紹介</a>
-      <a class="nav-optional" href="#community-cats">みんなの子</a>
       <a class="nav-optional" href="#new-cats">新しい猫</a>
+      <a class="nav-optional" href="#community-cats">みんなの子</a>
       <a href="#how-it-works">使い方</a>
       <a href="#faq">Q&amp;A</a>
+      <a href="#follow">Follow</a>
       <a href="#support">サポート</a>
     </nav>
 
@@ -98,14 +99,20 @@
       <div class="section-inner">
       <p class="section-kicker" id="notice-title">WHAT'S NEW</p>
       <article class="notice-item notice-item-current">
-        <h2>2026年7月10日：アップデート情報</h2>
+        <h2>2026年7月29日：アップデート情報</h2>
         <div class="notice-notes">
-          <p>• 「みんなの子」が仲間入りしました。世界中の猫ちゃんが休憩を知らせてくれます。</p>
-          <p>• メニューバー常駐機能を追加しました。ウィンドウを閉じてもメニューバーから使えます。</p>
+          <p>• 看板猫に新しい猫を追加しました。</p>
         </div>
       </article>
       <details class="notice-history">
         <summary>過去の更新</summary>
+        <article class="notice-item">
+          <h3>2026年7月10日：アップデート情報</h3>
+          <div class="notice-notes">
+            <p>• 「みんなの子」が仲間入りしました。世界中の猫ちゃんが休憩を知らせてくれます。</p>
+            <p>• メニューバー常駐機能を追加しました。ウィンドウを閉じてもメニューバーから使えます。</p>
+          </div>
+        </article>
         <article class="notice-item">
           <h3>2026年6月20日：アップデート情報</h3>
           <div class="notice-notes">
@@ -165,6 +172,23 @@
       </div>
     </section>
 
+    <section class="section cat-gallery" id="new-cats" aria-labelledby="cats-title">
+      <div class="section-inner">
+      <div class="section-heading">
+        <p class="section-kicker">New Cats</p>
+        <h2 id="cats-title" class="visually-hidden">新しい猫</h2>
+      </div>
+      <div class="cat-scroll" aria-label="猫一覧">
+        <article class="cat-card">
+          <img src="../../../cat-gatekeeper/assets/neko1-800.png" alt="Cat Gatekeeperの猫">
+        </article>
+        <article class="cat-card">
+          <img src="../../../cat-gatekeeper/assets/thumb.webp" alt="眠っているキジトラの猫">
+        </article>
+      </div>
+      </div>
+    </section>
+
     <section class="section community-cats" id="community-cats" aria-labelledby="community-cats-title">
       <div class="section-inner">
         <div class="section-heading">
@@ -184,20 +208,6 @@
           </div>
         </div>
         <p class="section-body community-cats-cta"><a href="/ja/cat-gatekeeper/desktop/community-guidelines/">みんなの猫ちゃんを募集中！ →</a></p>
-      </div>
-    </section>
-
-    <section class="section cat-gallery" id="new-cats" aria-labelledby="cats-title">
-      <div class="section-inner">
-      <div class="section-heading">
-        <p class="section-kicker">New Cats</p>
-        <h2 id="cats-title" class="visually-hidden">新しい猫</h2>
-      </div>
-      <div class="cat-scroll" aria-label="猫一覧">
-        <article class="cat-card">
-          <img src="../../../cat-gatekeeper/assets/neko1-800.png" alt="Cat Gatekeeperの猫">
-        </article>
-      </div>
       </div>
     </section>
 
@@ -289,6 +299,10 @@
           <p>メニュー画面で、猫が現れるまでの時間と休憩時間を変更できます。</p>
         </details>
         <details>
+          <summary>猫があらわれません</summary>
+          <p>作業時間と休憩時間を設定してから、カウントをスタートしてください。カウントが0になり休憩時間に入ると、猫が画面にあらわれます。</p>
+        </details>
+        <details>
           <summary>インターネット接続は必要ですか？</summary>
           <p>タイマーなどの基本機能は、インターネット接続なしで使えます。追加コンテンツの取得や公式サイトの表示には、インターネット接続が必要です。</p>
         </details>
@@ -312,18 +326,6 @@
       </div>
     </section>
 
-    <section class="section compact" id="support" aria-labelledby="support-title">
-      <div class="section-inner">
-      <div class="section-heading">
-        <p class="section-kicker" id="support-title">Support</p>
-      </div>
-      <div class="link-grid support-grid">
-        <a href="mailto:zokuzoku.app@gmail.com">お問い合わせはこちら</a>
-        <a href="https://github.com/zokuzoku/cat-gatekeeper/issues">GIT HUB</a>
-      </div>
-      </div>
-    </section>
-
     <section class="section compact" id="follow" aria-labelledby="follow-title">
       <div class="section-inner">
       <div class="section-heading">
@@ -335,6 +337,18 @@
             @konekone2026 をフォロー
           </a>
         </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="section compact" id="support" aria-labelledby="support-title">
+      <div class="section-inner">
+      <div class="section-heading">
+        <p class="section-kicker" id="support-title">Support</p>
+      </div>
+      <div class="link-grid support-grid">
+        <a href="mailto:zokuzoku.app@gmail.com">お問い合わせはこちら</a>
+        <a href="https://github.com/zokuzoku/cat-gatekeeper/issues">GIT HUB</a>
       </div>
       </div>
     </section>

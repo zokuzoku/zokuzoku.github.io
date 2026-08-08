@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cat Gatekeeper - Official Chrome Extension for Social Media Breaks</title>
-  <meta name="description" content="Cat Gatekeeper is the official free Chrome browser extension that shows a cat break screen when you spend too long on social media and selected websites. No ads. No data collection.">
-  <meta name="keywords" content="Cat Gatekeeper, official Cat Gatekeeper, Chrome extension, browser extension, social media blocker, break reminder, productivity cat">
+  <title>Cat Gatekeeper - Official Browser Extension for Social Media Breaks</title>
+  <meta name="description" content="Cat Gatekeeper is the official free browser extension for Chrome, Brave, and Firefox that shows a cat break screen when you spend too long on social media and selected websites. No ads. No data collection.">
+  <meta name="keywords" content="Cat Gatekeeper, official Cat Gatekeeper, Chrome extension, Brave extension, Firefox extension, browser extension, social media blocker, break reminder, productivity cat">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://zokuzoku.github.io/cat-gatekeeper/">
   <link rel="alternate" hreflang="en" href="https://zokuzoku.github.io/cat-gatekeeper/">
   <link rel="alternate" hreflang="ja" href="https://zokuzoku.github.io/ja/cat-gatekeeper/">
   <link rel="alternate" hreflang="x-default" href="https://zokuzoku.github.io/cat-gatekeeper/">
-  <meta property="og:title" content="Cat Gatekeeper - Official Chrome Extension">
+  <meta property="og:title" content="Cat Gatekeeper - Official Browser Extension">
   <meta property="og:description" content="A cat appears when you spend too long on social media and selected websites. The cutest forced-break browser extension.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://zokuzoku.github.io/cat-gatekeeper/">
@@ -19,7 +19,7 @@
   <meta property="og:image:width" content="512">
   <meta property="og:image:height" content="512">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Cat Gatekeeper - Official Chrome Extension">
+  <meta name="twitter:title" content="Cat Gatekeeper - Official Browser Extension">
   <meta name="twitter:description" content="A cat appears when you spend too long on social media and selected websites.">
   <meta name="twitter:image" content="https://zokuzoku.github.io/cat-gatekeeper/assets/og-cat-icon.png">
   <link rel="icon" href="https://zokuzoku.github.io/cat-gatekeeper/assets/favicon-cat-48.png" sizes="48x48" type="image/png">
@@ -27,15 +27,15 @@
   <link rel="icon" href="https://zokuzoku.github.io/cat-gatekeeper/assets/favicon-cat-16.png" sizes="16x16" type="image/png">
   <link rel="shortcut icon" href="../assets/favicon-cat-32.png" type="image/png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-cat.png">
-  <link rel="stylesheet" href="../site.css?v=219">
+  <link rel="stylesheet" href="../site.css?v=221">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "Cat Gatekeeper",
       "applicationCategory": "BrowserApplication",
-      "operatingSystem": "Chrome, Firefox",
-      "description": "The official free Chrome browser extension that shows a cat break screen when you spend too long on social media and selected websites.",
+      "operatingSystem": "Chrome, Brave, Firefox",
+      "description": "The official free browser extension for Chrome, Brave, and Firefox that shows a cat break screen when you spend too long on social media and selected websites.",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -212,14 +212,25 @@
       <div class="section-inner">
       <p class="section-kicker" id="notice-title">WHAT'S NEW</p>
       <article class="notice-item notice-item-current">
-        <h2>June 10, 2026: Ver. 1.1.10</h2>
+        <h2>August 6, 2026: Ver. 1.2.2 (Chrome)</h2>
         <div class="notice-notes">
-          <p>• The target domain for X has been updated from Twitter.com to x.com!</p>
-          <p>• Settings changes now apply to tabs that are already open!</p>
+          <p>• Usage time now carries over when you switch tabs or windows, and you can check it for each site in the extension menu.</p>
+          <p>• Breaks now continue after you reload a page or reopen it in another tab.</p>
+          <p>• Major sites can now be selected with checkboxes, and YouTube and YouTube Shorts can be configured and tracked separately.</p>
+          <p>• Added a new cat and a shuffle system that makes the same cat less likely to appear twice in a row.</p>
+          <p>• You can now end a break by pressing and holding the break screen for three seconds, and cats now appear over fullscreen videos.</p>
+          <p>• Fixed minor issues and improved overall behavior.</p>
         </div>
       </article>
       <details class="notice-history">
         <summary>Past updates</summary>
+        <article class="notice-item">
+          <h3>June 10, 2026: Ver. 1.1.10 (Chrome &amp; Firefox)</h3>
+          <div class="notice-notes">
+            <p>• The target domain for X has been updated from Twitter.com to x.com!</p>
+            <p>• Settings changes now apply to tabs that are already open!</p>
+          </div>
+        </article>
         <article class="notice-item">
           <h3>May 30, 2026: Brave support and default waiting time update</h3>
           <div class="notice-notes">
@@ -273,6 +284,9 @@
       </div>
       <div class="cat-scroll" aria-label="Cat gallery">
         <article class="cat-card is-new">
+          <img src="../assets/inara-thumb.webp" alt="INARA, a star cat">
+        </article>
+        <article class="cat-card">
           <img src="../assets/neko2-800.png" alt="New Cat Gatekeeper cat">
         </article>
         <article class="cat-card">
@@ -324,7 +338,7 @@
         <article>
           <span>01</span>
           <h3>Open the menu</h3>
-          <p>Click the extension icon in the top-right<br>and choose Cat Gatekeeper</p>
+          <p>Click the puzzle-piece icon<br>in the browser toolbar and choose Cat Gatekeeper</p>
         </article>
         <article>
           <span>02</span>
@@ -334,7 +348,7 @@
         <article>
           <span>03</span>
           <h3>Take a break</h3>
-          <p>When time is up, the cat appears<br>and stays on your screen until the countdown ends<br><small>You can also open the menu and dismiss it</small></p>
+          <p>When time is up, the cat appears<br>and stays on your screen until the countdown ends<br><small>Press and hold the screen for 3 seconds to dismiss it early</small></p>
         </article>
       </div>
       </div>
@@ -370,7 +384,11 @@
       <div class="faq-list">
         <details>
           <summary>Which sites does it work on?</summary>
-          <p>You can add custom sites. Tracking may reset on sites with frequent page changes or reloads. Cat Gatekeeper works best on social media and video sites where you stay on the same service for a while.</p>
+          <p>You can choose from major social media and video sites, or add any site by entering its URL.</p>
+        </details>
+        <details>
+          <summary>How is usage time measured?</summary>
+          <p>Time is tracked separately for each site you add and advances only while you are actively viewing it. It pauses while you are on another tab or app, and resumes when you return. It carries over as you navigate within the same site and resets after you have been away for 30 minutes. You can check the tracked time for each site under “Usage” in the extension menu.</p>
         </details>
         <details>
           <summary>Is it free?</summary>
@@ -382,39 +400,35 @@
         </details>
         <details>
           <summary>Why is site access needed?</summary>
-          <p>It needs site access to show the cat break screen on the sites you choose. Cat Gatekeeper does not collect, sell, or transmit your browsing history or page content. Your settings are stored in your browser.</p>
+          <p>Site access is needed to measure usage time on the sites you choose and display the cat break screen. Cat Gatekeeper does not collect your browsing history or page content or send it outside your browser. Your settings and usage time for target sites are stored only in your browser.</p>
         </details>
         <details>
           <summary>Can I change the timer?</summary>
-          <p>Yes. You can change it from the extension menu.</p>
+          <p>Yes. You can change both the time before the cat appears and how long it stays from the extension menu.</p>
         </details>
         <details>
           <summary>The cat does not appear.</summary>
-          <p>If you switch tabs or use sites with frequent page changes or reloads, tracking may reset easily. Cat Gatekeeper works best on social media and video sites where you stay on the same service for a while. It may also be conflicting with another extension, so if needed, turn off other extensions and test it again.</p>
+          <p>Right after the extension updates automatically, the update may not take effect on pages that are already open. Make sure the target site is enabled, then reload the page once. If the issue continues, another extension may be interfering, so try temporarily disabling other extensions and test again.</p>
         </details>
         <details>
           <summary>Where can I open the menu?</summary>
-          <p>You can open it from the extension icon near the address bar in the top-right of your browser.</p>
+          <p>Open the extensions (puzzle) icon in the top-right of your browser, then select Cat Gatekeeper.</p>
         </details>
         <details>
           <summary>Can I dismiss the cat?</summary>
-          <p>Yes. Open the extension menu and press the dismiss button.</p>
+          <p>Yes. Press and hold the break screen for three seconds, or open the extension menu and press the dismiss button.</p>
         </details>
         <details>
           <summary>Which browsers are supported?</summary>
-          <p>Cat Gatekeeper currently supports Chrome and Firefox. Other browsers are also under consideration.</p>
+          <p>Cat Gatekeeper currently supports Chrome, Brave, and Firefox. Other browsers are also under consideration.</p>
         </details>
         <details>
           <summary>Are the cats real?</summary>
-          <p>They are ideal cats created one by one with the help of AI, carefully adjusted to become the ultimate lovable distraction. They are not real cats, but I’m very confident in their cuteness. Please treat them kindly as little gatekeepers for your desk.</p>
+          <p>The cats in the videos are ideal cats created with the help of AI and carefully adjusted one by one to become the ultimate lovable distractions. Please treat them kindly as little gatekeepers for your desk.</p>
         </details>
         <details>
           <summary>Can I use the assets in the extension?</summary>
-          <p>You are very welcome to share screenshots or posts about Cat Gatekeeper. Please do not use or redistribute the image or video assets themselves.</p>
-        </details>
-        <details>
-          <summary>Will new cats be added?</summary>
-          <p>Yes. More cats are planned for future updates.</p>
+          <p>You are very welcome to include screenshots or screen recordings in posts introducing Cat Gatekeeper or sharing your impressions. However, please do not extract, reuse, or redistribute image or video assets included in the extension.</p>
         </details>
       </div>
       </div>

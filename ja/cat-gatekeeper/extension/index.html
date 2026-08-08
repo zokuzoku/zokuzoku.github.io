@@ -26,14 +26,14 @@
   <link rel="icon" href="https://zokuzoku.github.io/cat-gatekeeper/assets/favicon-cat-16.png" sizes="16x16" type="image/png">
   <link rel="shortcut icon" href="../../../cat-gatekeeper/assets/favicon-cat-32.png" type="image/png">
   <link rel="apple-touch-icon" href="../../../cat-gatekeeper/assets/apple-touch-cat.png">
-  <link rel="stylesheet" href="../../../cat-gatekeeper/site.css?v=219">
+  <link rel="stylesheet" href="../../../cat-gatekeeper/site.css?v=221">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "Cat Gatekeeper",
       "applicationCategory": "BrowserApplication",
-      "operatingSystem": "Chrome, Firefox",
+      "operatingSystem": "Chrome, Brave, Firefox",
       "description": "選んだサイトを使いすぎたときに猫の休憩画面を表示する無料のブラウザ拡張機能です。",
       "offers": {
         "@type": "Offer",
@@ -211,14 +211,25 @@
       <div class="section-inner">
       <p class="section-kicker" id="notice-title">WHAT'S NEW</p>
       <article class="notice-item notice-item-current">
-        <h2>2026年6月10日：Ver. 1.1.10</h2>
+        <h2>2026年8月6日：Ver. 1.2.2（Chrome）</h2>
         <div class="notice-notes">
-          <p>• Xの対象ドメインをTwitter.comからx.comに整理しました！</p>
-          <p>• 設定変更が、既に開いているタブにも反映されるように修正しました！</p>
+          <p>• タブやウィンドウを切り替えても閲覧時間を引き継ぎ、メニューでサイトごとに確認できるようにしました。</p>
+          <p>• ページの再読み込みや別タブでの開き直し後も、休憩が続くようにしました。</p>
+          <p>• 主要サイトをチェックボックスで選べるようにし、YouTubeとYouTube Shortsを別々に設定・計測できるようにしました。</p>
+          <p>• 新しい猫を追加し、同じ猫が続きにくいシャッフル方式にしました。</p>
+          <p>• 休憩画面を3秒長押しで終了できるようにし、全画面動画の上にも猫が現れるよう改善しました。</p>
+          <p>• その他、細かな不具合を修正し、動作を改善しました。</p>
         </div>
       </article>
       <details class="notice-history">
         <summary>過去の更新</summary>
+        <article class="notice-item">
+          <h3>2026年6月10日：Ver. 1.1.10（Chrome &amp; Firefox）</h3>
+          <div class="notice-notes">
+            <p>• Xの対象ドメインをTwitter.comからx.comに整理しました！</p>
+            <p>• 設定変更が、既に開いているタブにも反映されるように修正しました！</p>
+          </div>
+        </article>
         <article class="notice-item">
           <h3>2026年5月30日：Brave対応と待機時間の初期設定変更</h3>
           <div class="notice-notes">
@@ -272,6 +283,9 @@
       </div>
       <div class="cat-scroll" aria-label="猫一覧">
         <article class="cat-card is-new">
+          <img src="../../../cat-gatekeeper/assets/inara-thumb.webp" alt="看板猫のINARA">
+        </article>
+        <article class="cat-card">
           <img src="../../../cat-gatekeeper/assets/neko2-800.png" alt="Cat Gatekeeperの新しい猫">
         </article>
         <article class="cat-card">
@@ -323,7 +337,7 @@
         <article>
           <span>01</span>
           <h3>メニューを開く</h3>
-          <p>ブラウザ右上の拡張機能アイコンから<br>Cat Gatekeeperを選んで開きます</p>
+          <p>ブラウザ右上のパズルピースのアイコンからCat Gatekeeperを選んで開きます</p>
         </article>
         <article>
           <span>02</span>
@@ -333,7 +347,7 @@
         <article>
           <span>03</span>
           <h3>休憩する</h3>
-          <p>時間になると猫があらわれて<br>カウントダウンが終わるまで<br>画面に居座ります<br><small>メニューを開いて退いてもらうことも可能です</small></p>
+          <p>時間になると猫があらわれて<br>カウントダウンが終わるまで<br>画面に居座ります<br><small>画面を3秒長押しすると、途中で退いてもらえます</small></p>
         </article>
       </div>
       </div>
@@ -369,7 +383,11 @@
       <div class="faq-list">
         <details>
           <summary>どのサイトで使えますか？</summary>
-          <p>任意のサイトを追加できます。ページ移動や読み込みが多いサイトでは計測がリセットされやすいため、SNSや動画サイトなど、同じサイト内で長く見続けるサービスでの利用をおすすめします。</p>
+          <p>主要なSNSや動画サイトを選べるほか、URLを入力して任意のサイトを追加できます。</p>
+        </details>
+        <details>
+          <summary>使用時間はどのように計測されますか？</summary>
+          <p>登録したサイトごとに、そのサイトを実際に見ている時間だけ計測します。ほかのタブやアプリに移っているあいだは止まり、戻ると続きから再開します。同じサイト内でページを移動しても時間は引き継がれ、30分以上離れるとリセットされます。計測中の時間は、メニュー画面の「使用状況」でサイトごとに確認できます。</p>
         </details>
         <details>
           <summary>無料で使えますか？</summary>
@@ -381,39 +399,35 @@
         </details>
         <details>
           <summary>なぜサイトへのアクセス権限が必要ですか？</summary>
-          <p>選んだサイト上に猫の休憩画面を表示するために必要です。Cat Gatekeeperは閲覧履歴やページ内容を収集、販売、送信しません。設定はブラウザ内に保存されます。</p>
+          <p>選んだサイトで使用時間を計測し、猫の休憩画面を表示するために必要です。閲覧履歴やページの内容を収集したり、外部へ送信したりすることはありません。設定と対象サイトの使用時間は、ブラウザ内にのみ保存されます。</p>
         </details>
         <details>
           <summary>設定時間は変えられますか？</summary>
-          <p>メニュー画面で変更可能です。</p>
+          <p>猫が現れるまでの時間と、猫が居座る時間をメニュー画面で変更できます。</p>
         </details>
         <details>
           <summary>猫が出てきません。</summary>
-          <p>他のタブに移動した場合や、ページ移動や読み込みが多いサイトでは計測がリセットされやすいため、SNSや動画サイトなど同じサイト内で長く見続けるサービスでの利用をおすすめします。また、他の拡張機能と干渉している可能性もありますので、必要に応じて他の拡張機能をオフにして再度お試しください。</p>
+          <p>拡張機能が自動更新された直後は、すでに開いているページに更新が反映されないことがあります。対象サイトが有効になっているか確認し、ページを一度再読み込みしてください。それでも改善しない場合は、他の拡張機能と干渉している可能性があるため、必要に応じて他の拡張機能をオフにして再度お試しください。</p>
         </details>
         <details>
           <summary>メニューはどこから開けますか？</summary>
-          <p>ブラウザ右上、アドレスバー横の拡張機能アイコンから開けます。</p>
+          <p>ブラウザ右上の拡張機能（パズル）アイコンから、Cat Gatekeeperを選んで開けます。</p>
         </details>
         <details>
           <summary>猫は消せますか？</summary>
-          <p>拡張機能のメニューを開いて、「退いてもらう」ボタンを押してください。</p>
+          <p>休憩画面を3秒長押しするか、拡張機能のメニューを開いて「退いてもらう」ボタンを押してください。</p>
         </details>
         <details>
-          <summary>対応ブラウザはなんですか？</summary>
-          <p>現在はChromeとFirefoxに対応しています。その他のブラウザについても検討中です。</p>
+          <summary>対応しているブラウザは？</summary>
+          <p>現在はChrome、Brave、Firefoxに対応しています。その他のブラウザについても検討中です。</p>
         </details>
         <details>
-          <summary>この猫は実在する？</summary>
-          <p>「最高の邪魔者」になってもらうべく、AIの力を借りて一匹ずつ調整を重ねて生み出した理想の猫たちになります。実在の猫ではありませんが、可愛さには自信があります。ぜひ、デスクの門番として可愛がってあげてください。</p>
+          <summary>この猫たちは実在する？</summary>
+          <p>動画の猫は、AIの力を借りて「最高の邪魔者」になるよう一匹ずつ調整して生み出した理想の猫たちです。ぜひ、デスクの門番として可愛がってあげてください。</p>
         </details>
         <details>
           <summary>拡張機能内の素材を使ってもいいですか？</summary>
-          <p>紹介や感想の投稿で、Cat Gatekeeperの画面を載せるのは大歓迎です。画像・動画素材そのものの利用や再配布はご遠慮ください。</p>
-        </details>
-        <details>
-          <summary>新しい猫は追加されますか？</summary>
-          <p>今後のアップデートで追加予定です。</p>
+          <p>Cat Gatekeeperを紹介する投稿や感想で、スクリーンショットや画面録画を掲載するのは大歓迎です。ただし、拡張機能に含まれる画像・動画素材を抜き出して利用したり、再配布したりすることはご遠慮ください。</p>
         </details>
       </div>
       </div>

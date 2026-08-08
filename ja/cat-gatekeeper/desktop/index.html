@@ -24,7 +24,7 @@
   <link rel="icon" href="https://zokuzoku.github.io/cat-gatekeeper/assets/favicon-cat-16.png" sizes="16x16" type="image/png">
   <link rel="shortcut icon" href="../../../cat-gatekeeper/assets/favicon-cat-32.png" type="image/png">
   <link rel="apple-touch-icon" href="../../../cat-gatekeeper/assets/apple-touch-cat.png">
-  <link rel="stylesheet" href="../../../cat-gatekeeper/site.css?v=219">
+  <link rel="stylesheet" href="../../../cat-gatekeeper/site.css?v=221">
 </head>
 <body class="desktop-page">
   <header class="site-header" aria-label="サイトヘッダー">
@@ -44,7 +44,7 @@
         <div>
           <a href="/ja/cat-gatekeeper/">トップ</a>
           <a href="/ja/cat-gatekeeper/extension/">ブラウザ拡張版</a>
-          <a href="/ja/cat-gatekeeper/desktop/">デスクトップ版</a>
+          <a href="/ja/cat-gatekeeper/desktop/" aria-current="page">デスクトップ版</a>
           <span aria-disabled="true">スマホ版（準備中）</span>
         </div>
       </details>
@@ -183,9 +183,9 @@
             <p>写真の背景を切り抜いて、画面になじむように表示できます。</p>
           </article>
           <article class="custom-cat-feature-card">
-            <video src="../../../cat-gatekeeper/assets/feature-motion.mp4" autoplay muted loop playsinline webkit-playsinline preload="auto" aria-label="モーション設定の表示例"></video>
-            <h3>モーションを設定</h3>
-            <p>追加した写真に動きをつけて、休憩中に表示できます。</p>
+            <video src="../../../cat-gatekeeper/assets/feature-motion.mp4" autoplay muted loop playsinline webkit-playsinline preload="auto" aria-label="演出を選べる機能の表示例"></video>
+            <h3>演出を選べる</h3>
+            <p>追加した写真に好きな演出をつけて、休憩中に表示できます。</p>
           </article>
         </div>
       </div>
@@ -269,7 +269,7 @@
         <article>
           <span>02</span>
           <h3>作業する</h3>
-          <p>タイマーは最小化したまま<br>いつもの作業を進めます。</p>
+          <p>タイマーは画面に出したままでも、<br>メニューバーやシステムトレイにしまうこともできます。</p>
         </article>
         <article>
           <span>03</span>
@@ -310,11 +310,15 @@
       <div class="faq-list">
         <details>
           <summary>ブラウザ拡張版と同じものですか？</summary>
-          <p>別のアプリです。ブラウザ拡張版はブラウザ内のSNSサイト向け、デスクトップ版はPC上で使うタイマー型のアプリです。ブラウザ以外の作業にも使えます。</p>
+          <p>別のアプリです。ブラウザ拡張版は指定したWebサイトの見すぎを防ぐもの、デスクトップ版はPC作業全体の休憩を促すタイマーアプリです。</p>
         </details>
         <details>
-          <summary>対応OSはなんですか？</summary>
-          <p>macOS版とWindows版で使えます。</p>
+          <summary>作業内容は記録されますか？</summary>
+          <p>ブラウザの閲覧履歴やアプリの使用状況、キー入力、画面の内容は記録しません。設定した作業時間と休憩時間だけに従って動作します。</p>
+        </details>
+        <details>
+          <summary>対応しているOSは？</summary>
+          <p>macOS版とWindows版で使えます。macOS版は、Appleシリコン搭載MacとIntel搭載Macの両方に対応しています。</p>
         </details>
         <details>
           <summary>設定時間は変えられますか？</summary>
@@ -326,19 +330,35 @@
         </details>
         <details>
           <summary>インターネット接続は必要ですか？</summary>
-          <p>タイマーなどの基本機能は、インターネット接続なしで使えます。追加コンテンツの取得や公式サイトの表示には、インターネット接続が必要です。</p>
+          <p>基本機能はオフラインで使えます。「みんなの子」や追加コンテンツの取得、アップデート情報や公式サイトの表示にはインターネット接続が必要です。</p>
+        </details>
+        <details>
+          <summary>追加した写真は外部に送信されますか？</summary>
+          <p>「うちの子」に追加した写真は端末内で処理・保存され、外部には送信されません。</p>
+        </details>
+        <details>
+          <summary>写真の背景は切り抜けますか？</summary>
+          <p>写真を追加するときに「背景を切り抜く」をオンにすると、端末内で背景を切り抜けます。背景がシンプルな写真がおすすめです。</p>
+        </details>
+        <details>
+          <summary>写真にエフェクトをつけられますか？</summary>
+          <p>「うちの子」に追加した写真へエフェクトを設定できます。追加後も「うちの子」一覧から変更できます。</p>
+        </details>
+        <details>
+          <summary>ウィンドウを閉じても使えますか？</summary>
+          <p>設定で常駐機能をオンにすると、ウィンドウを閉じても、macOSではメニューバー、Windowsではシステムトレイから使えます。</p>
         </details>
         <details>
           <summary>猫は消せますか？</summary>
           <p>アプリのメニュー、または猫が登場した画面の右下に出る「退いてもらう」ボタンから消せます。</p>
         </details>
         <details>
-          <summary>この猫は実在する？</summary>
-          <p>「最高の邪魔者」になってもらうべく、AIの力を借りて一匹ずつ調整を重ねて生み出した理想の猫たちになります。実在の猫ではありませんが、可愛さには自信があります。ぜひ、デスクの門番として可愛がってあげてください。</p>
+          <summary>この猫たちは実在する？</summary>
+          <p>動画の猫は、AIの力を借りて「最高の邪魔者」になるよう一匹ずつ調整して生み出した理想の猫たちです。ぜひ、デスクの門番として可愛がってあげてください。</p>
         </details>
         <details>
           <summary>アプリ内の素材を使ってもいいですか？</summary>
-          <p>紹介や感想の投稿で、Cat Gatekeeperの画面を載せるのは大歓迎です。画像・動画素材そのものの利用や再配布はご遠慮ください。</p>
+          <p>Cat Gatekeeperを紹介する投稿や感想で、スクリーンショットや画面録画を掲載するのは大歓迎です。ただし、アプリに含まれる画像・動画素材を抜き出して利用したり、再配布したりすることはご遠慮ください。</p>
         </details>
         <details>
           <summary>アップデートが反映されません</summary>

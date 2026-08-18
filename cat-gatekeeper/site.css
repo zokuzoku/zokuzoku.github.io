@@ -1222,26 +1222,19 @@ nav a[aria-current="page"] {
 }
 
 .cat-scroll {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
-  width: min(100% - 40px, 1280px);
+  width: min(100% - 40px, 778px);
   margin: clamp(26px, 4vw, 48px) auto 0;
-  overflow-x: auto;
-  padding: 0 0 14px;
-  justify-content: center;
-  scroll-padding-inline: max(20px, calc((100vw - 1280px) / 2));
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
 }
 
 .cat-card {
   position: relative;
-  flex: 0 0 clamp(210px, 24vw, 300px);
   padding: 12px;
   border-radius: 8px;
   border: 2px solid rgba(255, 102, 51, 0.42);
   background: var(--warm-band);
-  scroll-snap-align: start;
 }
 
 .cat-card.is-new::after {
@@ -1260,8 +1253,8 @@ nav a[aria-current="page"] {
   width: 62px;
   height: 62px;
   color: #fff;
-  background: #9f3f28;
-  filter: drop-shadow(0 8px 14px rgba(159, 63, 40, 0.24));
+  background: var(--orange);
+  filter: drop-shadow(0 8px 14px rgba(255, 102, 51, 0.24));
   font-size: 13px;
   font-weight: 850;
   letter-spacing: 0.04em;
@@ -1827,7 +1820,7 @@ nav a[aria-current="page"] {
 
 .community-cat-set img {
   display: block;
-  width: clamp(132px, 15vw, 200px);
+  width: clamp(132px, 15vw, 220px);
   aspect-ratio: 1;
   border-radius: 8px;
   object-fit: cover;
@@ -2639,6 +2632,22 @@ nav a[aria-current="page"] {
 
   .custom-cat-feature-grid {
     grid-template-columns: 1fr;
+  }
+
+  .cat-scroll {
+    display: flex;
+    width: min(100% - 40px, 1280px);
+    overflow-x: auto;
+    padding: 0 0 14px;
+    justify-content: safe center;
+    scroll-padding-inline: 20px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .cat-card {
+    flex: 0 0 clamp(210px, 24vw, 300px);
+    scroll-snap-align: start;
   }
 
   .version-choice {
